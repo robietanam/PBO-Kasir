@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PBO Kasir", "PBO Kasir\PBO Kasir.csproj", "{4CC1C5FE-EA7D-4F26-A1C4-A4971E2E271C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CC1C5FE-EA7D-4F26-A1C4-A4971E2E271C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC1C5FE-EA7D-4F26-A1C4-A4971E2E271C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC1C5FE-EA7D-4F26-A1C4-A4971E2E271C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC1C5FE-EA7D-4F26-A1C4-A4971E2E271C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAB296C4-28A8-4D61-8812-0750DB21A7FF}
+	EndGlobalSection
+EndGlobal
