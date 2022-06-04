@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PBO_Kasir
 {
-    public partial class Form1 : Form
+    public partial class StokBarang : UserControl
     {
-        public Form1()
+        public StokBarang()
         {
             InitializeComponent();
         }
