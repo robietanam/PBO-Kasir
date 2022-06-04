@@ -10,18 +10,23 @@ using System.Windows.Forms;
 
 namespace PBO_Kasir
 {
-    public partial class StokBarang : UserControl
+    public partial class Kasbon : UserControl
     {
         mainForm objParent;
-        public StokBarang(mainForm pantek_parent)
+    public Kasbon(mainForm pantek_parent)
         {
             InitializeComponent();
             objParent = pantek_parent;
         }
 
-        private void button_simpanBarang_Click(object sender, EventArgs e)
+        private void dataGridView_Bon_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            objParent.showMenuBarang();
+           
+        }
+
+        private void button_TambahBon_Click(object sender, EventArgs e)
+        {
+            objParent.showKasbonTambah();
         }
     }
 }

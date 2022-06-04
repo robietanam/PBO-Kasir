@@ -44,6 +44,7 @@ namespace PBO_Kasir
                 textBox_Password.Text = "";
                 this.Visible = false;
                 objParent.showMainForm();
+                
             }
             else
             {

@@ -39,8 +39,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox_Stok = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox_Keterangan = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.comboBox_Kategori = new System.Windows.Forms.ComboBox();
             this.button_tambahKategori = new System.Windows.Forms.Button();
             this.button_simpanBarang = new System.Windows.Forms.Button();
@@ -152,26 +150,6 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Stok";
             // 
-            // textBox_Keterangan
-            // 
-            this.textBox_Keterangan.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox_Keterangan.Location = new System.Drawing.Point(315, 200);
-            this.textBox_Keterangan.Multiline = true;
-            this.textBox_Keterangan.Name = "textBox_Keterangan";
-            this.textBox_Keterangan.Size = new System.Drawing.Size(200, 65);
-            this.textBox_Keterangan.TabIndex = 15;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label6.Location = new System.Drawing.Point(311, 179);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 17);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Deskripsi";
-            // 
             // comboBox_Kategori
             // 
             this.comboBox_Kategori.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
@@ -198,6 +176,7 @@
             this.button_simpanBarang.TabIndex = 18;
             this.button_simpanBarang.Text = "Simpan";
             this.button_simpanBarang.UseVisualStyleBackColor = true;
+            this.button_simpanBarang.Click += new System.EventHandler(this.button_simpanBarang_Click);
             // 
             // StokBarang
             // 
@@ -206,8 +185,6 @@
             this.Controls.Add(this.button_simpanBarang);
             this.Controls.Add(this.button_tambahKategori);
             this.Controls.Add(this.comboBox_Kategori);
-            this.Controls.Add(this.textBox_Keterangan);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox_Stok);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox_Kode);
@@ -240,8 +217,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox_Stok;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox_Keterangan;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBox_Kategori;
         private System.Windows.Forms.Button button_tambahKategori;
         private System.Windows.Forms.Button button_simpanBarang;

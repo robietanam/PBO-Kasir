@@ -10,18 +10,22 @@ using System.Windows.Forms;
 
 namespace PBO_Kasir
 {
-    public partial class StokBarang : UserControl
+    public partial class Transaksi : UserControl
     {
         mainForm objParent;
-        public StokBarang(mainForm pantek_parent)
+        public Transaksi(mainForm pantek_parent)
         {
             InitializeComponent();
             objParent = pantek_parent;
         }
-
-        private void button_simpanBarang_Click(object sender, EventArgs e)
+        private void dataGridView_Barang_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            objParent.showMenuBarang();
+
+        }
+
+        private void button_Selanjutnya_Click(object sender, EventArgs e)
+        {
+            objParent.showKonfirmasi();
         }
     }
 }

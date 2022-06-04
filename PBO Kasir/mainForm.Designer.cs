@@ -104,6 +104,7 @@
             this.btnMenu_Kasbon.Text = "Kasbon";
             this.btnMenu_Kasbon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMenu_Kasbon.UseVisualStyleBackColor = true;
+            this.btnMenu_Kasbon.Click += new System.EventHandler(this.btnMenu_Kasbon_Click);
             // 
             // btnMenu_Barang
             // 
@@ -121,6 +122,7 @@
             this.btnMenu_Barang.Text = "Manajemen Barang";
             this.btnMenu_Barang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMenu_Barang.UseVisualStyleBackColor = true;
+            this.btnMenu_Barang.Click += new System.EventHandler(this.btnMenu_Barang_Click);
             // 
             // btnMenu_Transaksi
             // 
@@ -138,6 +140,7 @@
             this.btnMenu_Transaksi.Text = "Transaksi";
             this.btnMenu_Transaksi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMenu_Transaksi.UseVisualStyleBackColor = true;
+            this.btnMenu_Transaksi.Click += new System.EventHandler(this.btnMenu_Transaksi_Click);
             // 
             // label1
             // 
@@ -149,6 +152,7 @@
             this.label1.Size = new System.Drawing.Size(200, 100);
             this.label1.TabIndex = 1;
             this.label1.Text = "Kasir Pintar";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // mainForm
             // 
