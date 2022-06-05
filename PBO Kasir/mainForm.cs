@@ -17,6 +17,7 @@ namespace PBO_Kasir
         Transaksi objTransaksi;
         Barang objBarang;
         StokBarang objStokBarang;
+        KategoriTambah objKategoriTambah;
         Kasbon objKasbon;
         KasbonTambah objKasbonTambah;
         Konfirmasi objKonfirmasi;
@@ -76,6 +77,11 @@ namespace PBO_Kasir
             objKonfirmasiBerhasil.Location = new Point(200, 0);
             objKonfirmasiBerhasil.Anchor = ((AnchorStyles.Left | AnchorStyles.Right) | (AnchorStyles.Bottom | AnchorStyles.Top));
             this.Controls.Add(objKonfirmasiBerhasil);
+
+            objKategoriTambah = new KategoriTambah(this);
+            objKategoriTambah.Location = new Point(200, 0);
+            objKategoriTambah.Anchor = ((AnchorStyles.Left | AnchorStyles.Right) | (AnchorStyles.Bottom | AnchorStyles.Top));
+            this.Controls.Add(objKategoriTambah);
             //objListUsers = new listUsers(this);
             //objListUsers.Dock = DockStyle.Fill;
             //this.Controls.Add(objListUsers);
@@ -112,7 +118,7 @@ namespace PBO_Kasir
         }
         public void showMenuBarang()
         {
-            
+            objBarang.isiDataUsers();
             objBarang.Visible = true;
             objStokBarang.Visible = false;
             objKredit.Visible = false;
@@ -124,7 +130,6 @@ namespace PBO_Kasir
         }
         public void showplsStokBarang()
         {
-            
             objStokBarang.Visible = true;
             objKredit.Visible = false;
             objBarang.Visible = false;
@@ -190,8 +195,21 @@ namespace PBO_Kasir
             objKasbonTambah.Visible = false;
             objKonfirmasi.Visible = false;
         }
+        public void showTambahKategori()
+        {
+            objKategoriTambah.Visible = true;
+            objStokBarang.Visible = false;
+            objKredit.Visible = false;
+            objBarang.Visible = false;
+            objTransaksi.Visible = false;
+            objKasbon.Visible = false;
+            objKasbonTambah.Visible = false;
+            objKonfirmasi.Visible = false;
+            objKonfirmasiBerhasil.Visible = false;
+        }
         public void hideMainForm()
         {
+            objKategoriTambah.Visible = false;
             objStokBarang.Visible = false;
             objKredit.Visible = false;
             objBarang.Visible = false;
@@ -225,7 +243,6 @@ namespace PBO_Kasir
         private void btnMenu_Barang_Click(object sender, EventArgs e)
         {
             showMenuBarang();
-            objBarang.isiDataUsers();
         }
 
         private void btnMenu_Transaksi_Click(object sender, EventArgs e)

@@ -16,12 +16,17 @@ namespace PBO_Kasir
     public partial class StokBarang : UserControl
     {
         mainForm objParent;
+        SqlDBHelper objSqlDb = new SqlDBHelper();
         barangModel objBarangModel = new barangModel();
-        
+        KategoriTambah objKategoriTambah;
+
 
         public StokBarang(mainForm pantek_parent)
         {
             InitializeComponent();
+            //label_error.Text = "";
+            label_kode.Text = "";
+            label_error.Text = "";
             objParent = pantek_parent;
             comboBox_Kategori.DisplayMember = "id_kategori";
             comboBox_Kategori.DataSource = objBarangModel.getKategori();
@@ -30,9 +35,9 @@ namespace PBO_Kasir
         public bool checkFormatBarang(string kode, string nama, string hargaDasar, string hargaJual, string stok, string kategori)
         {
             bool check;
-            if ((kode.Length < 100 || !objBarangModel.checkValueAda("kode_barang", kode, "barang"))
-                || (nama.Length < 255) || (hargaDasar.Length < 100) || (hargaJual.Length < 100)
-                || (stok.Length < 100) || (kategori.Length < 255 || objBarangModel.checkValueAda("id_kategori", kategori, "kategori")))
+            if ((kode.Length < 100 && !String.IsNullOrWhiteSpace(kode))
+                && (nama.Length < 255 && !String.IsNullOrWhiteSpace(nama)) && (hargaDasar.Length < 100 && !String.IsNullOrWhiteSpace(hargaDasar)) && (hargaJual.Length < 100 && !String.IsNullOrWhiteSpace(hargaJual))
+                && (stok.Length < 100 && !String.IsNullOrWhiteSpace(stok)) && (kategori.Length < 255  && !String.IsNullOrWhiteSpace(kategori)))
             {
                 check = true;
             }
@@ -86,17 +91,43 @@ namespace PBO_Kasir
             }
             else e.Handled = e.KeyChar != (char)Keys.Back;
         }
+        private void textBox_Stok_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsNumber(e.KeyChar))
+            {
+                e.Handled = e.Handled = e.KeyChar != (char)Keys.Back;
+            }
+        }
 
-        
+
         private void button_simpanBarang_Click(object sender, EventArgs e)
         {
-            if (checkFormatBarang(textBox_Kode.Text, textBox_NamaBarang.Text, textBox_HargaDasar.Text, textBox_HargaBarang.Text, textBox_Stok.Text, comboBox_Kategori.Text)) objBarangModel.tambahBarang(textBox_Kode.Text, textBox_NamaBarang.Text, textBox_HargaDasar.Text, textBox_HargaBarang.Text, textBox_Stok.Text, comboBox_Kategori.Text);
-            objParent.showMenuBarang();
-            
-           
+            if (!checkFormatBarang(textBox_Kode.Text, textBox_NamaBarang.Text, textBox_HargaDasar.Text, textBox_HargaBarang.Text, textBox_Stok.Text, comboBox_Kategori.Text))
+            {
+                label_error.Text = "Data tidak lengkap ";
+                
+            }
+            else if (objBarangModel.checkValueAda("kode_barang", textBox_Kode.Text, "barang"))
+            {
+                label_kode.Text = "Kode harus unik";
+            }
+
+            else
+            {
+                objBarangModel.tambahBarang(textBox_Kode.Text, textBox_NamaBarang.Text, textBox_HargaDasar.Text, textBox_HargaBarang.Text, textBox_Stok.Text, comboBox_Kategori.Text);
+                label_kode.Text = "sangat benar";
+                label_error.Text = "Sangeat benar";
+                textBox_Kode.Text = "";
+                textBox_NamaBarang.Text = "";
+                textBox_HargaDasar.Text = "";
+                textBox_HargaBarang.Text = "";
+                textBox_Stok.Text = "";
+                comboBox_Kategori.Text = "";
+            }
+
             
         }
-       
+
         private void textBox_NamaBarang_TextChanged(object sender, EventArgs e)
         {
 
@@ -129,7 +160,22 @@ namespace PBO_Kasir
 
         private void button_tambahKategori_Click(object sender, EventArgs e)
         {
-            
+            objParent.showTambahKategori();
+        }
+
+        private void textBox_Stok_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_error_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+  
         }
     }
 }

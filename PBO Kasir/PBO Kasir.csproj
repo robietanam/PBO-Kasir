@@ -132,12 +132,6 @@
       <DependentUpon>Kredit.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlDBHelper.cs" />
-    <Compile Include="StokBarang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="StokBarang.Designer.cs">
-      <DependentUpon>StokBarang.cs</DependentUpon>
-    </Compile>
     <Compile Include="Transaksi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -174,8 +168,26 @@
     <Compile Include="KonfirmasiBerhasil.Designer.cs">
       <DependentUpon>KonfirmasiBerhasil.cs</DependentUpon>
     </Compile>
+    <Compile Include="StokBarang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StokBarang.Designer.cs">
+      <DependentUpon>StokBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriTambah.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KategoriTambah.Designer.cs">
+      <DependentUpon>KategoriTambah.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Barang.resx">
       <DependentUpon>Barang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KategoriTambah.resx">
+      <DependentUpon>KategoriTambah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokBarang.resx">
+      <DependentUpon>StokBarang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transaksi.resx">
       <DependentUpon>Transaksi.cs</DependentUpon>
@@ -200,9 +212,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Kredit.resx">
       <DependentUpon>Kredit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StokBarang.resx">
-      <DependentUpon>StokBarang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kasbon.resx">
       <DependentUpon>Kasbon.cs</DependentUpon>

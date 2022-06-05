@@ -24,6 +24,20 @@ namespace PBO_Kasir.models
              DataTable dt = objSqlDb.ExecuteQuery(query);
              return dt;
         }
+        public void tambahKategori(string id_kategori)
+        {
+            try
+            {
+                string query = "insert into kategori values ('{0}');";
+                query = string.Format(query, id_kategori);
+                objSqlDb.ExecuteNonQuery(query);
+            }
+            catch (Exception ex)
+            {
+                //
+            }
+
+        }
         public DataTable getDataBarang()
         {
             string query = "select * from barang ;";
@@ -32,7 +46,7 @@ namespace PBO_Kasir.models
         }
         public bool checkValueAda(string namaKolom, string data, string tabel)
         {
-            string query = "select * from" + tabel + " where " + namaKolom + "='" + data + "'";
+            string query = "select * from " + tabel + " where " + namaKolom + " = '" + data + "'";
             DataTable dt = objSqlDb.ExecuteQuery(query);
             if (dt.Rows.Count == 0)
             {
@@ -42,6 +56,7 @@ namespace PBO_Kasir.models
             {
                 return true;
             }
+
         }
         public void hapusData(string idBarang, string namaTabel, string namaID)
         {
@@ -75,9 +90,17 @@ namespace PBO_Kasir.models
 
         public void tambahBarang(string kode, string nama, string hargaDasar, string hargaJual, string stok, string kategori)
         {
-            string query = "insert into barang (kode_barang, nama_barang, harga_dasar, harga_jual, stok, kategori_id_kategori) values ('{0}','{1}','{2}','{3}','{4}','{5}');";
-            query = string.Format(query, kode, nama, hargaDasar, hargaJual, stok, kategori);
-            objSqlDb.ExecuteNonQuery(query);
+            try
+            {
+                string query = "insert into barang (kode_barang, nama_barang, harga_dasar, harga_jual, stok, kategori_id_kategori) values ('{0}','{1}','{2}','{3}','{4}','{5}');";
+                query = string.Format(query, kode, nama, hargaDasar, hargaJual, stok, kategori);
+                objSqlDb.ExecuteNonQuery(query);
+            }
+            catch (Exception ex)
+            {
+                //
+            }
+            
         }
 
         

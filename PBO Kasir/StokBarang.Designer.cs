@@ -42,6 +42,8 @@
             this.comboBox_Kategori = new System.Windows.Forms.ComboBox();
             this.button_tambahKategori = new System.Windows.Forms.Button();
             this.button_simpanBarang = new System.Windows.Forms.Button();
+            this.label_kode = new System.Windows.Forms.Label();
+            this.label_error = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labe1
@@ -145,6 +147,8 @@
             this.textBox_Stok.Name = "textBox_Stok";
             this.textBox_Stok.Size = new System.Drawing.Size(121, 20);
             this.textBox_Stok.TabIndex = 13;
+            this.textBox_Stok.TextChanged += new System.EventHandler(this.textBox_Stok_TextChanged);
+            this.textBox_Stok.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_Stok_KeyPress);
             // 
             // label5
             // 
@@ -179,7 +183,7 @@
             // 
             // button_simpanBarang
             // 
-            this.button_simpanBarang.Location = new System.Drawing.Point(212, 352);
+            this.button_simpanBarang.Location = new System.Drawing.Point(208, 352);
             this.button_simpanBarang.Name = "button_simpanBarang";
             this.button_simpanBarang.Size = new System.Drawing.Size(110, 38);
             this.button_simpanBarang.TabIndex = 18;
@@ -187,10 +191,32 @@
             this.button_simpanBarang.UseVisualStyleBackColor = true;
             this.button_simpanBarang.Click += new System.EventHandler(this.button_simpanBarang_Click);
             // 
+            // label_kode
+            // 
+            this.label_kode.AutoSize = true;
+            this.label_kode.Location = new System.Drawing.Point(359, 55);
+            this.label_kode.Name = "label_kode";
+            this.label_kode.Size = new System.Drawing.Size(101, 13);
+            this.label_kode.TabIndex = 19;
+            this.label_kode.Text = "Kode error message";
+            // 
+            // label_error
+            // 
+            this.label_error.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_error.AutoSize = true;
+            this.label_error.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label_error.Location = new System.Drawing.Point(29, 407);
+            this.label_error.Name = "label_error";
+            this.label_error.Size = new System.Drawing.Size(93, 17);
+            this.label_error.TabIndex = 20;
+            this.label_error.Text = "error mesage";
+            // 
             // StokBarang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label_error);
+            this.Controls.Add(this.label_kode);
             this.Controls.Add(this.button_simpanBarang);
             this.Controls.Add(this.button_tambahKategori);
             this.Controls.Add(this.comboBox_Kategori);
@@ -229,5 +255,7 @@
         private System.Windows.Forms.ComboBox comboBox_Kategori;
         private System.Windows.Forms.Button button_tambahKategori;
         private System.Windows.Forms.Button button_simpanBarang;
+        private System.Windows.Forms.Label label_kode;
+        private System.Windows.Forms.Label label_error;
     }
 }
