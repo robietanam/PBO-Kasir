@@ -112,6 +112,7 @@ namespace PBO_Kasir
         }
         public void showMenuBarang()
         {
+            
             objBarang.Visible = true;
             objStokBarang.Visible = false;
             objKredit.Visible = false;
@@ -224,6 +225,7 @@ namespace PBO_Kasir
         private void btnMenu_Barang_Click(object sender, EventArgs e)
         {
             showMenuBarang();
+            objBarang.isiDataUsers();
         }
 
         private void btnMenu_Transaksi_Click(object sender, EventArgs e)

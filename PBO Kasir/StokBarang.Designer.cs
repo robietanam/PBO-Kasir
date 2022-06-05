@@ -62,6 +62,7 @@
             this.textBox_NamaBarang.Name = "textBox_NamaBarang";
             this.textBox_NamaBarang.Size = new System.Drawing.Size(121, 20);
             this.textBox_NamaBarang.TabIndex = 1;
+            this.textBox_NamaBarang.TextChanged += new System.EventHandler(this.textBox_NamaBarang_TextChanged);
             // 
             // textBox_HargaDasar
             // 
@@ -70,6 +71,8 @@
             this.textBox_HargaDasar.Name = "textBox_HargaDasar";
             this.textBox_HargaDasar.Size = new System.Drawing.Size(121, 20);
             this.textBox_HargaDasar.TabIndex = 3;
+            this.textBox_HargaDasar.TextChanged += new System.EventHandler(this.textBox_HargaDasar_TextChanged);
+            this.textBox_HargaDasar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_HargaDasar_KeyPress);
             // 
             // label1
             // 
@@ -100,6 +103,8 @@
             this.textBox_HargaBarang.Name = "textBox_HargaBarang";
             this.textBox_HargaBarang.Size = new System.Drawing.Size(121, 20);
             this.textBox_HargaBarang.TabIndex = 9;
+            this.textBox_HargaBarang.TextChanged += new System.EventHandler(this.textBox_HargaBarang_TextChanged);
+            this.textBox_HargaBarang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_HargaBarang_KeyPress);
             // 
             // label4
             // 
@@ -119,6 +124,7 @@
             this.textBox_Kode.Name = "textBox_Kode";
             this.textBox_Kode.Size = new System.Drawing.Size(121, 20);
             this.textBox_Kode.TabIndex = 11;
+            this.textBox_Kode.TextChanged += new System.EventHandler(this.textBox_Kode_TextChanged);
             // 
             // label2
             // 
@@ -127,9 +133,10 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label2.Location = new System.Drawing.Point(312, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 17);
+            this.label2.Size = new System.Drawing.Size(41, 17);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Kode (Opsional)";
+            this.label2.Text = "Kode";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox_Stok
             // 
@@ -152,12 +159,13 @@
             // 
             // comboBox_Kategori
             // 
-            this.comboBox_Kategori.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.comboBox_Kategori.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Kategori.FormattingEnabled = true;
-            this.comboBox_Kategori.Location = new System.Drawing.Point(95, 268);
+            this.comboBox_Kategori.Location = new System.Drawing.Point(94, 269);
             this.comboBox_Kategori.Name = "comboBox_Kategori";
-            this.comboBox_Kategori.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_Kategori.Size = new System.Drawing.Size(129, 21);
             this.comboBox_Kategori.TabIndex = 16;
+            this.comboBox_Kategori.SelectedIndexChanged += new System.EventHandler(this.comboBox_Kategori_SelectedIndexChanged);
             // 
             // button_tambahKategori
             // 
@@ -167,6 +175,7 @@
             this.button_tambahKategori.TabIndex = 17;
             this.button_tambahKategori.Text = "+";
             this.button_tambahKategori.UseVisualStyleBackColor = true;
+            this.button_tambahKategori.Click += new System.EventHandler(this.button_tambahKategori_Click);
             // 
             // button_simpanBarang
             // 
