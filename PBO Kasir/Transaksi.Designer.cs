@@ -55,7 +55,7 @@
             this.TambahBarang,
             this.JumlahBarang,
             this.KurangiBarang});
-            this.dataGridView_Barang.Location = new System.Drawing.Point(30, 31);
+            this.dataGridView_Barang.Location = new System.Drawing.Point(30, 49);
             this.dataGridView_Barang.MaximumSize = new System.Drawing.Size(2000, 2000);
             this.dataGridView_Barang.Name = "dataGridView_Barang";
             this.dataGridView_Barang.Size = new System.Drawing.Size(543, 355);
@@ -134,6 +134,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_Selanjutnya);
             this.Controls.Add(this.dataGridView_Barang);

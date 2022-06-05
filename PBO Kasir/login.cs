@@ -25,31 +25,53 @@ namespace PBO_Kasir
             objParent = p_parent;
         }
 
-        private void textBox_Username_TextChanged(object sender, EventArgs e)
+        
+
+        private void login_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox_Password_TextChanged(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button_login_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if (textBox_Username.Text == "t" && textBox_Password.Text == "1")
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox_User.Text == "t" && textBox_Pass.Text == "1")
             {
                 lblInfo.Text = "";
-                textBox_Username.Text = "";
-                textBox_Password.Text = "";
+                textBox_User.Text = "";
+                textBox_Pass.Text = "";
                 this.Visible = false;
                 objParent.showMainForm();
-                
+
             }
             else
             {
                 lblInfo.Text = "Username atau password salah...";
             }
+        }
+
+        private void textBox_Pass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_User_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblInfo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

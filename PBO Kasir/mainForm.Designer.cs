@@ -59,33 +59,34 @@
             this.btnMenu_Pengaturan.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMenu_Pengaturan.FlatAppearance.BorderSize = 0;
             this.btnMenu_Pengaturan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu_Pengaturan.Font = new System.Drawing.Font("Poppins Medium", 8.25F);
             this.btnMenu_Pengaturan.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnMenu_Pengaturan.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu_Pengaturan.Image")));
             this.btnMenu_Pengaturan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu_Pengaturan.Location = new System.Drawing.Point(0, 320);
+            this.btnMenu_Pengaturan.Location = new System.Drawing.Point(0, 276);
             this.btnMenu_Pengaturan.Name = "btnMenu_Pengaturan";
-            this.btnMenu_Pengaturan.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnMenu_Pengaturan.Size = new System.Drawing.Size(200, 55);
+            this.btnMenu_Pengaturan.Padding = new System.Windows.Forms.Padding(20, 0, 15, 0);
+            this.btnMenu_Pengaturan.Size = new System.Drawing.Size(200, 44);
             this.btnMenu_Pengaturan.TabIndex = 5;
             this.btnMenu_Pengaturan.Text = "Pengaturan";
-            this.btnMenu_Pengaturan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMenu_Pengaturan.UseVisualStyleBackColor = true;
+            this.btnMenu_Pengaturan.Click += new System.EventHandler(this.btnMenu_Pengaturan_Click);
             // 
             // btnMenu_Laporan
             // 
             this.btnMenu_Laporan.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMenu_Laporan.FlatAppearance.BorderSize = 0;
             this.btnMenu_Laporan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu_Laporan.Font = new System.Drawing.Font("Poppins Medium", 8.25F);
             this.btnMenu_Laporan.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnMenu_Laporan.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu_Laporan.Image")));
             this.btnMenu_Laporan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu_Laporan.Location = new System.Drawing.Point(0, 265);
+            this.btnMenu_Laporan.Location = new System.Drawing.Point(0, 232);
             this.btnMenu_Laporan.Name = "btnMenu_Laporan";
-            this.btnMenu_Laporan.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnMenu_Laporan.Size = new System.Drawing.Size(200, 55);
+            this.btnMenu_Laporan.Padding = new System.Windows.Forms.Padding(22, 0, 30, 0);
+            this.btnMenu_Laporan.Size = new System.Drawing.Size(200, 44);
             this.btnMenu_Laporan.TabIndex = 4;
             this.btnMenu_Laporan.Text = "Laporan";
-            this.btnMenu_Laporan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMenu_Laporan.UseVisualStyleBackColor = true;
             // 
             // btnMenu_Kasbon
@@ -93,16 +94,16 @@
             this.btnMenu_Kasbon.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMenu_Kasbon.FlatAppearance.BorderSize = 0;
             this.btnMenu_Kasbon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu_Kasbon.Font = new System.Drawing.Font("Poppins Medium", 8.25F);
             this.btnMenu_Kasbon.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnMenu_Kasbon.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu_Kasbon.Image")));
             this.btnMenu_Kasbon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu_Kasbon.Location = new System.Drawing.Point(0, 210);
+            this.btnMenu_Kasbon.Location = new System.Drawing.Point(0, 188);
             this.btnMenu_Kasbon.Name = "btnMenu_Kasbon";
-            this.btnMenu_Kasbon.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnMenu_Kasbon.Size = new System.Drawing.Size(200, 55);
+            this.btnMenu_Kasbon.Padding = new System.Windows.Forms.Padding(20, 0, 34, 0);
+            this.btnMenu_Kasbon.Size = new System.Drawing.Size(200, 44);
             this.btnMenu_Kasbon.TabIndex = 3;
             this.btnMenu_Kasbon.Text = "Kasbon";
-            this.btnMenu_Kasbon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMenu_Kasbon.UseVisualStyleBackColor = true;
             this.btnMenu_Kasbon.Click += new System.EventHandler(this.btnMenu_Kasbon_Click);
             // 
@@ -111,16 +112,17 @@
             this.btnMenu_Barang.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMenu_Barang.FlatAppearance.BorderSize = 0;
             this.btnMenu_Barang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu_Barang.Font = new System.Drawing.Font("Poppins Medium", 8.25F);
             this.btnMenu_Barang.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnMenu_Barang.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu_Barang.Image")));
             this.btnMenu_Barang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu_Barang.Location = new System.Drawing.Point(0, 155);
+            this.btnMenu_Barang.Location = new System.Drawing.Point(0, 144);
             this.btnMenu_Barang.Name = "btnMenu_Barang";
-            this.btnMenu_Barang.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnMenu_Barang.Size = new System.Drawing.Size(200, 55);
+            this.btnMenu_Barang.Padding = new System.Windows.Forms.Padding(20, 0, 12, 0);
+            this.btnMenu_Barang.Size = new System.Drawing.Size(200, 44);
             this.btnMenu_Barang.TabIndex = 2;
             this.btnMenu_Barang.Text = "Manajemen Barang";
-            this.btnMenu_Barang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMenu_Barang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMenu_Barang.UseVisualStyleBackColor = true;
             this.btnMenu_Barang.Click += new System.EventHandler(this.btnMenu_Barang_Click);
             // 
@@ -129,23 +131,23 @@
             this.btnMenu_Transaksi.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMenu_Transaksi.FlatAppearance.BorderSize = 0;
             this.btnMenu_Transaksi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu_Transaksi.Font = new System.Drawing.Font("Poppins Medium", 8.25F);
             this.btnMenu_Transaksi.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnMenu_Transaksi.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu_Transaksi.Image")));
             this.btnMenu_Transaksi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenu_Transaksi.Location = new System.Drawing.Point(0, 100);
             this.btnMenu_Transaksi.Name = "btnMenu_Transaksi";
-            this.btnMenu_Transaksi.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnMenu_Transaksi.Size = new System.Drawing.Size(200, 55);
+            this.btnMenu_Transaksi.Padding = new System.Windows.Forms.Padding(20, 0, 28, 0);
+            this.btnMenu_Transaksi.Size = new System.Drawing.Size(200, 44);
             this.btnMenu_Transaksi.TabIndex = 1;
             this.btnMenu_Transaksi.Text = "Transaksi";
-            this.btnMenu_Transaksi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMenu_Transaksi.UseVisualStyleBackColor = true;
             this.btnMenu_Transaksi.Click += new System.EventHandler(this.btnMenu_Transaksi_Click);
             // 
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.label1.Font = new System.Drawing.Font("Poppins Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";

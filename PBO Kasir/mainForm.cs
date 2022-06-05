@@ -240,6 +240,11 @@ namespace PBO_Kasir
         {
             showMenuKasbon();
         }
+
+        private void btnMenu_Pengaturan_Click(object sender, EventArgs e)
+        {
+
+        }
         /* public void showPeranForm()
 {
 objLoginForm.Visible = false;
