@@ -31,32 +31,35 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.button_TambahBarang = new System.Windows.Forms.Button();
+            this.comboBox_Kategori = new System.Windows.Forms.ComboBox();
+            this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kode_barang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NamaBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HargaDasar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HargaJual = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Stok = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Kategori = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.No,
             this.kode_barang,
             this.NamaBarang,
             this.HargaDasar,
             this.HargaJual,
-            this.Stok,
-            this.Kategori});
+            this.Stok});
             this.dataGridView1.Location = new System.Drawing.Point(29, 50);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(543, 360);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -80,9 +83,27 @@
             this.button_TambahBarang.UseVisualStyleBackColor = true;
             this.button_TambahBarang.Click += new System.EventHandler(this.button_TambahBarang_Click);
             // 
+            // comboBox_Kategori
+            // 
+            this.comboBox_Kategori.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_Kategori.Location = new System.Drawing.Point(73, 26);
+            this.comboBox_Kategori.Name = "comboBox_Kategori";
+            this.comboBox_Kategori.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_Kategori.TabIndex = 3;
+            this.comboBox_Kategori.SelectedIndexChanged += new System.EventHandler(this.comboBox_Kategori_SelectedIndexChanged);
+            // 
+            // No
+            // 
+            this.No.DataPropertyName = "nomor";
+            this.No.FillWeight = 38.07106F;
+            this.No.HeaderText = "No";
+            this.No.Name = "No";
+            this.No.ReadOnly = true;
+            // 
             // kode_barang
             // 
             this.kode_barang.DataPropertyName = "kode_barang";
+            this.kode_barang.FillWeight = 109.5275F;
             this.kode_barang.HeaderText = "Kode";
             this.kode_barang.Name = "kode_barang";
             this.kode_barang.ReadOnly = true;
@@ -90,7 +111,7 @@
             // NamaBarang
             // 
             this.NamaBarang.DataPropertyName = "nama_barang";
-            this.NamaBarang.FillWeight = 150F;
+            this.NamaBarang.FillWeight = 164.2913F;
             this.NamaBarang.HeaderText = "Nama Barang";
             this.NamaBarang.Name = "NamaBarang";
             this.NamaBarang.ReadOnly = true;
@@ -98,6 +119,7 @@
             // HargaDasar
             // 
             this.HargaDasar.DataPropertyName = "harga_dasar";
+            this.HargaDasar.FillWeight = 109.5275F;
             this.HargaDasar.HeaderText = "Harga Dasar";
             this.HargaDasar.Name = "HargaDasar";
             this.HargaDasar.ReadOnly = true;
@@ -105,6 +127,7 @@
             // HargaJual
             // 
             this.HargaJual.DataPropertyName = "harga_dasar";
+            this.HargaJual.FillWeight = 109.5275F;
             this.HargaJual.HeaderText = "Harga Jual";
             this.HargaJual.Name = "HargaJual";
             this.HargaJual.ReadOnly = true;
@@ -112,21 +135,16 @@
             // Stok
             // 
             this.Stok.DataPropertyName = "stok";
+            this.Stok.FillWeight = 109.5275F;
             this.Stok.HeaderText = "Stok";
             this.Stok.Name = "Stok";
             this.Stok.ReadOnly = true;
-            // 
-            // Kategori
-            // 
-            this.Kategori.DataPropertyName = "kategori_id_kategori";
-            this.Kategori.HeaderText = "Kategori";
-            this.Kategori.Name = "Kategori";
-            this.Kategori.ReadOnly = true;
             // 
             // Barang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.comboBox_Kategori);
             this.Controls.Add(this.button_TambahBarang);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
@@ -143,11 +161,12 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button_TambahBarang;
+        private System.Windows.Forms.ComboBox comboBox_Kategori;
+        private System.Windows.Forms.DataGridViewTextBoxColumn No;
         private System.Windows.Forms.DataGridViewTextBoxColumn kode_barang;
         private System.Windows.Forms.DataGridViewTextBoxColumn NamaBarang;
         private System.Windows.Forms.DataGridViewTextBoxColumn HargaDasar;
         private System.Windows.Forms.DataGridViewTextBoxColumn HargaJual;
         private System.Windows.Forms.DataGridViewTextBoxColumn Stok;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Kategori;
     }
 }

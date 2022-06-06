@@ -113,6 +113,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Konfirmasi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Konfirmasi.Designer.cs">
+      <DependentUpon>Konfirmasi.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,13 @@
       <DependentUpon>mainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="models\barangModel.cs" />
+    <Compile Include="models\transaksiModel.cs" />
+    <Compile Include="playground.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="playground.Designer.cs">
+      <DependentUpon>playground.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="kasirForm.cs">
@@ -165,12 +178,6 @@
     <Compile Include="KasbonTambah.Designer.cs">
       <DependentUpon>KasbonTambah.cs</DependentUpon>
     </Compile>
-    <Compile Include="Konfirmasi.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Konfirmasi.Designer.cs">
-      <DependentUpon>Konfirmasi.cs</DependentUpon>
-    </Compile>
     <Compile Include="KonfirmasiBerhasil.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -194,6 +201,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KategoriTambah.resx">
       <DependentUpon>KategoriTambah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Konfirmasi.resx">
+      <DependentUpon>Konfirmasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="playground.resx">
+      <DependentUpon>playground.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StokBarang.resx">
       <DependentUpon>StokBarang.cs</DependentUpon>
@@ -227,9 +240,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KasbonTambah.resx">
       <DependentUpon>KasbonTambah.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Konfirmasi.resx">
-      <DependentUpon>Konfirmasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KonfirmasiBerhasil.resx">
       <DependentUpon>KonfirmasiBerhasil.cs</DependentUpon>

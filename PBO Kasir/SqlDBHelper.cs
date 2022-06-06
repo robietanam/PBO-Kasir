@@ -21,20 +21,17 @@ namespace PBO_Kasir
         public DataTable ExecuteQuery(string sql)
         {
             DataTable dt = new DataTable();
-            try
-            {
-                connection.Open();
-                NpgsqlCommand cmd = new NpgsqlCommand();
-                cmd.Connection = connection;
-                cmd.CommandText = sql; // "select * from users.person";
-                cmd.CommandType = CommandType.Text;
-                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
 
-                da.Fill(dt);
-                cmd.Dispose();
-                connection.Close();
-            }
-            catch (Exception ex) { }
+            connection.Open();
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            cmd.Connection = connection;
+            cmd.CommandText = sql; // "select * from users.person";
+            cmd.CommandType = CommandType.Text;
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+
+            da.Fill(dt);
+            cmd.Dispose();
+            connection.Close();
 
             return dt;
         }
@@ -118,7 +115,10 @@ namespace PBO_Kasir
                 connection.Close();
 
             }
-            catch (Exception ex) { }
+            catch (Exception ex) 
+            { 
+            
+            }
         }
 
     }

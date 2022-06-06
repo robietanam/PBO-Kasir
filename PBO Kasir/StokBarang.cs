@@ -114,9 +114,24 @@ namespace PBO_Kasir
 
             else
             {
+                if (Decimal.Parse(textBox_HargaBarang.Text) % 1 == 0 )
+                {
+                    textBox_HargaBarang.Text = textBox_HargaBarang.Text + ".00";
+                }
+                else
+                {
+                    //
+                }
+                if (Decimal.Parse(textBox_HargaDasar.Text) % 1 == 0)
+                {
+                    textBox_HargaDasar.Text = textBox_HargaDasar.Text + ".00";
+                }
+                else
+                {
+                    //
+                }
                 objBarangModel.tambahBarang(textBox_Kode.Text, textBox_NamaBarang.Text, textBox_HargaDasar.Text, textBox_HargaBarang.Text, textBox_Stok.Text, comboBox_Kategori.Text);
-                label_kode.Text = "sangat benar";
-                label_error.Text = "Sangeat benar";
+                label_error.Text = "Data Tersimpan";
                 textBox_Kode.Text = "";
                 textBox_NamaBarang.Text = "";
                 textBox_HargaDasar.Text = "";
@@ -176,6 +191,11 @@ namespace PBO_Kasir
         private void button1_Click(object sender, EventArgs e)
         {
   
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            objParent.showMenuBarang();
         }
     }
 }

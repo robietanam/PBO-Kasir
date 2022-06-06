@@ -20,12 +20,13 @@ namespace PBO_Kasir
         {
             InitializeComponent();
             objParent = pantek_parent;
-
+            comboBox_Kategori.DisplayMember = "id_kategori";
+            comboBox_Kategori.DataSource = objBarangModel.getKategori();
         }
         public void isiDataUsers()
         {
             dataGridView1.AutoGenerateColumns = false;
-            dataGridView1.DataSource = objBarangModel.getDataBarang(); ;
+            dataGridView1.DataSource = objBarangModel.getDataBarang(comboBox_Kategori.Text); ;
         }
         private void button_TambahBarang_Click(object sender, EventArgs e)
         {
@@ -35,6 +36,11 @@ namespace PBO_Kasir
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void comboBox_Kategori_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            isiDataUsers();
         }
     }
 }

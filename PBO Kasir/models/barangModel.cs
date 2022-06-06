@@ -38,9 +38,16 @@ namespace PBO_Kasir.models
             }
 
         }
-        public DataTable getDataBarang()
+        public DataTable getDataBarangTransaksi(string kategori)
         {
-            string query = "select * from barang ;";
+            string query = "select kode_barang,nama_barang,harga_jual,stok from barang where kategori_id_kategori = '" + kategori + "'";
+            DataTable dt = objSqlDb.ExecuteQuery(query);
+            return dt;
+        }
+
+        public DataTable getDataBarang(string kategori)
+        {
+            string query = "select row_number(*) over() as nomor, t1.kode_barang,nama_barang,harga_dasar,harga_jual,stok from barang t1 where kategori_id_kategori = '" + kategori + "'";
             DataTable dt = objSqlDb.ExecuteQuery(query);
             return dt;
         }

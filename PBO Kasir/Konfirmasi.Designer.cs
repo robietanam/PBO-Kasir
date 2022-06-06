@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button_Edit = new System.Windows.Forms.Button();
             this.button_Konfirmasi = new System.Windows.Forms.Button();
             this.textBox_Nama = new System.Windows.Forms.TextBox();
@@ -37,16 +36,10 @@
             this.textBox_Bayar = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.msgText = new System.Windows.Forms.Label();
+            this.linkLabel_Kembali = new System.Windows.Forms.LinkLabel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 68);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(565, 289);
-            this.dataGridView1.TabIndex = 0;
             // 
             // button_Edit
             // 
@@ -56,6 +49,7 @@
             this.button_Edit.TabIndex = 1;
             this.button_Edit.Text = "Edit";
             this.button_Edit.UseVisualStyleBackColor = true;
+            this.button_Edit.Click += new System.EventHandler(this.button_Edit_Click);
             // 
             // button_Konfirmasi
             // 
@@ -73,6 +67,7 @@
             this.textBox_Nama.Name = "textBox_Nama";
             this.textBox_Nama.Size = new System.Drawing.Size(157, 20);
             this.textBox_Nama.TabIndex = 3;
+            this.textBox_Nama.TextChanged += new System.EventHandler(this.textBox_Nama_TextChanged);
             // 
             // label1
             // 
@@ -117,10 +112,38 @@
             this.msgText.Size = new System.Drawing.Size(0, 13);
             this.msgText.TabIndex = 8;
             // 
+            // linkLabel_Kembali
+            // 
+            this.linkLabel_Kembali.AutoSize = true;
+            this.linkLabel_Kembali.Location = new System.Drawing.Point(12, 415);
+            this.linkLabel_Kembali.Name = "linkLabel_Kembali";
+            this.linkLabel_Kembali.Size = new System.Drawing.Size(44, 13);
+            this.linkLabel_Kembali.TabIndex = 9;
+            this.linkLabel_Kembali.TabStop = true;
+            this.linkLabel_Kembali.Text = "Kembali";
+            this.linkLabel_Kembali.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_Kembali_LinkClicked);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(15, 68);
+            this.dataGridView1.MaximumSize = new System.Drawing.Size(2000, 2000);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(565, 298);
+            this.dataGridView1.TabIndex = 14;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            // 
             // Konfirmasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.linkLabel_Kembali);
             this.Controls.Add(this.msgText);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -129,7 +152,6 @@
             this.Controls.Add(this.textBox_Nama);
             this.Controls.Add(this.button_Konfirmasi);
             this.Controls.Add(this.button_Edit);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "Konfirmasi";
             this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -139,8 +161,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button_Edit;
         private System.Windows.Forms.Button button_Konfirmasi;
         private System.Windows.Forms.TextBox textBox_Nama;
@@ -149,5 +169,7 @@
         private System.Windows.Forms.TextBox textBox_Bayar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label msgText;
+        private System.Windows.Forms.LinkLabel linkLabel_Kembali;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
