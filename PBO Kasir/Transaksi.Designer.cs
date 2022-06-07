@@ -41,10 +41,8 @@ namespace PBO_Kasir
             this.button_Selanjutnya = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.comboBox_Kategori = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Barang)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView_Barang
@@ -62,12 +60,13 @@ namespace PBO_Kasir
             this.JumlahBarang,
             this.TambahBarang,
             this.KurangiBarang});
-            this.dataGridView_Barang.Location = new System.Drawing.Point(30, 52);
+            this.dataGridView_Barang.Location = new System.Drawing.Point(20, 55);
             this.dataGridView_Barang.MaximumSize = new System.Drawing.Size(2000, 2000);
             this.dataGridView_Barang.Name = "dataGridView_Barang";
             this.dataGridView_Barang.RowHeadersVisible = false;
-            this.dataGridView_Barang.Size = new System.Drawing.Size(543, 242);
+            this.dataGridView_Barang.Size = new System.Drawing.Size(558, 382);
             this.dataGridView_Barang.TabIndex = 4;
+            this.dataGridView_Barang.Visible = false;
             this.dataGridView_Barang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Barang_CellContentClick);
             this.dataGridView_Barang.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dataGridView_Barang_EditingControlShowing);
             // 
@@ -132,7 +131,7 @@ namespace PBO_Kasir
             // 
             // button_Selanjutnya
             // 
-            this.button_Selanjutnya.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_Selanjutnya.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_Selanjutnya.Location = new System.Drawing.Point(460, 20);
             this.button_Selanjutnya.Name = "button_Selanjutnya";
             this.button_Selanjutnya.Size = new System.Drawing.Size(92, 29);
@@ -153,6 +152,7 @@ namespace PBO_Kasir
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(283, 20);
             this.label2.Name = "label2";
@@ -160,22 +160,6 @@ namespace PBO_Kasir
             this.label2.TabIndex = 12;
             this.label2.Text = "Barang";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(30, 300);
-            this.dataGridView1.MaximumSize = new System.Drawing.Size(2000, 2000);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(543, 119);
-            this.dataGridView1.TabIndex = 13;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Barang_CellContentClick);
-            this.dataGridView1.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dataGridView_Barang_EditingControlShowing);
             // 
             // comboBox_Kategori
             // 
@@ -192,7 +176,6 @@ namespace PBO_Kasir
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox_Kategori);
             this.Controls.Add(this.label1);
@@ -201,7 +184,6 @@ namespace PBO_Kasir
             this.Name = "Transaksi";
             this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Barang)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,7 +202,6 @@ namespace PBO_Kasir
         private System.Windows.Forms.DataGridViewButtonColumn TambahBarang;
         private System.Windows.Forms.DataGridViewButtonColumn KurangiBarang;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ComboBox comboBox_Kategori;
     }
 }

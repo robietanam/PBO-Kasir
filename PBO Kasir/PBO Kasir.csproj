@@ -126,13 +126,8 @@
       <DependentUpon>mainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="models\barangModel.cs" />
+    <Compile Include="models\kasbonModel.cs" />
     <Compile Include="models\transaksiModel.cs" />
-    <Compile Include="playground.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="playground.Designer.cs">
-      <DependentUpon>playground.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="kasirForm.cs">
@@ -204,9 +199,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Konfirmasi.resx">
       <DependentUpon>Konfirmasi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="playground.resx">
-      <DependentUpon>playground.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StokBarang.resx">
       <DependentUpon>StokBarang.cs</DependentUpon>

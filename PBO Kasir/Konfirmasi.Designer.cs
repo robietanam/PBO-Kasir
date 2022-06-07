@@ -38,11 +38,13 @@
             this.msgText = new System.Windows.Forms.Label();
             this.linkLabel_Kembali = new System.Windows.Forms.LinkLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label_error = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button_Edit
             // 
+            this.button_Edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_Edit.Location = new System.Drawing.Point(505, 39);
             this.button_Edit.Name = "button_Edit";
             this.button_Edit.Size = new System.Drawing.Size(75, 23);
@@ -53,6 +55,7 @@
             // 
             // button_Konfirmasi
             // 
+            this.button_Konfirmasi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_Konfirmasi.Location = new System.Drawing.Point(513, 405);
             this.button_Konfirmasi.Name = "button_Konfirmasi";
             this.button_Konfirmasi.Size = new System.Drawing.Size(75, 23);
@@ -63,6 +66,7 @@
             // 
             // textBox_Nama
             // 
+            this.textBox_Nama.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_Nama.Location = new System.Drawing.Point(350, 381);
             this.textBox_Nama.Name = "textBox_Nama";
             this.textBox_Nama.Size = new System.Drawing.Size(157, 20);
@@ -71,6 +75,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(253, 384);
             this.label1.Name = "label1";
@@ -80,6 +85,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(301, 410);
             this.label2.Name = "label2";
@@ -89,6 +95,7 @@
             // 
             // textBox_Bayar
             // 
+            this.textBox_Bayar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_Bayar.Location = new System.Drawing.Point(350, 407);
             this.textBox_Bayar.Name = "textBox_Bayar";
             this.textBox_Bayar.Size = new System.Drawing.Size(157, 20);
@@ -114,6 +121,7 @@
             // 
             // linkLabel_Kembali
             // 
+            this.linkLabel_Kembali.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.linkLabel_Kembali.AutoSize = true;
             this.linkLabel_Kembali.Location = new System.Drawing.Point(12, 415);
             this.linkLabel_Kembali.Name = "linkLabel_Kembali";
@@ -138,10 +146,22 @@
             this.dataGridView1.TabIndex = 14;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
+            // label_error
+            // 
+            this.label_error.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_error.AutoSize = true;
+            this.label_error.Location = new System.Drawing.Point(301, 430);
+            this.label_error.Name = "label_error";
+            this.label_error.Size = new System.Drawing.Size(56, 13);
+            this.label_error.TabIndex = 15;
+            this.label_error.Text = "label_error";
+            this.label_error.Click += new System.EventHandler(this.label4_Click_1);
+            // 
             // Konfirmasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label_error);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.linkLabel_Kembali);
             this.Controls.Add(this.msgText);
@@ -171,5 +191,6 @@
         private System.Windows.Forms.Label msgText;
         private System.Windows.Forms.LinkLabel linkLabel_Kembali;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label_error;
     }
 }

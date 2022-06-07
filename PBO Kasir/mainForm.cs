@@ -22,7 +22,6 @@ namespace PBO_Kasir
         KasbonTambah objKasbonTambah;
         Konfirmasi objKonfirmasi;
         KonfirmasiBerhasil objKonfirmasiBerhasil;
-        playground objPlayground;
 
         int offset_lebar_menu = 200;
         int lebar_menu = 600;
@@ -84,10 +83,10 @@ namespace PBO_Kasir
             objKategoriTambah.Anchor = ((AnchorStyles.Left | AnchorStyles.Right) | (AnchorStyles.Bottom | AnchorStyles.Top));
             this.Controls.Add(objKategoriTambah);
 
-            objPlayground = new playground(this);
+            /*objPlayground = new playground(this);
             objPlayground.Location = new Point(200, 0);
             objPlayground.Anchor = ((AnchorStyles.Left | AnchorStyles.Right) | (AnchorStyles.Bottom | AnchorStyles.Top));
-            this.Controls.Add(objPlayground);
+            this.Controls.Add(objPlayground);*/
             //objListUsers = new listUsers(this);
             //objListUsers.Dock = DockStyle.Fill;
             //this.Controls.Add(objListUsers);
@@ -127,7 +126,7 @@ namespace PBO_Kasir
         }
         public void showMenuBarang()
         {
-            objBarang.isiDataUsers();
+            objBarang.isiDataBarang();
             objBarang.Visible = true;
             objStokBarang.Visible = false;
             objKredit.Visible = false;
@@ -162,6 +161,7 @@ namespace PBO_Kasir
         
         public void showMenuKasbon()
         {
+            objKasbon.isiDataKasbon();
             objKasbon.Visible = true;
             objStokBarang.Visible = false;
             objKredit.Visible = false;
@@ -183,8 +183,21 @@ namespace PBO_Kasir
             objKonfirmasiBerhasil.Visible = false;
         }
         
-        public void showKonfirmasiBerhasil()
+        public void showKonfirmasiBerhasilBarang()
         {
+            objKonfirmasiBerhasil.dataKonfirmasiBerhasil(objKonfirmasi.informasiBerhasil());
+            objKonfirmasiBerhasil.Visible = true;
+            objKasbon.Visible = false;
+            objStokBarang.Visible = false;
+            objKredit.Visible = false;
+            objBarang.Visible = false;
+            objTransaksi.Visible = false;
+            objKasbonTambah.Visible = false;
+            objKonfirmasi.Visible = false;
+        }
+        public void showKonfirmasiBerhasilKasbon()
+        {
+            objKonfirmasiBerhasil.dataKonfirmasiBerhasil(objKasbon.informasiBerhasil());
             objKonfirmasiBerhasil.Visible = true;
             objKasbon.Visible = false;
             objStokBarang.Visible = false;
@@ -218,7 +231,6 @@ namespace PBO_Kasir
             objKasbon.Visible = false;
             objKasbonTambah.Visible = false;            
             objKonfirmasiBerhasil.Visible = false;
-            objPlayground.Visible = false;
         }
         public void hideMainForm()
         {
@@ -252,7 +264,7 @@ namespace PBO_Kasir
             btnMenu_Transaksi.Visible = true;
             label1.Visible = true;
         }
-        public void showPlayGround()
+       /* public void showPlayGround()
         {
             objPlayground.Visible = true;
             objKategoriTambah.Visible = false;
@@ -263,7 +275,7 @@ namespace PBO_Kasir
             objKasbon.Visible = false;
             objKasbonTambah.Visible = false;
             objKonfirmasiBerhasil.Visible = false;
-        }
+        }*/
         private void btnMenu_Barang_Click(object sender, EventArgs e)
         {
             showMenuBarang();
@@ -282,6 +294,7 @@ namespace PBO_Kasir
 
         private void btnMenu_Kasbon_Click(object sender, EventArgs e)
         {
+            
             showMenuKasbon();
         }
 
@@ -292,7 +305,7 @@ namespace PBO_Kasir
 
         private void button1_Click(object sender, EventArgs e)
         {
-            showPlayGround();
+            //showPlayGround();
         }
         /* public void showPeranForm()
 {

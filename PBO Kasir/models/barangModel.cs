@@ -19,8 +19,7 @@ namespace PBO_Kasir.models
 
         public DataTable getKategori()
         {
-           
-            string query = "SELECT id_kategori FROM kategori;";
+             string query = "SELECT id_kategori FROM kategori;";
              DataTable dt = objSqlDb.ExecuteQuery(query);
              return dt;
         }
@@ -65,26 +64,25 @@ namespace PBO_Kasir.models
             }
 
         }
+
         public void hapusData(string idBarang, string namaTabel, string namaID)
         {
-            string sql = @"DELETE FROM :nama_tabel
-                           Where :namaID = :idBarang";
-            objSqlDb.ExecuteNonQuery(sql,
-                new NpgsqlParameter(":nama_tabel", namaTabel),
-                new NpgsqlParameter(":idBarang", idBarang),
-                new NpgsqlParameter(":namaID", namaID)
-                );
+
+            string query = "Delete From {0} where {1} = '{2}' "; 
+            query = string.Format(query, namaTabel, namaID, idBarang);
+            objSqlDb.ExecuteNonQuery(query);
         }
 
-        public void updateBarang(string kode, string nama, string hargaDasar, string hargaJual, string stok, string kategori)
+        public void updateBarang(string kode, string nama, float hargaDasar, float hargaJual, string stok, string kategori)
         {
-            string query = @"update barang set kode_barang =:kode::varchar(100),
-                                nama_barang =:nama::varchar(255) , 
-                                harga_dasar =:hargaDasar::money,
-                                harga_jual =:hargaJual::money,
+            string query = @"update barang set kode_barang = :kode::varchar(100),
+                                nama_barang = :nama::varchar(255) , 
+                                harga_dasar = :hargaDasar::float,
+                                harga_jual = :hargaJual::float,
                                 stok = :stok::integer,
                                 kategori_id_kategori = :kategori::varchar(100)
-                                where kode_barang =:kode::varchar(100);";
+                                where kode_barang = :kode::varchar(100);";
+
             objSqlDb.ExecuteNonQuery(query,
                 new NpgsqlParameter(":kode", kode),
                 new NpgsqlParameter(":nama", nama),
@@ -97,17 +95,12 @@ namespace PBO_Kasir.models
 
         public void tambahBarang(string kode, string nama, string hargaDasar, string hargaJual, string stok, string kategori)
         {
-            try
-            {
-                string query = "insert into barang (kode_barang, nama_barang, harga_dasar, harga_jual, stok, kategori_id_kategori) values ('{0}','{1}','{2}','{3}','{4}','{5}');";
-                query = string.Format(query, kode, nama, hargaDasar, hargaJual, stok, kategori);
-                objSqlDb.ExecuteNonQuery(query);
-            }
-            catch (Exception ex)
-            {
-                //
-            }
             
+            string query = "insert into barang (kode_barang, nama_barang, harga_dasar, harga_jual, stok, kategori_id_kategori) values ('{0}','{1}','{2}','{3}','{4}','{5}');";
+            query = string.Format(query, kode, nama, hargaDasar, hargaJual, stok, kategori);
+            objSqlDb.ExecuteNonQuery(query);
+
+          
         }
 
         

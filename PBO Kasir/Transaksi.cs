@@ -17,9 +17,7 @@ namespace PBO_Kasir
         DataTable dtBarang = new DataTable();
         mainForm objParent;
         Dictionary<string,DataGridView> dgv = new Dictionary<string,DataGridView>();
-
         Dictionary<string, DataTable> dts = new Dictionary<string, DataTable>();
-/*        Konfirmasi objKonfirmasi;*/
         string saveData;
        
         public Transaksi(mainForm pantek_parent)
@@ -41,6 +39,7 @@ namespace PBO_Kasir
                 membuatGridView(nama);
 
             }
+            dgv[comboBox_Kategori.Text].Visible = true;
 
         }
         public void membuatGridView(string kategori)
@@ -108,14 +107,13 @@ namespace PBO_Kasir
             genGridView.Name = "dataGridView_Barang";
             genGridView.RowHeadersVisible = false;
             genGridView.TabIndex = 4;
-            genGridView.AllowUserToAddRows = false;
-            genGridView.TabIndex = 4;
             genGridView.Location = new Point(30, 52);
             genGridView.MaximumSize = new Size(2000, 2000);
-            genGridView.Size = new Size(543, 242);
+            genGridView.Size = new Size(558, 382);
             genGridView.Anchor = ((AnchorStyles)((((AnchorStyles.Top | AnchorStyles.Bottom)
            | AnchorStyles.Left)
            | AnchorStyles.Right)));
+            genGridView.Visible = false;
             genGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             genGridView.DataSource = objBarangModel.getDataBarangTransaksi(kategori);
             dgv.Add(kategori,genGridView);
@@ -159,7 +157,7 @@ namespace PBO_Kasir
             /*            objKonfirmasi.isiDatanya(isiDataKonfirmasi());
                         this.Visible = false;
                         objKonfirmasi.Visible = true;*/
-            dataGridView1.DataSource = isiDataKonfirmasi();
+            //dataGridView1.DataSource = isiDataKonfirmasi();
             
         }
         /*        private void saveDataTransaksi(string name)
@@ -230,9 +228,6 @@ namespace PBO_Kasir
                     {
                         //
                     }
-                    
-                    
-
 
                 }
             }
@@ -249,8 +244,11 @@ namespace PBO_Kasir
                 if (e.ColumnIndex == 1)  // edit
                 {
                     if (row.Cells[0].Value == null || row.Cells[0].Value == "")
-                    {
+                    {  
                         row.Cells[0].Value = "1";
+                        int stok = int.Parse(row.Cells[6].Value.ToString());
+                        stok -= 1;
+                        row.Cells[6].Value = stok.ToString();
 
                     }
                     else if (row.Cells[0].Value != null)
@@ -258,7 +256,9 @@ namespace PBO_Kasir
                         int num = int.Parse(row.Cells[0].Value.ToString());
                         num += 1;
                         row.Cells[0].Value = num.ToString();
-
+                        int stok = int.Parse(row.Cells[6].Value.ToString());
+                        stok -= 1;
+                        row.Cells[6].Value = stok.ToString();
                     }
                 }
 
@@ -269,6 +269,9 @@ namespace PBO_Kasir
                         int num = int.Parse(row.Cells[0].Value.ToString());
                         num -= 1;
                         row.Cells[0].Value = num.ToString();
+                        int stok = int.Parse(row.Cells[6].Value.ToString());
+                        stok += 1;
+                        row.Cells[6].Value = stok.ToString();
                     }
                 }
             }
@@ -325,7 +328,7 @@ namespace PBO_Kasir
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = isiDataKonfirmasi();
+            //dataGridView1.DataSource = isiDataKonfirmasi();
         }
 
         private void label2_Click(object sender, EventArgs e)

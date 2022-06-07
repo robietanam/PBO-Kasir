@@ -16,6 +16,7 @@ namespace PBO_Kasir
         mainForm objParent;
         DataTable dtKonfirmasi = new DataTable();
         transaksiModel objTransaksiModel = new transaksiModel();
+        float HargaTotal;
         public Konfirmasi(mainForm pantek_parent)
         {
             InitializeComponent();
@@ -28,22 +29,42 @@ namespace PBO_Kasir
         }
         private void button_Konfirmasi_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(textBox_Nama.Text.ToString()))
-            {
-                textBox_Nama.Text = "Unknown";
-            }
+            HargaTotal = 0;
+            float Bayar = float.Parse(textBox_Bayar.Text.ToString());
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-                objTransaksiModel.simpanTransaksi(textBox_Nama.Text.ToString(), row.Cells[2].Value.ToString(), row.Cells[0].Value.ToString());
-
+                HargaTotal += float.Parse(row.Cells[2].Value.ToString());
             }
-            dataGridView1.DataSource = null;
-            objParent.ResetTransaksi();
-            //objTransaksiModel.simpanTransaksi();
-            textBox_Nama.Text = "";
-            objParent.showKonfirmasiBerhasil();
-        }
 
+            if (HargaTotal > Bayar)
+            {
+                label_error.Text = "Bayar Tidak Cukup";
+            }
+            else
+            {
+                if (String.IsNullOrEmpty(textBox_Nama.Text.ToString()))
+                {
+                    textBox_Nama.Text = "Unknown";
+                }
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    objTransaksiModel.simpanTransaksiBarang(textBox_Nama.Text.ToString(), row.Cells[2].Value.ToString(), row.Cells[0].Value.ToString());
+                }
+                dataGridView1.DataSource = null;
+                objParent.ResetTransaksi();
+                //objTransaksiModel.simpanTransaksi();
+                objParent.showKonfirmasiBerhasilBarang();
+                textBox_Nama.Text = "";
+                textBox_Bayar.Text = "";
+                
+            }
+            
+        }
+        public string[] informasiBerhasil()
+        {
+            string[] info = { textBox_Nama.Text.ToString(), textBox_Bayar.Text.ToString(), Math.Round((float.Parse(textBox_Bayar.Text) - HargaTotal),2).ToString() };
+            return info;
+        }
         private void linkLabel_Kembali_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             objParent.showMenuTransaksi();
@@ -140,6 +161,11 @@ namespace PBO_Kasir
         }
 
         private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click_1(object sender, EventArgs e)
         {
 
         }

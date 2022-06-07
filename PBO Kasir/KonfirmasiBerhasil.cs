@@ -18,10 +18,25 @@ namespace PBO_Kasir
             InitializeComponent();
             objParent = pantek_parent;
         }
-
+        public void dataKonfirmasiBerhasil(string[] info)
+        {
+            label_nama.Text = info[0];
+            label_Bayar.Text = info[1];
+            label_Kembali.Text = info[2];
+        }
         private void linkLabel_Kembali_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             objParent.showMenuTransaksi();
+        }
+
+        private void label_Kembali_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_nama_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

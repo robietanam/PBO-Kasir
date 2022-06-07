@@ -41,6 +41,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(19, 41);
             this.label1.Name = "label1";
@@ -50,6 +51,7 @@
             // 
             // textBox_Kategori
             // 
+            this.textBox_Kategori.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox_Kategori.Location = new System.Drawing.Point(111, 38);
             this.textBox_Kategori.Name = "textBox_Kategori";
             this.textBox_Kategori.Size = new System.Drawing.Size(207, 20);
@@ -58,6 +60,7 @@
             // 
             // button_Tambah
             // 
+            this.button_Tambah.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button_Tambah.Location = new System.Drawing.Point(335, 38);
             this.button_Tambah.Name = "button_Tambah";
             this.button_Tambah.Size = new System.Drawing.Size(75, 23);
@@ -68,6 +71,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -78,6 +83,8 @@
             this.Kategori});
             this.dataGridView1.Location = new System.Drawing.Point(22, 77);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(554, 238);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -87,6 +94,7 @@
             this.Nomor.FillWeight = 50.76142F;
             this.Nomor.HeaderText = "Nomor";
             this.Nomor.Name = "Nomor";
+            this.Nomor.ReadOnly = true;
             this.Nomor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Kategori
@@ -95,6 +103,7 @@
             this.Kategori.FillWeight = 149.2386F;
             this.Kategori.HeaderText = "Nama Kategori";
             this.Kategori.Name = "Kategori";
+            this.Kategori.ReadOnly = true;
             this.Kategori.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // label_error
@@ -107,6 +116,7 @@
             // 
             // linkLabel_Kembali
             // 
+            this.linkLabel_Kembali.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.linkLabel_Kembali.AutoSize = true;
             this.linkLabel_Kembali.Location = new System.Drawing.Point(416, 45);
             this.linkLabel_Kembali.Name = "linkLabel_Kembali";

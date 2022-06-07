@@ -32,18 +32,27 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button_TambahBarang = new System.Windows.Forms.Button();
             this.comboBox_Kategori = new System.Windows.Forms.ComboBox();
+            this.button_Edit = new System.Windows.Forms.Button();
+            this.button_Simpan = new System.Windows.Forms.Button();
+            this.label_Status = new System.Windows.Forms.Label();
+            this.button_Cancel = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button_Hapus = new System.Windows.Forms.Button();
             this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kode_barang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NamaBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HargaDasar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HargaJual = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Stok = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HapusBarang = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -55,7 +64,8 @@
             this.NamaBarang,
             this.HargaDasar,
             this.HargaJual,
-            this.Stok});
+            this.Stok,
+            this.HapusBarang});
             this.dataGridView1.Location = new System.Drawing.Point(29, 50);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -72,9 +82,11 @@
             this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Barang";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button_TambahBarang
             // 
+            this.button_TambahBarang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_TambahBarang.Location = new System.Drawing.Point(477, 21);
             this.button_TambahBarang.Name = "button_TambahBarang";
             this.button_TambahBarang.Size = new System.Drawing.Size(95, 23);
@@ -91,6 +103,71 @@
             this.comboBox_Kategori.Size = new System.Drawing.Size(121, 21);
             this.comboBox_Kategori.TabIndex = 3;
             this.comboBox_Kategori.SelectedIndexChanged += new System.EventHandler(this.comboBox_Kategori_SelectedIndexChanged);
+            // 
+            // button_Edit
+            // 
+            this.button_Edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_Edit.Location = new System.Drawing.Point(398, 21);
+            this.button_Edit.Name = "button_Edit";
+            this.button_Edit.Size = new System.Drawing.Size(73, 23);
+            this.button_Edit.TabIndex = 4;
+            this.button_Edit.Text = "Edit";
+            this.button_Edit.UseVisualStyleBackColor = true;
+            this.button_Edit.Click += new System.EventHandler(this.button_Edit_Click);
+            // 
+            // button_Simpan
+            // 
+            this.button_Simpan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_Simpan.Location = new System.Drawing.Point(319, 21);
+            this.button_Simpan.Name = "button_Simpan";
+            this.button_Simpan.Size = new System.Drawing.Size(73, 23);
+            this.button_Simpan.TabIndex = 5;
+            this.button_Simpan.Text = "Simpan";
+            this.button_Simpan.UseVisualStyleBackColor = true;
+            this.button_Simpan.Click += new System.EventHandler(this.button_Simpan_Click);
+            // 
+            // label_Status
+            // 
+            this.label_Status.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label_Status.AutoSize = true;
+            this.label_Status.Location = new System.Drawing.Point(26, 413);
+            this.label_Status.Name = "label_Status";
+            this.label_Status.Size = new System.Drawing.Size(60, 13);
+            this.label_Status.TabIndex = 6;
+            this.label_Status.Text = "label status";
+            // 
+            // button_Cancel
+            // 
+            this.button_Cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_Cancel.Location = new System.Drawing.Point(240, 21);
+            this.button_Cancel.Name = "button_Cancel";
+            this.button_Cancel.Size = new System.Drawing.Size(73, 23);
+            this.button_Cancel.TabIndex = 7;
+            this.button_Cancel.Text = "Cancel";
+            this.button_Cancel.UseVisualStyleBackColor = true;
+            this.button_Cancel.Click += new System.EventHandler(this.button_Cancel_Click);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(226, 413);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "label status";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // button_Hapus
+            // 
+            this.button_Hapus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_Hapus.Location = new System.Drawing.Point(398, 0);
+            this.button_Hapus.Name = "button_Hapus";
+            this.button_Hapus.Size = new System.Drawing.Size(73, 23);
+            this.button_Hapus.TabIndex = 9;
+            this.button_Hapus.Text = "Hapus";
+            this.button_Hapus.UseVisualStyleBackColor = true;
+            this.button_Hapus.Click += new System.EventHandler(this.button_Hapus_Click);
             // 
             // No
             // 
@@ -126,7 +203,7 @@
             // 
             // HargaJual
             // 
-            this.HargaJual.DataPropertyName = "harga_dasar";
+            this.HargaJual.DataPropertyName = "harga_jual";
             this.HargaJual.FillWeight = 109.5275F;
             this.HargaJual.HeaderText = "Harga Jual";
             this.HargaJual.Name = "HargaJual";
@@ -140,10 +217,24 @@
             this.Stok.Name = "Stok";
             this.Stok.ReadOnly = true;
             // 
+            // HapusBarang
+            // 
+            this.HapusBarang.HeaderText = "Hapus";
+            this.HapusBarang.Name = "HapusBarang";
+            this.HapusBarang.ReadOnly = true;
+            this.HapusBarang.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.HapusBarang.Visible = false;
+            // 
             // Barang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button_Hapus);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.button_Cancel);
+            this.Controls.Add(this.label_Status);
+            this.Controls.Add(this.button_Simpan);
+            this.Controls.Add(this.button_Edit);
             this.Controls.Add(this.comboBox_Kategori);
             this.Controls.Add(this.button_TambahBarang);
             this.Controls.Add(this.label1);
@@ -162,11 +253,18 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button_TambahBarang;
         private System.Windows.Forms.ComboBox comboBox_Kategori;
+        private System.Windows.Forms.Button button_Edit;
+        private System.Windows.Forms.Button button_Simpan;
+        private System.Windows.Forms.Label label_Status;
+        private System.Windows.Forms.Button button_Cancel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button_Hapus;
         private System.Windows.Forms.DataGridViewTextBoxColumn No;
         private System.Windows.Forms.DataGridViewTextBoxColumn kode_barang;
         private System.Windows.Forms.DataGridViewTextBoxColumn NamaBarang;
         private System.Windows.Forms.DataGridViewTextBoxColumn HargaDasar;
         private System.Windows.Forms.DataGridViewTextBoxColumn HargaJual;
         private System.Windows.Forms.DataGridViewTextBoxColumn Stok;
+        private System.Windows.Forms.DataGridViewButtonColumn HapusBarang;
     }
 }

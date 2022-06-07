@@ -49,7 +49,6 @@
             // 
             // labe1
             // 
-            this.labe1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labe1.AutoSize = true;
             this.labe1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.labe1.Location = new System.Drawing.Point(91, 51);
@@ -60,7 +59,6 @@
             // 
             // textBox_NamaBarang
             // 
-            this.textBox_NamaBarang.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_NamaBarang.Location = new System.Drawing.Point(94, 71);
             this.textBox_NamaBarang.Name = "textBox_NamaBarang";
             this.textBox_NamaBarang.Size = new System.Drawing.Size(121, 20);
@@ -69,7 +67,6 @@
             // 
             // textBox_HargaDasar
             // 
-            this.textBox_HargaDasar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_HargaDasar.Location = new System.Drawing.Point(94, 133);
             this.textBox_HargaDasar.Name = "textBox_HargaDasar";
             this.textBox_HargaDasar.Size = new System.Drawing.Size(121, 20);
@@ -79,7 +76,6 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label1.Location = new System.Drawing.Point(92, 114);
@@ -90,7 +86,6 @@
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label3.Location = new System.Drawing.Point(92, 249);
@@ -101,7 +96,6 @@
             // 
             // textBox_HargaBarang
             // 
-            this.textBox_HargaBarang.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_HargaBarang.Location = new System.Drawing.Point(94, 199);
             this.textBox_HargaBarang.Name = "textBox_HargaBarang";
             this.textBox_HargaBarang.Size = new System.Drawing.Size(121, 20);
@@ -111,7 +105,6 @@
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label4.Location = new System.Drawing.Point(92, 180);
@@ -122,7 +115,7 @@
             // 
             // textBox_Kode
             // 
-            this.textBox_Kode.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox_Kode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_Kode.Location = new System.Drawing.Point(314, 71);
             this.textBox_Kode.Name = "textBox_Kode";
             this.textBox_Kode.Size = new System.Drawing.Size(121, 20);
@@ -131,7 +124,7 @@
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label2.Location = new System.Drawing.Point(312, 52);
@@ -143,7 +136,7 @@
             // 
             // textBox_Stok
             // 
-            this.textBox_Stok.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox_Stok.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_Stok.Location = new System.Drawing.Point(314, 133);
             this.textBox_Stok.Name = "textBox_Stok";
             this.textBox_Stok.Size = new System.Drawing.Size(121, 20);
@@ -153,7 +146,7 @@
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label5.Location = new System.Drawing.Point(312, 114);
@@ -184,6 +177,7 @@
             // 
             // button_simpanBarang
             // 
+            this.button_simpanBarang.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button_simpanBarang.Location = new System.Drawing.Point(208, 352);
             this.button_simpanBarang.Name = "button_simpanBarang";
             this.button_simpanBarang.Size = new System.Drawing.Size(110, 38);
@@ -194,6 +188,7 @@
             // 
             // label_kode
             // 
+            this.label_kode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label_kode.AutoSize = true;
             this.label_kode.Location = new System.Drawing.Point(359, 55);
             this.label_kode.Name = "label_kode";
@@ -203,7 +198,7 @@
             // 
             // label_error
             // 
-            this.label_error.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_error.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label_error.AutoSize = true;
             this.label_error.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label_error.Location = new System.Drawing.Point(29, 407);
@@ -214,6 +209,7 @@
             // 
             // linkLabel1
             // 
+            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Location = new System.Drawing.Point(29, 377);
             this.linkLabel1.Name = "linkLabel1";

@@ -37,7 +37,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker_TenggatHutang = new System.Windows.Forms.DateTimePicker();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label_error = new System.Windows.Forms.Label();
+            this.textBox_Jumlah = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox_Kode = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -58,6 +62,9 @@
             // 
             // button_TambahBon
             // 
+            this.button_TambahBon.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_TambahBon.Location = new System.Drawing.Point(247, 266);
             this.button_TambahBon.Name = "button_TambahBon";
             this.button_TambahBon.Size = new System.Drawing.Size(75, 23);
@@ -68,6 +75,7 @@
             // 
             // dateTimePicker_TanggalHutang
             // 
+            this.dateTimePicker_TanggalHutang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimePicker_TanggalHutang.Location = new System.Drawing.Point(323, 125);
             this.dateTimePicker_TanggalHutang.Name = "dateTimePicker_TanggalHutang";
             this.dateTimePicker_TanggalHutang.Size = new System.Drawing.Size(156, 20);
@@ -75,7 +83,7 @@
             // 
             // textBox_AtasNama
             // 
-            this.textBox_AtasNama.Location = new System.Drawing.Point(97, 197);
+            this.textBox_AtasNama.Location = new System.Drawing.Point(97, 174);
             this.textBox_AtasNama.Name = "textBox_AtasNama";
             this.textBox_AtasNama.Size = new System.Drawing.Size(138, 20);
             this.textBox_AtasNama.TabIndex = 5;
@@ -83,7 +91,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(94, 181);
+            this.label2.Location = new System.Drawing.Point(94, 158);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 13);
             this.label2.TabIndex = 4;
@@ -91,15 +99,18 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(320, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Tanggal Hutang";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(320, 181);
             this.label4.Name = "label4";
@@ -109,26 +120,66 @@
             // 
             // dateTimePicker_TenggatHutang
             // 
+            this.dateTimePicker_TenggatHutang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimePicker_TenggatHutang.Location = new System.Drawing.Point(323, 197);
             this.dateTimePicker_TenggatHutang.Name = "dateTimePicker_TenggatHutang";
             this.dateTimePicker_TenggatHutang.Size = new System.Drawing.Size(156, 20);
             this.dateTimePicker_TenggatHutang.TabIndex = 7;
+            this.dateTimePicker_TenggatHutang.ValueChanged += new System.EventHandler(this.dateTimePicker_TenggatHutang_ValueChanged);
             // 
-            // checkBox1
+            // label_error
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(323, 161);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(104, 17);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "Tenggat Hutang";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.label_error.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label_error.AutoSize = true;
+            this.label_error.Location = new System.Drawing.Point(94, 304);
+            this.label_error.Name = "label_error";
+            this.label_error.Size = new System.Drawing.Size(56, 13);
+            this.label_error.TabIndex = 11;
+            this.label_error.Text = "label_error";
+            // 
+            // textBox_Jumlah
+            // 
+            this.textBox_Jumlah.Location = new System.Drawing.Point(97, 218);
+            this.textBox_Jumlah.Name = "textBox_Jumlah";
+            this.textBox_Jumlah.Size = new System.Drawing.Size(138, 20);
+            this.textBox_Jumlah.TabIndex = 13;
+            this.textBox_Jumlah.TextChanged += new System.EventHandler(this.textBox_Jumlah_TextChanged);
+            this.textBox_Jumlah.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_HargaBarang_KeyPress);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(94, 202);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Jumlah";
+            // 
+            // textBox_Kode
+            // 
+            this.textBox_Kode.Location = new System.Drawing.Point(97, 86);
+            this.textBox_Kode.Name = "textBox_Kode";
+            this.textBox_Kode.Size = new System.Drawing.Size(138, 20);
+            this.textBox_Kode.TabIndex = 15;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(94, 70);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Kode Bon";
             // 
             // KasbonTambah
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.textBox_Kode);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBox_Jumlah);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label_error);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dateTimePicker_TenggatHutang);
             this.Controls.Add(this.label3);
@@ -156,6 +207,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker_TenggatHutang;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label_error;
+        private System.Windows.Forms.TextBox textBox_Jumlah;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox_Kode;
+        private System.Windows.Forms.Label label6;
     }
 }
