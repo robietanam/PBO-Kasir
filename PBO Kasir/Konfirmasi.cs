@@ -17,10 +17,12 @@ namespace PBO_Kasir
         DataTable dtKonfirmasi = new DataTable();
         transaksiModel objTransaksiModel = new transaksiModel();
         float HargaTotal;
+        
         public Konfirmasi(mainForm pantek_parent)
         {
             InitializeComponent();
             objParent = pantek_parent;
+            textBox_Bayar.Text = "0";
         }
         public void isiDatanya(DataTable dt)
         {
@@ -30,7 +32,11 @@ namespace PBO_Kasir
         private void button_Konfirmasi_Click(object sender, EventArgs e)
         {
             HargaTotal = 0;
+            
+
             float Bayar = float.Parse(textBox_Bayar.Text.ToString());
+
+            
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
                 HargaTotal += float.Parse(row.Cells[2].Value.ToString());
