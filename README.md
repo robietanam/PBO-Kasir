@@ -2,6 +2,7 @@
 
 -- DDL COPAS INI--
 -- Nama Database Kasir_PBO
+-- Buka dulu readme nya jangan langsung copas--
 CREATE TABLE barang (
     kode_barang          VARCHAR(100) NOT NULL,
     nama_barang          VARCHAR(255) NOT NULL,
