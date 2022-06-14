@@ -107,7 +107,7 @@ namespace PBO_Kasir
                 label_error.Text = "Data tidak lengkap ";
                 
             }
-            else if (objBarangModel.checkValueAda("kode_barang", textBox_Kode.Text, "barang"))
+            else if (objBarangModel.checkValueAda("kode_barang",  textBox_Kode.Text, "barang"))
             {
                 label_kode.Text = "Kode harus unik";
             }

@@ -7,12 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PBO_Kasir.models;
 
 namespace PBO_Kasir
 {
     public partial class login : UserControl
     {
         mainForm objParent;
+        userModel objUserModel = new userModel();
+        DataTable dt = new DataTable();
         public login()
         {
             InitializeComponent();
@@ -23,6 +26,7 @@ namespace PBO_Kasir
         {
             InitializeComponent();
             objParent = p_parent;
+            dt = objUserModel.getLogin();
         }
 
         
@@ -44,7 +48,7 @@ namespace PBO_Kasir
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox_User.Text == "t" && textBox_Pass.Text == "1")
+            if (textBox_User.Text == dt.Rows[0][1].ToString() && textBox_Pass.Text == dt.Rows[0][2].ToString())
             {
                 lblInfo.Text = "";
                 textBox_User.Text = "";

@@ -37,7 +37,7 @@ namespace PBO_Kasir.models
             }
 
         }
-        public DataTable getDataBarangTransaksi(string kategori)
+        public DataTable getDataBarangTransaksi(ref string kategori)
         {
             string query = "select kode_barang,nama_barang,harga_jual,stok from barang where kategori_id_kategori = '" + kategori + "'";
             DataTable dt = objSqlDb.ExecuteQuery(query);
@@ -50,7 +50,7 @@ namespace PBO_Kasir.models
             DataTable dt = objSqlDb.ExecuteQuery(query);
             return dt;
         }
-        public bool checkValueAda(string namaKolom, string data, string tabel)
+        public bool checkValueAda( string namaKolom,  string data,  string tabel)
         {
             string query = "select * from " + tabel + " where " + namaKolom + " = '" + data + "'";
             DataTable dt = objSqlDb.ExecuteQuery(query);

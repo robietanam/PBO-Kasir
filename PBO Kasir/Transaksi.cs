@@ -115,7 +115,7 @@ namespace PBO_Kasir
            | AnchorStyles.Right)));
             genGridView.Visible = false;
             genGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            genGridView.DataSource = objBarangModel.getDataBarangTransaksi(kategori);
+            genGridView.DataSource = objBarangModel.getDataBarangTransaksi(ref kategori);
             dgv.Add(kategori,genGridView);
             genGridView.CellContentClick += new DataGridViewCellEventHandler(this.dataGridView_Barang_CellContentClick);
             genGridView.EditingControlShowing += new DataGridViewEditingControlShowingEventHandler(this.dataGridView_Barang_EditingControlShowing);

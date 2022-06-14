@@ -30,20 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnProfil = new System.Windows.Forms.Button();
             this.btnMenu_Pengaturan = new System.Windows.Forms.Button();
             this.btnMenu_Laporan = new System.Windows.Forms.Button();
             this.btnMenu_Kasbon = new System.Windows.Forms.Button();
             this.btnMenu_Barang = new System.Windows.Forms.Button();
             this.btnMenu_Transaksi = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
-            this.panelMenu.Controls.Add(this.button1);
+            this.panelMenu.Controls.Add(this.btnProfil);
             this.panelMenu.Controls.Add(this.btnMenu_Pengaturan);
             this.panelMenu.Controls.Add(this.btnMenu_Laporan);
             this.panelMenu.Controls.Add(this.btnMenu_Kasbon);
@@ -55,6 +55,24 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(200, 450);
             this.panelMenu.TabIndex = 0;
+            // 
+            // btnProfil
+            // 
+            this.btnProfil.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProfil.FlatAppearance.BorderSize = 0;
+            this.btnProfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.btnProfil.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnProfil.Image = ((System.Drawing.Image)(resources.GetObject("btnProfil.Image")));
+            this.btnProfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProfil.Location = new System.Drawing.Point(0, 320);
+            this.btnProfil.Name = "btnProfil";
+            this.btnProfil.Padding = new System.Windows.Forms.Padding(20, 0, 28, 0);
+            this.btnProfil.Size = new System.Drawing.Size(200, 44);
+            this.btnProfil.TabIndex = 6;
+            this.btnProfil.Text = "Profile";
+            this.btnProfil.UseVisualStyleBackColor = true;
+            this.btnProfil.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnMenu_Pengaturan
             // 
@@ -124,7 +142,6 @@
             this.btnMenu_Barang.Size = new System.Drawing.Size(200, 44);
             this.btnMenu_Barang.TabIndex = 2;
             this.btnMenu_Barang.Text = "Manajemen Barang";
-            this.btnMenu_Barang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMenu_Barang.UseVisualStyleBackColor = true;
             this.btnMenu_Barang.Click += new System.EventHandler(this.btnMenu_Barang_Click);
             // 
@@ -158,24 +175,6 @@
             this.label1.Text = "Kasir Pintar";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 320);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(20, 0, 28, 0);
-            this.button1.Size = new System.Drawing.Size(200, 44);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Transaksi";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -198,6 +197,6 @@
         private System.Windows.Forms.Button btnMenu_Barang;
         private System.Windows.Forms.Button btnMenu_Transaksi;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnProfil;
     }
 }

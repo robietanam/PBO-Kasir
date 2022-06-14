@@ -272,6 +272,7 @@
             this.textBox_Bayar.Size = new System.Drawing.Size(124, 20);
             this.textBox_Bayar.TabIndex = 10;
             this.textBox_Bayar.Visible = false;
+            this.textBox_Bayar.TextChanged += new System.EventHandler(this.textBox_Bayar_TextChanged);
             // 
             // button_BayarCancel
             // 

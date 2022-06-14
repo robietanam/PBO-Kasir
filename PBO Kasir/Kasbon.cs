@@ -115,27 +115,36 @@ namespace PBO_Kasir
             button_Cancel.Visible = true;
             dataGridView_Bon.ReadOnly = false;
         }
-
-        private void button_Simpan_Click(object sender, EventArgs e)
+        private void resetBayar()
         {
+            label_Kode.Text = "-";
+            label_namaBon.Text = "-";
+            label_atasNama.Text = "-";
+            label_Jumlah.Text = "-";
+            kodeBayar = "-";
+            hargaBayar = "-";
+            atasNama = "-";
+            textBox_Bayar.Text = "0";
             HapusBon.Visible = false;
             button_Simpan.Visible = false;
             button_Cancel.Visible = false;
             button_Edit.Visible = true;
             button_Hapus.Visible = true;
             dataGridView_Bon.ReadOnly = true;
+
+        }
+        private void button_Simpan_Click(object sender, EventArgs e)
+        {
+            resetBayar();
             simpanDataBaru();
+            indexBonS.Clear();
         }
 
         private void button_Cancel_Click(object sender, EventArgs e)
         {
-            HapusBon.Visible = false;
-            button_Simpan.Visible = false;
-            button_Cancel.Visible = false;
-            button_Hapus.Visible = true;
-            button_Edit.Visible = true;
-            dataGridView_Bon.ReadOnly = true;
+            resetBayar();
             isiDataKasbon();
+            indexBonS.Clear();
         }
 
         private void Kasbonlabel_Click(object sender, EventArgs e)
@@ -172,7 +181,9 @@ namespace PBO_Kasir
         }
         private void button_BayarCancel_Click(object sender, EventArgs e)
         {
+            resetBayar();
             hideBayarKasbonMenu();
+            
         }
 
         private void button_Bayar_Click(object sender, EventArgs e)
@@ -183,6 +194,7 @@ namespace PBO_Kasir
                 {
                     bayarKasbon();
                     objParent.showKonfirmasiBerhasilKasbon();
+                    resetBayar();
                 }
                 else
                 {
@@ -198,6 +210,11 @@ namespace PBO_Kasir
         }
 
         private void label_error_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_Bayar_TextChanged(object sender, EventArgs e)
         {
 
         }

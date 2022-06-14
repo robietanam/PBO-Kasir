@@ -126,6 +126,7 @@
       <DependentUpon>mainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="models\barangModel.cs" />
+    <Compile Include="models\userModel.cs" />
     <Compile Include="models\kasbonModel.cs" />
     <Compile Include="models\transaksiModel.cs" />
     <Compile Include="Program.cs" />
@@ -191,6 +192,12 @@
     <Compile Include="KategoriTambah.Designer.cs">
       <DependentUpon>KategoriTambah.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserProfile.Designer.cs">
+      <DependentUpon>UserProfile.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Barang.resx">
       <DependentUpon>Barang.cs</DependentUpon>
     </EmbeddedResource>
@@ -235,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KonfirmasiBerhasil.resx">
       <DependentUpon>KonfirmasiBerhasil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserProfile.resx">
+      <DependentUpon>UserProfile.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

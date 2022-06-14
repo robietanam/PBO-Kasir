@@ -15,8 +15,8 @@ namespace PBO_Kasir
     {
         mainForm objParent;
         barangModel objBarangModel = new barangModel();
-        DataTable dtBarang = new DataTable();
         List<string> hapusKodeBarang = new List<string>();
+        DataTable dtBarang = new DataTable();
         public Barang(mainForm pantek_parent)
         {
             InitializeComponent();
@@ -27,10 +27,9 @@ namespace PBO_Kasir
             button_Cancel.Visible = false;
             label_Status.Text = "";
         }
-        public void isiDataBarang()
+        public void updateDataBarang(out DataTable dt)
         {
-            dataGridView1.AutoGenerateColumns = false;
-            dataGridView1.DataSource = objBarangModel.getDataBarang(comboBox_Kategori.Text);
+            dt = objBarangModel.getDataBarang(comboBox_Kategori.Text);
         }
         public void simpanDataBaru()
         {
@@ -61,7 +60,7 @@ namespace PBO_Kasir
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn)
             {
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-                if (e.ColumnIndex == 7)  // hapus
+                if (e.ColumnIndex == 6)  // hapus
                 {
                     if (row.Cells[1].Value != null)
                     {
@@ -73,7 +72,9 @@ namespace PBO_Kasir
         }
         private void comboBox_Kategori_SelectedIndexChanged(object sender, EventArgs e)
         {
-            isiDataBarang();
+            updateDataBarang(out dtBarang);
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DataSource = dtBarang;
         }
 
         private void button_Edit_Click(object sender, EventArgs e)
@@ -92,18 +93,30 @@ namespace PBO_Kasir
             button_Simpan.Visible = false;
             dataGridView1.ReadOnly = true;
             button_Hapus.Visible = true;
+            HapusBarang.Visible = false;
             label_Status.Text = "Data Tersimpan";
-            isiDataBarang();
+
+            updateDataBarang(out dtBarang);
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DataSource = dtBarang;
+
+            hapusKodeBarang.Clear();
         }
 
         private void button_Cancel_Click(object sender, EventArgs e)
-        {
+        {          
             button_Edit.Visible = true;
             button_Cancel.Visible = false;
             button_Simpan.Visible = false;
             dataGridView1.ReadOnly = true;
             button_Hapus.Visible = true;
-            isiDataBarang();
+            HapusBarang.Visible = false;
+
+            updateDataBarang(out dtBarang);
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DataSource = dtBarang;
+
+            hapusKodeBarang.Clear();
         }
 
         private void label1_Click(object sender, EventArgs e)
