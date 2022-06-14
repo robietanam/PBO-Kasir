@@ -36,6 +36,8 @@
             this.label_nama = new System.Windows.Forms.Label();
             this.label_Bayar = new System.Windows.Forms.Label();
             this.label_Kembali = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -127,10 +129,21 @@
             this.label_Kembali.Text = "0";
             this.label_Kembali.Click += new System.EventHandler(this.label_Kembali_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PBO_Kasir.Properties.Resources.bgconfirm;
+            this.pictureBox1.Location = new System.Drawing.Point(151, 70);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(351, 283);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // KonfirmasiBerhasil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label_Kembali);
             this.Controls.Add(this.label_Bayar);
             this.Controls.Add(this.label_nama);
@@ -141,6 +154,7 @@
             this.Controls.Add(this.label1);
             this.Name = "KonfirmasiBerhasil";
             this.Size = new System.Drawing.Size(600, 450);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,5 +170,6 @@
         private System.Windows.Forms.Label label_nama;
         private System.Windows.Forms.Label label_Bayar;
         private System.Windows.Forms.Label label_Kembali;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
