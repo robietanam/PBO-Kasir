@@ -55,3 +55,9 @@ ALTER TABLE transaksi
 ALTER TABLE transaksi
     ADD CONSTRAINT transaksi_kasbon_fk FOREIGN KEY ( kasbon_kode_kasbon )
         REFERENCES kasbon ( kode_kasbon );
+create table userLogin (
+	no_index integer primary key,
+	nama_user varchar(255) ,
+	password varchar (255) 
+);
+insert into userLogin values ('1','t','1')
