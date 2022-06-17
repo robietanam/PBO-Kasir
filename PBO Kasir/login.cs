@@ -55,7 +55,11 @@ namespace PBO_Kasir
             }
             else
             {
-                lblInfo.Text = "Username atau password salah...";
+                lblInfo.Text = "Username atau password salah";
+                lblInfo.Font = new Font("Poppins Medium", 9);
+                lblInfo.BackColor = Color.FromArgb(22, 31, 106);
+                lblInfo.BorderStyle = BorderStyle.None;
+                lblInfo.ForeColor = Color.FromArgb(104, 113, 254);
             }
         }
 

@@ -33,17 +33,17 @@ namespace PBO_Kasir
         }
         private void button_Tambah_Click(object sender, EventArgs e)
         {
-            if (objBarangModel.checkValueAda("id_kategori", textBox_Kategori.Text, "kategori"))
+            if (objBarangModel.checkValueAda("id_kategori", textBox_Kategori1.Text, "kategori"))
             {
                 label_error.Text = "Kategori sudah ada";
             }
-            else if (String.IsNullOrWhiteSpace(textBox_Kategori.Text))
+            else if (String.IsNullOrWhiteSpace(textBox_Kategori1.Text))
             {
                 label_error.Text = "Kategori perlu diisi";
             }
             else
             {
-                objBarangModel.tambahKategori(textBox_Kategori.Text);
+                objBarangModel.tambahKategori(textBox_Kategori1.Text);
             }
             isiDataKategori();
         }
@@ -56,6 +56,24 @@ namespace PBO_Kasir
         private void linkLabel_Kembali_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             objParent.showMenuBarang();
+            StyleDatageidview();
+        }
+        void StyleDatageidview()
+        {
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(22, 31, 106);
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.Single;
+            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(209, 185, 250);
+            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+
+
+
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(22, 31, 106);
+            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Poppins Medium", 10);
+
+
         }
     }
 }

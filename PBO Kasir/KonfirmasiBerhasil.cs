@@ -23,5 +23,10 @@ namespace PBO_Kasir
         {
             objParent.showMenuTransaksi();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

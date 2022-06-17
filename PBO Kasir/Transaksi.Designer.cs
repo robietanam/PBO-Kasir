@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView_Barang = new System.Windows.Forms.DataGridView();
+            this.button_Selanjutnya = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.KodeBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NamaBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Harga_Jual = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -36,8 +40,6 @@
             this.TambahBarang = new System.Windows.Forms.DataGridViewButtonColumn();
             this.JumlahBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.KurangiBarang = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.button_Selanjutnya = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Barang)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,6 +49,17 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_Barang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView_Barang.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Poppins Medium", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 4, 4, 0);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Barang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView_Barang.ColumnHeadersHeight = 35;
             this.dataGridView_Barang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.KodeBarang,
             this.NamaBarang,
@@ -55,15 +68,47 @@
             this.TambahBarang,
             this.JumlahBarang,
             this.KurangiBarang});
-            this.dataGridView_Barang.Location = new System.Drawing.Point(30, 49);
+            this.dataGridView_Barang.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
+            this.dataGridView_Barang.Location = new System.Drawing.Point(18, 46);
             this.dataGridView_Barang.MaximumSize = new System.Drawing.Size(2000, 2000);
             this.dataGridView_Barang.Name = "dataGridView_Barang";
-            this.dataGridView_Barang.Size = new System.Drawing.Size(543, 355);
+            this.dataGridView_Barang.Size = new System.Drawing.Size(567, 349);
             this.dataGridView_Barang.TabIndex = 4;
             this.dataGridView_Barang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Barang_CellContentClick);
             // 
+            // button_Selanjutnya
+            // 
+            this.button_Selanjutnya.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.button_Selanjutnya.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_Selanjutnya.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
+            this.button_Selanjutnya.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button_Selanjutnya.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Selanjutnya.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            this.button_Selanjutnya.ForeColor = System.Drawing.Color.White;
+            this.button_Selanjutnya.Location = new System.Drawing.Point(472, 405);
+            this.button_Selanjutnya.Name = "button_Selanjutnya";
+            this.button_Selanjutnya.Size = new System.Drawing.Size(113, 35);
+            this.button_Selanjutnya.TabIndex = 2;
+            this.button_Selanjutnya.Text = "Selanjutnya";
+            this.button_Selanjutnya.UseVisualStyleBackColor = false;
+            this.button_Selanjutnya.Click += new System.EventHandler(this.button_Selanjutnya_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Poppins Medium", 12F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
+            this.label1.Location = new System.Drawing.Point(13, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 28);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Barang";
+            // 
             // KodeBarang
             // 
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins Medium", 8.25F);
+            this.KodeBarang.DefaultCellStyle = dataGridViewCellStyle2;
             this.KodeBarang.HeaderText = "Kode Barang";
             this.KodeBarang.Name = "KodeBarang";
             this.KodeBarang.ReadOnly = true;
@@ -95,7 +140,6 @@
             this.TambahBarang.HeaderText = "Tambah";
             this.TambahBarang.Name = "TambahBarang";
             this.TambahBarang.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.TambahBarang.Text = "+";
             // 
             // JumlahBarang
             // 
@@ -110,26 +154,6 @@
             this.KurangiBarang.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.KurangiBarang.Text = "-";
             // 
-            // button_Selanjutnya
-            // 
-            this.button_Selanjutnya.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Selanjutnya.Location = new System.Drawing.Point(481, 401);
-            this.button_Selanjutnya.Name = "button_Selanjutnya";
-            this.button_Selanjutnya.Size = new System.Drawing.Size(92, 29);
-            this.button_Selanjutnya.TabIndex = 2;
-            this.button_Selanjutnya.Text = "Selanjutnya";
-            this.button_Selanjutnya.UseVisualStyleBackColor = true;
-            this.button_Selanjutnya.Click += new System.EventHandler(this.button_Selanjutnya_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Barang";
-            // 
             // Transaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -140,6 +164,7 @@
             this.Controls.Add(this.dataGridView_Barang);
             this.Name = "Transaksi";
             this.Size = new System.Drawing.Size(600, 450);
+            this.Load += new System.EventHandler(this.Transaksi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Barang)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

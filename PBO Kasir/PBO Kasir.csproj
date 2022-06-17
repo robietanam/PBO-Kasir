@@ -113,6 +113,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="comboBoxcustom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customtextbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customtextbox.Designer.cs">
+      <DependentUpon>customtextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatePackerCustom.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +204,9 @@
     <EmbeddedResource Include="Barang.resx">
       <DependentUpon>Barang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="customtextbox.resx">
+      <DependentUpon>customtextbox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KategoriTambah.resx">
       <DependentUpon>KategoriTambah.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,6 +230,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
@@ -247,6 +263,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarDark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgconfirm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\komputer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Other 07 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loginbg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />

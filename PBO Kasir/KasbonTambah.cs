@@ -23,5 +23,20 @@ namespace PBO_Kasir
         {
             objParent.showMenuKasbon();
         }
+
+        private void textBox_NamaBon_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void KasbonTambah_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_NamaBon1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

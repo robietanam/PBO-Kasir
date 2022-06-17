@@ -177,5 +177,31 @@ namespace PBO_Kasir
         {
   
         }
+
+        private void StokBarang_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_NamaBarang1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_Stok1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxcustom1_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show("Default ebent: Select c");
+
+        }
     }
 }
