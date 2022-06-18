@@ -47,7 +47,7 @@ namespace PBO_Kasir
             dataGridView_Barang.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(22, 31, 106);
             dataGridView_Barang.ColumnHeadersDefaultCellStyle.Font = new Font("Poppins Medium", 10);
 
-            
+     
         }
     }
 }
