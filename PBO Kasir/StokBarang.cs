@@ -55,13 +55,13 @@ namespace PBO_Kasir
 
         private void textBox_HargaDasar_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (Char.IsNumber(e.KeyChar) || e.KeyChar == '.')
+            if (Char.IsNumber(e.KeyChar) || e.KeyChar == ',')
             {
                 TextBox tb = sender as TextBox;
                 int cursorPosLeft = tb.SelectionStart;
                 int cursorPosRight = tb.SelectionStart + tb.SelectionLength;
                 string result = tb.Text.Substring(0, cursorPosLeft) + e.KeyChar + tb.Text.Substring(cursorPosRight);
-                string[] parts = result.Split('.');
+                string[] parts = result.Split(',');
                 if (parts.Length > 1)
                 {
                     if (parts[1].Length > 2 || parts.Length > 2)
@@ -74,13 +74,13 @@ namespace PBO_Kasir
         }
         private void textBox_HargaBarang_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (Char.IsNumber(e.KeyChar) || e.KeyChar == '.')
+            if (Char.IsNumber(e.KeyChar) || e.KeyChar == ',')
             {
                 TextBox tb = sender as TextBox;
                 int cursorPosLeft = tb.SelectionStart;
                 int cursorPosRight = tb.SelectionStart + tb.SelectionLength;
                 string result = tb.Text.Substring(0, cursorPosLeft) + e.KeyChar + tb.Text.Substring(cursorPosRight);
-                string[] parts = result.Split('.');
+                string[] parts = result.Split(',');
                 if (parts.Length > 1)
                 {
                     if (parts[1].Length > 2 || parts.Length > 2)
@@ -102,21 +102,20 @@ namespace PBO_Kasir
 
         private void button_simpanBarang_Click(object sender, EventArgs e)
         {
-            if (!checkFormatBarang(textBox_Kode.Text, textBox_NamaBarang.Text, textBox_HargaDasar.Text, textBox_HargaBarang.Text, textBox_Stok.Text, comboBox_Kategori.Text))
+            if (!checkFormatBarang(textBox_Kode.Text, textBox_NamaBarang.Text, textBox_HargaDasar.Text, textBox_HargaBarang.Text, textBox_Stok.Text, comboBox_Kategori.Text.ToString()))
             {
                 label_error.Text = "Data tidak lengkap ";
                 
             }
-            else if (objBarangModel.checkValueAda("kode_barang", textBox_Kode.Text, "barang"))
+            else if (objBarangModel.checkValueAda("kode_barang",  textBox_Kode.Text, "barang"))
             {
                 label_kode.Text = "Kode harus unik";
             }
 
             else
             {
-                objBarangModel.tambahBarang(textBox_Kode.Text, textBox_NamaBarang.Text, textBox_HargaDasar.Text, textBox_HargaBarang.Text, textBox_Stok.Text, comboBox_Kategori.Text);
-                label_kode.Text = "sangat benar";
-                label_error.Text = "Sangeat benar";
+                objBarangModel.tambahBarang(textBox_Kode.Text.ToString(), textBox_NamaBarang.Text.ToString(), textBox_HargaDasar.Text.ToString().Replace(@",", @"."), textBox_HargaBarang.Text.ToString().Replace(@",", @"."), textBox_Stok.Text.ToString(), comboBox_Kategori.Text.ToString());
+                label_error.Text = textBox_HargaBarang.Text.ToString();
                 textBox_Kode.Text = "";
                 textBox_NamaBarang.Text = "";
                 textBox_HargaDasar.Text = "";
@@ -178,6 +177,7 @@ namespace PBO_Kasir
   
         }
 
+<<<<<<< HEAD
         private void StokBarang_Load(object sender, EventArgs e)
         {
 
@@ -202,6 +202,11 @@ namespace PBO_Kasir
         {
             MessageBox.Show("Default ebent: Select c");
 
+=======
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            objParent.showMenuBarang();
+>>>>>>> refs/remotes/origin/master
         }
     }
 }

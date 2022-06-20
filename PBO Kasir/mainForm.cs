@@ -17,12 +17,13 @@ namespace PBO_Kasir
         Transaksi objTransaksi;
         Barang objBarang;
         StokBarang objStokBarang;
-        KategoriTambah objKategoriTambah;
+        UserProfile objUserProfile;
         Kasbon objKasbon;
         KasbonTambah objKasbonTambah;
         Konfirmasi objKonfirmasi;
         KonfirmasiBerhasil objKonfirmasiBerhasil;
-       
+        KategoriTambah objKategoriTambah;
+
         int offset_lebar_menu = 200;
         int lebar_menu = 600;
         int panjang_menu = 450;
@@ -82,6 +83,15 @@ namespace PBO_Kasir
             objKategoriTambah.Location = new Point(200, 0);
             objKategoriTambah.Anchor = ((AnchorStyles.Left | AnchorStyles.Right) | (AnchorStyles.Bottom | AnchorStyles.Top));
             this.Controls.Add(objKategoriTambah);
+
+            objUserProfile = new UserProfile();
+            objUserProfile.Location = new Point(200, 0);
+            objUserProfile.Anchor = ((AnchorStyles.Left | AnchorStyles.Right) | (AnchorStyles.Bottom | AnchorStyles.Top));
+            this.Controls.Add(objUserProfile);
+            /*objPlayground = new playground(this);
+            objPlayground.Location = new Point(200, 0);
+            objPlayground.Anchor = ((AnchorStyles.Left | AnchorStyles.Right) | (AnchorStyles.Bottom | AnchorStyles.Top));
+            this.Controls.Add(objPlayground);*/
             //objListUsers = new listUsers(this);
             //objListUsers.Dock = DockStyle.Fill;
             //this.Controls.Add(objListUsers);
@@ -107,7 +117,10 @@ namespace PBO_Kasir
             objListPerson.isiDataUsers();
             toolStrip1.Visible = true;
         }*/
-       
+        public void ResetTransaksi()
+        {
+            objTransaksi.resetDataGrid();
+        }
         public void showLoginForm()
         {
             objLoginForm.Visible = true;
@@ -118,86 +131,59 @@ namespace PBO_Kasir
         }
         public void showMenuBarang()
         {
-            objBarang.isiDataUsers();
+            hideFiturPanel();
             objBarang.Visible = true;
-            objStokBarang.Visible = false;
-            objKredit.Visible = false;
-            objTransaksi.Visible = false;
-            objKasbon.Visible = false;
-            objKasbonTambah.Visible = false;
-            objKonfirmasi.Visible = false;
-            objKonfirmasiBerhasil.Visible = false;
         }
         public void showplsStokBarang()
         {
+            hideFiturPanel();
             objStokBarang.Visible = true;
-            objKredit.Visible = false;
-            objBarang.Visible = false;
-            objTransaksi.Visible = false;
-            objKasbon.Visible = false;
-            objKasbonTambah.Visible = false;
-            objKonfirmasi.Visible = false;
-            objKonfirmasiBerhasil.Visible = false;
         }
         public void showMenuTransaksi()
         {
+            hideFiturPanel();
             objTransaksi.Visible = true;
-            objStokBarang.Visible = false;
-            objKredit.Visible = false;
-            objBarang.Visible = false;
-            objKasbon.Visible = false;
-            objKasbonTambah.Visible = false;
-            objKonfirmasi.Visible = false;
-            objKonfirmasiBerhasil.Visible = false;
         }
         
         public void showMenuKasbon()
         {
+            hideFiturPanel();
+            objKasbon.isiDataKasbon();
             objKasbon.Visible = true;
-            objStokBarang.Visible = false;
-            objKredit.Visible = false;
-            objBarang.Visible = false;
-            objTransaksi.Visible = false;
-            objKasbonTambah.Visible = false;
-            objKonfirmasi.Visible = false;
-            objKonfirmasiBerhasil.Visible = false;
         }
         public void showKasbonTambah()
         {
+            hideFiturPanel();
             objKasbonTambah.Visible = true;
-            objKasbon.Visible = false;
-            objStokBarang.Visible = false;
-            objKredit.Visible = false;
-            objBarang.Visible = false;
-            objTransaksi.Visible = false;
-            objKonfirmasi.Visible = false;
-            objKonfirmasiBerhasil.Visible = false;
         }
-        public void showKonfirmasi()
+        
+        public void showKonfirmasiBerhasilBarang()
         {
-            objKonfirmasi.Visible = true;
-            objKasbon.Visible = false;
-            objStokBarang.Visible = false;
-            objKredit.Visible = false;
-            objBarang.Visible = false;
-            objTransaksi.Visible = false;
-            objKasbonTambah.Visible = false;
-            objKonfirmasiBerhasil.Visible = false;
-        }
-        public void showKonfirmasiBerhasil()
-        {
+            hideFiturPanel();
+            objKonfirmasiBerhasil.dataKonfirmasiBerhasil(objKonfirmasi.informasiBerhasil());
             objKonfirmasiBerhasil.Visible = true;
-            objKasbon.Visible = false;
-            objStokBarang.Visible = false;
-            objKredit.Visible = false;
-            objBarang.Visible = false;
-            objTransaksi.Visible = false;
-            objKasbonTambah.Visible = false;
-            objKonfirmasi.Visible = false;
+        }
+        public void showKonfirmasiBerhasilKasbon()
+        {
+            hideFiturPanel();
+            objKonfirmasiBerhasil.dataKonfirmasiBerhasil(objKasbon.informasiBerhasil());
+            objKonfirmasiBerhasil.Visible = true;
         }
         public void showTambahKategori()
         {
+            hideFiturPanel();
             objKategoriTambah.Visible = true;
+        }
+        public void showKonfirmasi()
+        {
+            hideFiturPanel();
+            objKonfirmasi.isiDatanya(objTransaksi.isiDataKonfirmasi());
+            objKonfirmasi.Visible = true;
+        }
+        public void hideFiturPanel()
+        {
+            objUserProfile.Visible = false;
+            objKategoriTambah.Visible = false;
             objStokBarang.Visible = false;
             objKredit.Visible = false;
             objBarang.Visible = false;
@@ -209,17 +195,8 @@ namespace PBO_Kasir
         }
         public void hideMainForm()
         {
-            objKategoriTambah.Visible = false;
-            objStokBarang.Visible = false;
-            objKredit.Visible = false;
-            objBarang.Visible = false;
-            objTransaksi.Visible = false;
-            objKasbon.Visible = false;
-            objKasbonTambah.Visible = false;
-            objKonfirmasi.Visible = false;
-            objKonfirmasiBerhasil.Visible = false;
+            hideFiturPanel();
 
-           
             panelMenu.Visible = false;
             btnMenu_Pengaturan.Visible = false;
             btnMenu_Laporan.Visible = false;
@@ -239,7 +216,18 @@ namespace PBO_Kasir
             btnMenu_Transaksi.Visible = true;
             label1.Visible = true;
         }
-
+       /* public void showPlayGround()
+        {
+            objPlayground.Visible = true;
+            objKategoriTambah.Visible = false;
+            objStokBarang.Visible = false;
+            objKredit.Visible = false;
+            objBarang.Visible = false;
+            objTransaksi.Visible = false;
+            objKasbon.Visible = false;
+            objKasbonTambah.Visible = false;
+            objKonfirmasiBerhasil.Visible = false;
+        }*/
         private void btnMenu_Barang_Click(object sender, EventArgs e)
         {
             showMenuBarang();
@@ -248,6 +236,7 @@ namespace PBO_Kasir
         private void btnMenu_Transaksi_Click(object sender, EventArgs e)
         {
             showMenuTransaksi();
+            objTransaksi.isiDataTransaksi();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -257,12 +246,19 @@ namespace PBO_Kasir
 
         private void btnMenu_Kasbon_Click(object sender, EventArgs e)
         {
+            
             showMenuKasbon();
         }
 
         private void btnMenu_Pengaturan_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            hideFiturPanel();
+            objUserProfile.Visible = true;
         }
         /* public void showPeranForm()
 {

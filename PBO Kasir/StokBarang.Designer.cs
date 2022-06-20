@@ -44,6 +44,7 @@
             this.button_simpanBarang = new System.Windows.Forms.Button();
             this.label_kode = new System.Windows.Forms.Label();
             this.label_error = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -56,11 +57,13 @@
             this.textBox_HargaDasar1 = new PBO_Kasir.customtextbox();
             this.textBox_HargaBarang1 = new PBO_Kasir.customtextbox();
             this.textBox_NamaBarang1 = new PBO_Kasir.customtextbox();
+=======
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+>>>>>>> refs/remotes/origin/master
             this.SuspendLayout();
             // 
             // labe1
             // 
-            this.labe1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labe1.AutoSize = true;
             this.labe1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.labe1.Location = new System.Drawing.Point(19, 407);
@@ -71,8 +74,12 @@
             // 
             // textBox_NamaBarang
             // 
+<<<<<<< HEAD
             this.textBox_NamaBarang.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_NamaBarang.Location = new System.Drawing.Point(19, 427);
+=======
+            this.textBox_NamaBarang.Location = new System.Drawing.Point(94, 71);
+>>>>>>> refs/remotes/origin/master
             this.textBox_NamaBarang.Name = "textBox_NamaBarang";
             this.textBox_NamaBarang.Size = new System.Drawing.Size(121, 20);
             this.textBox_NamaBarang.TabIndex = 1;
@@ -80,8 +87,12 @@
             // 
             // textBox_HargaDasar
             // 
+<<<<<<< HEAD
             this.textBox_HargaDasar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_HargaDasar.Location = new System.Drawing.Point(23, 377);
+=======
+            this.textBox_HargaDasar.Location = new System.Drawing.Point(94, 133);
+>>>>>>> refs/remotes/origin/master
             this.textBox_HargaDasar.Name = "textBox_HargaDasar";
             this.textBox_HargaDasar.Size = new System.Drawing.Size(121, 20);
             this.textBox_HargaDasar.TabIndex = 3;
@@ -90,7 +101,6 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label1.Location = new System.Drawing.Point(21, 358);
@@ -101,7 +111,6 @@
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label3.Location = new System.Drawing.Point(412, 370);
@@ -112,8 +121,12 @@
             // 
             // textBox_HargaBarang
             // 
+<<<<<<< HEAD
             this.textBox_HargaBarang.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_HargaBarang.Location = new System.Drawing.Point(414, 320);
+=======
+            this.textBox_HargaBarang.Location = new System.Drawing.Point(94, 199);
+>>>>>>> refs/remotes/origin/master
             this.textBox_HargaBarang.Name = "textBox_HargaBarang";
             this.textBox_HargaBarang.Size = new System.Drawing.Size(121, 20);
             this.textBox_HargaBarang.TabIndex = 9;
@@ -122,7 +135,6 @@
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label4.Location = new System.Drawing.Point(412, 301);
@@ -133,8 +145,13 @@
             // 
             // textBox_Kode
             // 
+<<<<<<< HEAD
             this.textBox_Kode.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_Kode.Location = new System.Drawing.Point(147, 355);
+=======
+            this.textBox_Kode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_Kode.Location = new System.Drawing.Point(314, 71);
+>>>>>>> refs/remotes/origin/master
             this.textBox_Kode.Name = "textBox_Kode";
             this.textBox_Kode.Size = new System.Drawing.Size(121, 20);
             this.textBox_Kode.TabIndex = 11;
@@ -142,7 +159,7 @@
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label2.Location = new System.Drawing.Point(145, 336);
@@ -154,8 +171,13 @@
             // 
             // textBox_Stok
             // 
+<<<<<<< HEAD
             this.textBox_Stok.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_Stok.Location = new System.Drawing.Point(147, 417);
+=======
+            this.textBox_Stok.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_Stok.Location = new System.Drawing.Point(314, 133);
+>>>>>>> refs/remotes/origin/master
             this.textBox_Stok.Name = "textBox_Stok";
             this.textBox_Stok.Size = new System.Drawing.Size(121, 20);
             this.textBox_Stok.TabIndex = 13;
@@ -164,7 +186,7 @@
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label5.Location = new System.Drawing.Point(145, 398);
@@ -196,11 +218,15 @@
             // button_simpanBarang
             // 
             this.button_simpanBarang.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+<<<<<<< HEAD
             this.button_simpanBarang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(113)))), ((int)(((byte)(254)))));
             this.button_simpanBarang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_simpanBarang.Font = new System.Drawing.Font("Poppins Medium", 12F);
             this.button_simpanBarang.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button_simpanBarang.Location = new System.Drawing.Point(263, 347);
+=======
+            this.button_simpanBarang.Location = new System.Drawing.Point(208, 352);
+>>>>>>> refs/remotes/origin/master
             this.button_simpanBarang.Name = "button_simpanBarang";
             this.button_simpanBarang.Size = new System.Drawing.Size(110, 38);
             this.button_simpanBarang.TabIndex = 18;
@@ -210,6 +236,7 @@
             // 
             // label_kode
             // 
+            this.label_kode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label_kode.AutoSize = true;
             this.label_kode.Location = new System.Drawing.Point(192, 339);
             this.label_kode.Name = "label_kode";
@@ -219,7 +246,11 @@
             // 
             // label_error
             // 
+<<<<<<< HEAD
             this.label_error.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+=======
+            this.label_error.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+>>>>>>> refs/remotes/origin/master
             this.label_error.AutoSize = true;
             this.label_error.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label_error.Location = new System.Drawing.Point(272, 390);
@@ -228,6 +259,7 @@
             this.label_error.TabIndex = 20;
             this.label_error.Text = "error mesage";
             // 
+<<<<<<< HEAD
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -434,11 +466,25 @@
             this.textBox_NamaBarang1.Texts = "";
             this.textBox_NamaBarang1.UnderlinedStyle = false;
             this.textBox_NamaBarang1.Load += new System.EventHandler(this.textBox_NamaBarang1_Load);
+=======
+            // linkLabel1
+            // 
+            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(29, 377);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(44, 13);
+            this.linkLabel1.TabIndex = 21;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Kembali";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+>>>>>>> refs/remotes/origin/master
             // 
             // StokBarang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.BackColor = System.Drawing.SystemColors.Window;
             this.Controls.Add(this.label11);
             this.Controls.Add(this.comboBoxcustom1);
@@ -452,6 +498,9 @@
             this.Controls.Add(this.textBox_HargaBarang1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox_NamaBarang1);
+=======
+            this.Controls.Add(this.linkLabel1);
+>>>>>>> refs/remotes/origin/master
             this.Controls.Add(this.label_error);
             this.Controls.Add(this.label_kode);
             this.Controls.Add(this.button_simpanBarang);
@@ -495,6 +544,7 @@
         private System.Windows.Forms.Button button_simpanBarang;
         private System.Windows.Forms.Label label_kode;
         private System.Windows.Forms.Label label_error;
+<<<<<<< HEAD
         private customtextbox textBox_NamaBarang1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -507,5 +557,8 @@
         private customtextbox textBox_Stok1;
         private comboBoxcustom comboBoxcustom1;
         private System.Windows.Forms.Label label11;
+=======
+        private System.Windows.Forms.LinkLabel linkLabel1;
+>>>>>>> refs/remotes/origin/master
     }
 }

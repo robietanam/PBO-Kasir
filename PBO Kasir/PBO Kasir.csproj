@@ -113,6 +113,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="comboBoxcustom.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -124,6 +125,13 @@
     </Compile>
     <Compile Include="DatePackerCustom.cs">
       <SubType>Component</SubType>
+=======
+    <Compile Include="Konfirmasi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Konfirmasi.Designer.cs">
+      <DependentUpon>Konfirmasi.cs</DependentUpon>
+>>>>>>> refs/remotes/origin/master
     </Compile>
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
@@ -132,6 +140,9 @@
       <DependentUpon>mainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="models\barangModel.cs" />
+    <Compile Include="models\userModel.cs" />
+    <Compile Include="models\kasbonModel.cs" />
+    <Compile Include="models\transaksiModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="kasirForm.cs">
@@ -177,12 +188,6 @@
     <Compile Include="KasbonTambah.Designer.cs">
       <DependentUpon>KasbonTambah.cs</DependentUpon>
     </Compile>
-    <Compile Include="Konfirmasi.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Konfirmasi.Designer.cs">
-      <DependentUpon>Konfirmasi.cs</DependentUpon>
-    </Compile>
     <Compile Include="KonfirmasiBerhasil.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -201,6 +206,12 @@
     <Compile Include="KategoriTambah.Designer.cs">
       <DependentUpon>KategoriTambah.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserProfile.Designer.cs">
+      <DependentUpon>UserProfile.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Barang.resx">
       <DependentUpon>Barang.cs</DependentUpon>
     </EmbeddedResource>
@@ -209,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KategoriTambah.resx">
       <DependentUpon>KategoriTambah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Konfirmasi.resx">
+      <DependentUpon>Konfirmasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StokBarang.resx">
       <DependentUpon>StokBarang.cs</DependentUpon>
@@ -244,11 +258,11 @@
     <EmbeddedResource Include="KasbonTambah.resx">
       <DependentUpon>KasbonTambah.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Konfirmasi.resx">
-      <DependentUpon>Konfirmasi.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="KonfirmasiBerhasil.resx">
       <DependentUpon>KonfirmasiBerhasil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserProfile.resx">
+      <DependentUpon>UserProfile.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

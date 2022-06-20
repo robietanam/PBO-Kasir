@@ -16,25 +16,30 @@ namespace PBO_Kasir
             connection = new NpgsqlConnection();
             connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=Kasir_PBO;CommandTimeout=10";
             // ConfigurationManager.ConnectionStrings["constr"].ToString();
+            
         }
 
         public DataTable ExecuteQuery(string sql)
         {
             DataTable dt = new DataTable();
-            try
+            if (connection.State != ConnectionState.Open)
             {
-                connection.Open();
-                NpgsqlCommand cmd = new NpgsqlCommand();
-                cmd.Connection = connection;
-                cmd.CommandText = sql; // "select * from users.person";
-                cmd.CommandType = CommandType.Text;
-                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
-
-                da.Fill(dt);
-                cmd.Dispose();
+                //
+            }
+            else
+            {
                 connection.Close();
             }
-            catch (Exception ex) { }
+            connection.Open();
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            cmd.Connection = connection;
+            cmd.CommandText = sql; // "select * from users.person";
+            cmd.CommandType = CommandType.Text;
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+
+            da.Fill(dt);
+            cmd.Dispose();
+            connection.Close();
 
             return dt;
         }
@@ -53,6 +58,7 @@ namespace PBO_Kasir
             {
                 cmd.Connection.Open();
                 new NpgsqlDataAdapter(cmd).Fill(ds);
+                cmd.Connection.Close();
             }
             catch (NpgsqlException ex)
             {
@@ -82,43 +88,44 @@ namespace PBO_Kasir
 
         public void ExecuteNonQuery(string sql, params NpgsqlParameter[] parameters)
         {
+            
             DataSet ds = new DataSet();
             NpgsqlCommand cmd = new NpgsqlCommand(sql, connection);
             foreach (var item in parameters)
             {
                 cmd.Parameters.Add(item);
             }
-
-            try
+            if (connection.State != ConnectionState.Open)
             {
-                cmd.Connection.Open();
-                cmd.ExecuteNonQuery();
-                cmd.Dispose();
+                //
+            }
+            else
+            {
                 connection.Close();
             }
-            catch (NpgsqlException ex)
-            {
-                //Show a message or log a message on ex.Message
-            }
+            cmd.Connection.Open();
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
+            cmd.Connection.Close();
+            
+
         }
 
         public void ExecuteNonQuery(string query)
         {
-            try
-            {
-                connection.Open();
-                NpgsqlCommand cmd = new NpgsqlCommand();
-                cmd.Connection = connection;
 
-                cmd.CommandText = query;
-                cmd.CommandType = CommandType.Text;
-                cmd.ExecuteNonQuery();
+            connection.Open();
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            cmd.Connection = connection;
 
-                cmd.Dispose();
-                connection.Close();
+            cmd.CommandText = query;
+            cmd.CommandType = CommandType.Text;
+            cmd.ExecuteNonQuery();
 
-            }
-            catch (Exception ex) { }
+            cmd.Dispose();
+            connection.Close();
+
+
         }
 
     }
