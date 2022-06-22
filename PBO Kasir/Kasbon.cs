@@ -131,6 +131,9 @@ namespace PBO_Kasir
             button_Edit.Visible = true;
             button_Hapus.Visible = true;
             dataGridView_Bon.ReadOnly = true;
+            hideBayarKasbonMenu();  
+            
+        
 
         }
         private void button_Simpan_Click(object sender, EventArgs e)
@@ -157,6 +160,7 @@ namespace PBO_Kasir
             label2.Visible = true;
             label3.Visible = true;
             label4.Visible = true;
+            label5.Visible = true;
             label_namaBon.Visible = true;
             label_atasNama.Visible = true;
             label_Jumlah.Visible = true;
@@ -171,6 +175,7 @@ namespace PBO_Kasir
             label2.Visible = false;
             label3.Visible = false;
             label4.Visible = false;
+            label5.Visible = false;
             label_namaBon.Visible = false;
             label_atasNama.Visible = false;
             label_Jumlah.Visible = false;
@@ -215,6 +220,31 @@ namespace PBO_Kasir
         }
 
         private void textBox_Bayar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Kasbon_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_Bayar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_Bayar_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

@@ -136,6 +136,29 @@ namespace PBO_Kasir
             button_Cancel.Visible = true;
             button_Simpan.Visible = true;
         }
+
+        void StyleDatageidview()
+        {
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(22, 31, 106);
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.Single;
+            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(209, 185, 250);
+            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+
+
+
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(22, 31, 106);
+           
+
+
+        }
+
+        private void Barang_Load(object sender, EventArgs e)
+        {
+            StyleDatageidview();
+        }
     }
 }
 

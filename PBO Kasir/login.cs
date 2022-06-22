@@ -14,6 +14,7 @@ namespace PBO_Kasir
     public partial class login : UserControl
     {
         mainForm objParent;
+        fitur objFitur = new fitur();
         userModel objUserModel = new userModel();
         DataTable dt = new DataTable();
         public login()
@@ -60,6 +61,7 @@ namespace PBO_Kasir
             else
             {
                 lblInfo.Text = "Username atau password salah...";
+                objFitur.countdownTimer(lblInfo);    
             }
         }
 

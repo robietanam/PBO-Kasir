@@ -39,25 +39,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(174, 106);
+            this.label1.Location = new System.Drawing.Point(203, 155);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.Size = new System.Drawing.Size(51, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nama : ";
             // 
             // textBox_nama
             // 
-            this.textBox_nama.Location = new System.Drawing.Point(224, 103);
+            this.textBox_nama.Location = new System.Drawing.Point(261, 151);
+            this.textBox_nama.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_nama.Name = "textBox_nama";
-            this.textBox_nama.Size = new System.Drawing.Size(152, 20);
+            this.textBox_nama.Size = new System.Drawing.Size(177, 24);
             this.textBox_nama.TabIndex = 1;
             this.textBox_nama.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button_simpan
             // 
-            this.button_simpan.Location = new System.Drawing.Point(235, 175);
+            this.button_simpan.Location = new System.Drawing.Point(274, 256);
+            this.button_simpan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_simpan.Name = "button_simpan";
-            this.button_simpan.Size = new System.Drawing.Size(75, 23);
+            this.button_simpan.Size = new System.Drawing.Size(88, 34);
             this.button_simpan.TabIndex = 2;
             this.button_simpan.Text = "Simpan";
             this.button_simpan.UseVisualStyleBackColor = true;
@@ -65,33 +68,36 @@
             // 
             // textBox_password
             // 
-            this.textBox_password.Location = new System.Drawing.Point(224, 129);
+            this.textBox_password.Location = new System.Drawing.Point(261, 189);
+            this.textBox_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_password.Name = "textBox_password";
-            this.textBox_password.Size = new System.Drawing.Size(152, 20);
+            this.textBox_password.Size = new System.Drawing.Size(177, 24);
             this.textBox_password.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(156, 132);
+            this.label2.Location = new System.Drawing.Point(182, 193);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 13);
+            this.label2.Size = new System.Drawing.Size(71, 19);
             this.label2.TabIndex = 4;
             this.label2.Text = "Password : ";
             // 
             // label_status
             // 
             this.label_status.AutoSize = true;
-            this.label_status.Location = new System.Drawing.Point(104, 217);
+            this.label_status.Location = new System.Drawing.Point(297, 294);
+            this.label_status.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_status.Name = "label_status";
-            this.label_status.Size = new System.Drawing.Size(35, 13);
+            this.label_status.Size = new System.Drawing.Size(43, 19);
             this.label_status.TabIndex = 5;
             this.label_status.Text = "status";
             this.label_status.Click += new System.EventHandler(this.label_status_Click);
             // 
             // UserProfile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label_status);
             this.Controls.Add(this.label2);
@@ -99,6 +105,8 @@
             this.Controls.Add(this.button_simpan);
             this.Controls.Add(this.textBox_nama);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Poppins Medium", 8.25F);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UserProfile";
             this.Size = new System.Drawing.Size(600, 450);
             this.Load += new System.EventHandler(this.UserProfile_Load);

@@ -345,5 +345,10 @@ namespace PBO_Kasir
         {
 
         }
+
+        private void Transaksi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

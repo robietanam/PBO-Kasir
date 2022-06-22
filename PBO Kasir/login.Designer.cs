@@ -45,12 +45,13 @@
             // lblInfo
             // 
             this.lblInfo.AutoSize = true;
-            this.lblInfo.BackColor = System.Drawing.Color.LimeGreen;
+            this.lblInfo.BackColor = System.Drawing.Color.Transparent;
             this.lblInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblInfo.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblInfo.Location = new System.Drawing.Point(19, 112);
+            this.lblInfo.Font = new System.Drawing.Font("Poppins Medium", 8.25F);
+            this.lblInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(113)))), ((int)(((byte)(254)))));
+            this.lblInfo.Location = new System.Drawing.Point(358, 325);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(2, 15);
+            this.lblInfo.Size = new System.Drawing.Size(2, 21);
             this.lblInfo.TabIndex = 4;
             this.lblInfo.Click += new System.EventHandler(this.lblInfo_Click);
             // 
@@ -127,7 +128,7 @@
             this.textBox_User.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_User.Font = new System.Drawing.Font("Poppins Medium", 12F);
             this.textBox_User.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(113)))), ((int)(((byte)(254)))));
-            this.textBox_User.Location = new System.Drawing.Point(347, 174);
+            this.textBox_User.Location = new System.Drawing.Point(358, 174);
             this.textBox_User.Name = "textBox_User";
             this.textBox_User.Size = new System.Drawing.Size(248, 24);
             this.textBox_User.TabIndex = 12;
@@ -140,7 +141,7 @@
             this.textBox_Pass.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox_Pass.Font = new System.Drawing.Font("Poppins Medium", 12F);
             this.textBox_Pass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(113)))), ((int)(((byte)(254)))));
-            this.textBox_Pass.Location = new System.Drawing.Point(343, 256);
+            this.textBox_Pass.Location = new System.Drawing.Point(358, 255);
             this.textBox_Pass.Name = "textBox_Pass";
             this.textBox_Pass.Size = new System.Drawing.Size(248, 24);
             this.textBox_Pass.TabIndex = 13;

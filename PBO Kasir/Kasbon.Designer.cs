@@ -47,7 +47,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox_Bayar = new System.Windows.Forms.TextBox();
             this.button_BayarCancel = new System.Windows.Forms.Button();
             this.button_Bayar = new System.Windows.Forms.Button();
             this.label_Kode = new System.Windows.Forms.Label();
@@ -56,15 +55,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label_namaBon = new System.Windows.Forms.Label();
             this.label_error = new System.Windows.Forms.Label();
+            this.textBox_Bayar = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Bon)).BeginInit();
             this.SuspendLayout();
             // 
             // Kasbonlabel
             // 
             this.Kasbonlabel.AutoSize = true;
-            this.Kasbonlabel.Location = new System.Drawing.Point(16, 42);
+            this.Kasbonlabel.Location = new System.Drawing.Point(19, 19);
+            this.Kasbonlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Kasbonlabel.Name = "Kasbonlabel";
-            this.Kasbonlabel.Size = new System.Drawing.Size(43, 13);
+            this.Kasbonlabel.Size = new System.Drawing.Size(50, 19);
             this.Kasbonlabel.TabIndex = 0;
             this.Kasbonlabel.Text = "Kasbon";
             this.Kasbonlabel.Click += new System.EventHandler(this.Kasbonlabel_Click);
@@ -90,11 +92,12 @@
             this.BayarBon,
             this.HapusBon});
             this.dataGridView_Bon.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
-            this.dataGridView_Bon.Location = new System.Drawing.Point(19, 61);
+            this.dataGridView_Bon.Location = new System.Drawing.Point(22, 80);
+            this.dataGridView_Bon.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView_Bon.Name = "dataGridView_Bon";
             this.dataGridView_Bon.ReadOnly = true;
             this.dataGridView_Bon.RowHeadersVisible = false;
-            this.dataGridView_Bon.Size = new System.Drawing.Size(554, 337);
+            this.dataGridView_Bon.Size = new System.Drawing.Size(546, 285);
             this.dataGridView_Bon.TabIndex = 1;
             this.dataGridView_Bon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Bon_CellContentClick);
             // 
@@ -177,57 +180,77 @@
             // button_TambahBon
             // 
             this.button_TambahBon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_TambahBon.Location = new System.Drawing.Point(475, 32);
+            this.button_TambahBon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
+            this.button_TambahBon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_TambahBon.ForeColor = System.Drawing.Color.White;
+            this.button_TambahBon.Location = new System.Drawing.Point(22, 42);
+            this.button_TambahBon.Margin = new System.Windows.Forms.Padding(4);
             this.button_TambahBon.Name = "button_TambahBon";
-            this.button_TambahBon.Size = new System.Drawing.Size(98, 23);
+            this.button_TambahBon.Size = new System.Drawing.Size(80, 25);
             this.button_TambahBon.TabIndex = 2;
             this.button_TambahBon.Text = "Tambah Bon";
-            this.button_TambahBon.UseVisualStyleBackColor = true;
+            this.button_TambahBon.UseVisualStyleBackColor = false;
             this.button_TambahBon.Click += new System.EventHandler(this.button_TambahBon_Click);
             // 
             // button_Hapus
             // 
             this.button_Hapus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Hapus.Location = new System.Drawing.Point(397, 3);
+            this.button_Hapus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
+            this.button_Hapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Hapus.ForeColor = System.Drawing.Color.White;
+            this.button_Hapus.Location = new System.Drawing.Point(488, 13);
+            this.button_Hapus.Margin = new System.Windows.Forms.Padding(4);
             this.button_Hapus.Name = "button_Hapus";
-            this.button_Hapus.Size = new System.Drawing.Size(70, 23);
+            this.button_Hapus.Size = new System.Drawing.Size(80, 25);
             this.button_Hapus.TabIndex = 3;
             this.button_Hapus.Text = "Hapus";
-            this.button_Hapus.UseVisualStyleBackColor = true;
+            this.button_Hapus.UseVisualStyleBackColor = false;
             this.button_Hapus.Click += new System.EventHandler(this.button_Hapus_Click);
             // 
             // button_Edit
             // 
             this.button_Edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Edit.Location = new System.Drawing.Point(397, 32);
+            this.button_Edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
+            this.button_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Edit.ForeColor = System.Drawing.Color.White;
+            this.button_Edit.Location = new System.Drawing.Point(122, 42);
+            this.button_Edit.Margin = new System.Windows.Forms.Padding(4);
             this.button_Edit.Name = "button_Edit";
-            this.button_Edit.Size = new System.Drawing.Size(72, 23);
+            this.button_Edit.Size = new System.Drawing.Size(80, 25);
             this.button_Edit.TabIndex = 4;
             this.button_Edit.Text = "Edit";
-            this.button_Edit.UseVisualStyleBackColor = true;
+            this.button_Edit.UseVisualStyleBackColor = false;
             this.button_Edit.Click += new System.EventHandler(this.button_Edit_Click);
             // 
             // button_Simpan
             // 
             this.button_Simpan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Simpan.Location = new System.Drawing.Point(319, 32);
+            this.button_Simpan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(214)))), ((int)(((byte)(103)))));
+            this.button_Simpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Simpan.ForeColor = System.Drawing.Color.White;
+            this.button_Simpan.Location = new System.Drawing.Point(400, 47);
+            this.button_Simpan.Margin = new System.Windows.Forms.Padding(4);
             this.button_Simpan.Name = "button_Simpan";
-            this.button_Simpan.Size = new System.Drawing.Size(72, 23);
+            this.button_Simpan.Size = new System.Drawing.Size(80, 25);
             this.button_Simpan.TabIndex = 5;
             this.button_Simpan.Text = "Simpan";
-            this.button_Simpan.UseVisualStyleBackColor = true;
+            this.button_Simpan.UseVisualStyleBackColor = false;
             this.button_Simpan.Visible = false;
             this.button_Simpan.Click += new System.EventHandler(this.button_Simpan_Click);
             // 
             // button_Cancel
             // 
             this.button_Cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Cancel.Location = new System.Drawing.Point(241, 32);
+            this.button_Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(13)))), ((int)(((byte)(15)))));
+            this.button_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Cancel.ForeColor = System.Drawing.Color.White;
+            this.button_Cancel.Location = new System.Drawing.Point(488, 47);
+            this.button_Cancel.Margin = new System.Windows.Forms.Padding(4);
             this.button_Cancel.Name = "button_Cancel";
-            this.button_Cancel.Size = new System.Drawing.Size(72, 23);
+            this.button_Cancel.Size = new System.Drawing.Size(80, 25);
             this.button_Cancel.TabIndex = 6;
             this.button_Cancel.Text = "Cancel";
-            this.button_Cancel.UseVisualStyleBackColor = true;
+            this.button_Cancel.UseVisualStyleBackColor = false;
             this.button_Cancel.Visible = false;
             this.button_Cancel.Click += new System.EventHandler(this.button_Cancel_Click);
             // 
@@ -235,66 +258,67 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 401);
+            this.label1.Location = new System.Drawing.Point(19, 378);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 13);
+            this.label1.Size = new System.Drawing.Size(82, 19);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Kode          : ";
+            this.label1.Text = "Kode             : ";
             this.label1.Visible = false;
             // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 414);
+            this.label2.Location = new System.Drawing.Point(19, 397);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.Size = new System.Drawing.Size(79, 19);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Atas Nama :";
+            this.label2.Text = "Atas Nama  :";
             this.label2.Visible = false;
             // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(290, 404);
+            this.label3.Location = new System.Drawing.Point(238, 382);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 13);
+            this.label3.Size = new System.Drawing.Size(74, 19);
             this.label3.TabIndex = 9;
             this.label3.Text = "Jumlah       :";
             this.label3.Visible = false;
             // 
-            // textBox_Bayar
-            // 
-            this.textBox_Bayar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_Bayar.Location = new System.Drawing.Point(293, 423);
-            this.textBox_Bayar.Name = "textBox_Bayar";
-            this.textBox_Bayar.Size = new System.Drawing.Size(124, 20);
-            this.textBox_Bayar.TabIndex = 10;
-            this.textBox_Bayar.Visible = false;
-            this.textBox_Bayar.TextChanged += new System.EventHandler(this.textBox_Bayar_TextChanged);
-            // 
             // button_BayarCancel
             // 
             this.button_BayarCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_BayarCancel.Location = new System.Drawing.Point(501, 420);
+            this.button_BayarCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
+            this.button_BayarCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_BayarCancel.ForeColor = System.Drawing.Color.White;
+            this.button_BayarCancel.Location = new System.Drawing.Point(488, 412);
+            this.button_BayarCancel.Margin = new System.Windows.Forms.Padding(4);
             this.button_BayarCancel.Name = "button_BayarCancel";
-            this.button_BayarCancel.Size = new System.Drawing.Size(72, 23);
+            this.button_BayarCancel.Size = new System.Drawing.Size(80, 25);
             this.button_BayarCancel.TabIndex = 11;
             this.button_BayarCancel.Text = "Batal";
-            this.button_BayarCancel.UseVisualStyleBackColor = true;
+            this.button_BayarCancel.UseVisualStyleBackColor = false;
             this.button_BayarCancel.Visible = false;
             this.button_BayarCancel.Click += new System.EventHandler(this.button_BayarCancel_Click);
             // 
             // button_Bayar
             // 
             this.button_Bayar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Bayar.Location = new System.Drawing.Point(423, 420);
+            this.button_Bayar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
+            this.button_Bayar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Bayar.ForeColor = System.Drawing.Color.White;
+            this.button_Bayar.Location = new System.Drawing.Point(488, 378);
+            this.button_Bayar.Margin = new System.Windows.Forms.Padding(4);
             this.button_Bayar.Name = "button_Bayar";
-            this.button_Bayar.Size = new System.Drawing.Size(72, 23);
+            this.button_Bayar.Size = new System.Drawing.Size(80, 25);
             this.button_Bayar.TabIndex = 11;
             this.button_Bayar.Text = "Bayar";
-            this.button_Bayar.UseVisualStyleBackColor = true;
+            this.button_Bayar.UseVisualStyleBackColor = false;
             this.button_Bayar.Visible = false;
             this.button_Bayar.Click += new System.EventHandler(this.button_Bayar_Click);
             // 
@@ -302,9 +326,10 @@
             // 
             this.label_Kode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label_Kode.AutoSize = true;
-            this.label_Kode.Location = new System.Drawing.Point(87, 404);
+            this.label_Kode.Location = new System.Drawing.Point(102, 382);
+            this.label_Kode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Kode.Name = "label_Kode";
-            this.label_Kode.Size = new System.Drawing.Size(13, 13);
+            this.label_Kode.Size = new System.Drawing.Size(18, 19);
             this.label_Kode.TabIndex = 12;
             this.label_Kode.Text = "- ";
             this.label_Kode.Visible = false;
@@ -313,9 +338,10 @@
             // 
             this.label_Jumlah.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Jumlah.AutoSize = true;
-            this.label_Jumlah.Location = new System.Drawing.Point(360, 404);
+            this.label_Jumlah.Location = new System.Drawing.Point(320, 382);
+            this.label_Jumlah.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Jumlah.Name = "label_Jumlah";
-            this.label_Jumlah.Size = new System.Drawing.Size(13, 13);
+            this.label_Jumlah.Size = new System.Drawing.Size(18, 19);
             this.label_Jumlah.TabIndex = 13;
             this.label_Jumlah.Text = "- ";
             this.label_Jumlah.Visible = false;
@@ -324,9 +350,10 @@
             // 
             this.label_atasNama.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label_atasNama.AutoSize = true;
-            this.label_atasNama.Location = new System.Drawing.Point(87, 417);
+            this.label_atasNama.Location = new System.Drawing.Point(102, 401);
+            this.label_atasNama.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_atasNama.Name = "label_atasNama";
-            this.label_atasNama.Size = new System.Drawing.Size(13, 13);
+            this.label_atasNama.Size = new System.Drawing.Size(18, 19);
             this.label_atasNama.TabIndex = 14;
             this.label_atasNama.Text = "- ";
             this.label_atasNama.Visible = false;
@@ -335,20 +362,22 @@
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 430);
+            this.label4.Location = new System.Drawing.Point(19, 420);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 13);
+            this.label4.Size = new System.Drawing.Size(78, 19);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Nama Bon  :";
+            this.label4.Text = "Nama Bon   :";
             this.label4.Visible = false;
             // 
             // label_namaBon
             // 
             this.label_namaBon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label_namaBon.AutoSize = true;
-            this.label_namaBon.Location = new System.Drawing.Point(87, 430);
+            this.label_namaBon.Location = new System.Drawing.Point(102, 420);
+            this.label_namaBon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_namaBon.Name = "label_namaBon";
-            this.label_namaBon.Size = new System.Drawing.Size(13, 13);
+            this.label_namaBon.Size = new System.Drawing.Size(18, 19);
             this.label_namaBon.TabIndex = 16;
             this.label_namaBon.Text = "- ";
             this.label_namaBon.Visible = false;
@@ -357,17 +386,44 @@
             // 
             this.label_error.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label_error.AutoSize = true;
-            this.label_error.Location = new System.Drawing.Point(420, 404);
+            this.label_error.Location = new System.Drawing.Point(390, 382);
+            this.label_error.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_error.Name = "label_error";
-            this.label_error.Size = new System.Drawing.Size(10, 13);
+            this.label_error.Size = new System.Drawing.Size(15, 19);
             this.label_error.TabIndex = 17;
             this.label_error.Text = "-";
+            this.label_error.Visible = false;
             this.label_error.Click += new System.EventHandler(this.label_error_Click);
+            // 
+            // textBox_Bayar
+            // 
+            this.textBox_Bayar.Location = new System.Drawing.Point(324, 404);
+            this.textBox_Bayar.Name = "textBox_Bayar";
+            this.textBox_Bayar.Size = new System.Drawing.Size(81, 24);
+            this.textBox_Bayar.TabIndex = 19;
+            this.textBox_Bayar.Visible = false;
+            this.textBox_Bayar.TextChanged += new System.EventHandler(this.textBox_Bayar_TextChanged_1);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(238, 407);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 19);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Bayar          :";
+            this.label5.Visible = false;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Kasbon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox_Bayar);
             this.Controls.Add(this.label_error);
             this.Controls.Add(this.label_namaBon);
             this.Controls.Add(this.label4);
@@ -376,7 +432,6 @@
             this.Controls.Add(this.label_Kode);
             this.Controls.Add(this.button_Bayar);
             this.Controls.Add(this.button_BayarCancel);
-            this.Controls.Add(this.textBox_Bayar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -387,8 +442,11 @@
             this.Controls.Add(this.button_TambahBon);
             this.Controls.Add(this.dataGridView_Bon);
             this.Controls.Add(this.Kasbonlabel);
+            this.Font = new System.Drawing.Font("Poppins Medium", 8.25F);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Kasbon";
             this.Size = new System.Drawing.Size(600, 450);
+            this.Load += new System.EventHandler(this.Kasbon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Bon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -416,7 +474,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox_Bayar;
         private System.Windows.Forms.Button button_BayarCancel;
         private System.Windows.Forms.Button button_Bayar;
         private System.Windows.Forms.Label label_Kode;
@@ -425,5 +482,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label_namaBon;
         private System.Windows.Forms.Label label_error;
+        private System.Windows.Forms.TextBox textBox_Bayar;
+        private System.Windows.Forms.Label label5;
     }
 }

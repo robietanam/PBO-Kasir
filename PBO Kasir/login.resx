@@ -121,7 +121,7 @@
   <data name="UsernameBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAA1pJREFUWEflmPFV3DAMh28ENigjMAIjsAFsUDaADdoNYAPYgBE6QkdghOvvO8uJ
+        DgAACw4BQL7hQQAAA1pJREFUWEflmPFV3DAMh28ENigjMAIjsAFsUDaADdoNYAPYgBE6QkdghOvvO8uJ
         rNiOkx7XP/q95weRZMWWZDlw+C84Ho/XGrcaDxp39vuNqS+PXs6CnjQ+ND41emDzqHFt078OvYTI8MK9
         MPfW3J0POSVif7OwyIvGeSIqR0StlkZkOX03Glc2hTlXGsxD96ZR47fGnU3Zhxx8P7kqYWHPGtOC1pAt
         GWAOi4o8mdk2mJjmF/zUGF5YRHNZ6CuOAo9mMoYm0CoiTSfS5XRSWwyi1awxs42MHR4ZssuYigdTF0hO
@@ -141,7 +141,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAmNJREFUWEfllo1RIzEMRlPCdXCUQAmUQAfQAXRwdAAdQAd3HaSElEAJlJB731rO
+        EAAACxABrSO9dQAAAmNJREFUWEfllo1RIzEMRlPCdXCUQAmUQAfQAXRwdAAdQAd3HaSElEAJlJB731rO
         KF7b2LveHMy9Gc0ksiR/q/XP7v57jsfjlbMf5v53SAT2iO2xDyzlgL1iN5ZyOZj0AcuJKvGOXVn6djCJ
         uqaO5ZBgCZGV+GWlxkNxra10cv1/wmbdwXeDvWEp24ikcCruBft0MxCjB0u7PlakCoa6J+5tqBly0m6O
         2TwUUgc8TzaUhXGt03vFYWci+O87uTf3OiikoyJyMHcWxnPr9NmG47jf/eu7SBE/YbUg4/5hPKc8fmvt
@@ -157,7 +157,7 @@
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAzAAAAHpCAYAAABdptnVAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAFjNJREFUeF7t3eluFEm6gOG5ivEOtbgKLzTm3NbIogGPZVmGBlnIOnddp6PUyTEQ
+        EAAACxABrSO9dQAAFjNJREFUeF7t3eluFEm6gOG5ivEOtbgKLzTm3NbIogGPZVmGBlnIOnddp6PUyTEQ
         NrXkEsvz4/k506122pmvIuKLf/375X8WALCuo/nN4tX//C8A9ErAALCxyeuv0ZcLAHRFwACwsZ3R5WJ2
         8S36ggGALggYALayO363mF88RF8yANA2AQPA1g5n19GXDAC0TcAA0IoXJ7fRFw0AtEnAANAaEQNA1wQM
         AK0an32KvnAAoA0CBoDWiRgAuiJgAOiEiAGgCwIGgM6IGADaJmAA6NTL07voCwgANiFgAOic6WQAtEXA

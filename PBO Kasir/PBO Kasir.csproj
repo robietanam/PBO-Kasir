@@ -113,6 +113,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="customtextbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customtextbox.Designer.cs">
+      <DependentUpon>customtextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatePackerCustom.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Konfirmasi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -126,6 +135,7 @@
       <DependentUpon>mainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="models\barangModel.cs" />
+    <Compile Include="models\fitur.cs" />
     <Compile Include="models\userModel.cs" />
     <Compile Include="models\kasbonModel.cs" />
     <Compile Include="models\transaksiModel.cs" />
@@ -201,6 +211,9 @@
     <EmbeddedResource Include="Barang.resx">
       <DependentUpon>Barang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="customtextbox.resx">
+      <DependentUpon>customtextbox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KategoriTambah.resx">
       <DependentUpon>KategoriTambah.cs</DependentUpon>
     </EmbeddedResource>
@@ -263,8 +276,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\bgconfirm.png" />
-    <Content Include="Resources\calendarDark.png" />
-    <Content Include="Resources\calendarWhite.png" />
+    <None Include="Resources\calendarWhite.png" />
+    <None Include="Resources\calendarDark.png" />
     <Content Include="Resources\komputer.png" />
     <Content Include="Resources\Loginbg.png" />
     <Content Include="Resources\Other 07 1.png" />

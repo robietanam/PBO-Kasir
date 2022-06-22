@@ -43,30 +43,36 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 41);
+            this.label1.Location = new System.Drawing.Point(26, 33);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 13);
+            this.label1.Size = new System.Drawing.Size(100, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nama Kategori : ";
             // 
             // textBox_Kategori
             // 
             this.textBox_Kategori.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox_Kategori.Location = new System.Drawing.Point(111, 38);
+            this.textBox_Kategori.Location = new System.Drawing.Point(26, 56);
+            this.textBox_Kategori.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_Kategori.Name = "textBox_Kategori";
-            this.textBox_Kategori.Size = new System.Drawing.Size(207, 20);
+            this.textBox_Kategori.Size = new System.Drawing.Size(241, 24);
             this.textBox_Kategori.TabIndex = 1;
             this.textBox_Kategori.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button_Tambah
             // 
             this.button_Tambah.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button_Tambah.Location = new System.Drawing.Point(335, 38);
+            this.button_Tambah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
+            this.button_Tambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Tambah.ForeColor = System.Drawing.Color.White;
+            this.button_Tambah.Location = new System.Drawing.Point(484, 51);
+            this.button_Tambah.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_Tambah.Name = "button_Tambah";
-            this.button_Tambah.Size = new System.Drawing.Size(75, 23);
+            this.button_Tambah.Size = new System.Drawing.Size(88, 34);
             this.button_Tambah.TabIndex = 2;
             this.button_Tambah.Text = "Tambah";
-            this.button_Tambah.UseVisualStyleBackColor = true;
+            this.button_Tambah.UseVisualStyleBackColor = false;
             this.button_Tambah.Click += new System.EventHandler(this.button_Tambah_Click);
             // 
             // dataGridView1
@@ -81,11 +87,12 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nomor,
             this.Kategori});
-            this.dataGridView1.Location = new System.Drawing.Point(22, 77);
+            this.dataGridView1.Location = new System.Drawing.Point(26, 113);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(554, 238);
+            this.dataGridView1.Size = new System.Drawing.Size(546, 140);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -109,18 +116,21 @@
             // label_error
             // 
             this.label_error.AutoSize = true;
-            this.label_error.Location = new System.Drawing.Point(108, 22);
+            this.label_error.Location = new System.Drawing.Point(126, 32);
+            this.label_error.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_error.Name = "label_error";
-            this.label_error.Size = new System.Drawing.Size(0, 13);
+            this.label_error.Size = new System.Drawing.Size(0, 19);
             this.label_error.TabIndex = 4;
             // 
             // linkLabel_Kembali
             // 
             this.linkLabel_Kembali.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.linkLabel_Kembali.AutoSize = true;
-            this.linkLabel_Kembali.Location = new System.Drawing.Point(416, 45);
+            this.linkLabel_Kembali.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
+            this.linkLabel_Kembali.Location = new System.Drawing.Point(271, 407);
+            this.linkLabel_Kembali.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel_Kembali.Name = "linkLabel_Kembali";
-            this.linkLabel_Kembali.Size = new System.Drawing.Size(44, 13);
+            this.linkLabel_Kembali.Size = new System.Drawing.Size(54, 19);
             this.linkLabel_Kembali.TabIndex = 5;
             this.linkLabel_Kembali.TabStop = true;
             this.linkLabel_Kembali.Text = "Kembali";
@@ -128,14 +138,17 @@
             // 
             // KategoriTambah
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.linkLabel_Kembali);
             this.Controls.Add(this.label_error);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button_Tambah);
             this.Controls.Add(this.textBox_Kategori);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Poppins Medium", 8.25F);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "KategoriTambah";
             this.Size = new System.Drawing.Size(600, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

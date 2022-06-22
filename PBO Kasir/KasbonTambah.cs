@@ -31,7 +31,7 @@ namespace PBO_Kasir
             }
             else
             {
-                objKasbonModel.tambahBon(textBox_Kode.Text,textBox_NamaBon.Text, textBox_AtasNama.Text,textBox_Jumlah.Text.ToString().Replace(@",", @"."), dateTimePicker_TanggalHutang.Value.ToString("yyyy-MM-dd"), dateTimePicker_TenggatHutang.Value.ToString("yyyy-MM-dd"));
+                objKasbonModel.tambahBon(textBox_Kode.Text, textBox_NamaBon.Text, textBox_AtasNama.Text, textBox_Jumlah.Text.ToString().Replace(@",", @"."), dateTimePicker_TanggalHutang.Value.ToString("yyyy-MM-dd"), dateTimePicker_TenggatHutang.Value.ToString("yyyy-MM-dd"));
                 objParent.showMenuKasbon();
             }
 
@@ -80,6 +80,11 @@ namespace PBO_Kasir
         }
 
         private void textBox_Jumlah_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_Kode_TextChanged(object sender, EventArgs e)
         {
 
         }
