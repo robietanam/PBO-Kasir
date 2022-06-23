@@ -57,16 +57,17 @@
             this.label_error = new System.Windows.Forms.Label();
             this.textBox_Bayar = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Bon)).BeginInit();
             this.SuspendLayout();
             // 
             // Kasbonlabel
             // 
             this.Kasbonlabel.AutoSize = true;
-            this.Kasbonlabel.Location = new System.Drawing.Point(19, 19);
+            this.Kasbonlabel.Location = new System.Drawing.Point(21, 24);
             this.Kasbonlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Kasbonlabel.Name = "Kasbonlabel";
-            this.Kasbonlabel.Size = new System.Drawing.Size(50, 19);
+            this.Kasbonlabel.Size = new System.Drawing.Size(43, 13);
             this.Kasbonlabel.TabIndex = 0;
             this.Kasbonlabel.Text = "Kasbon";
             this.Kasbonlabel.Click += new System.EventHandler(this.Kasbonlabel_Click);
@@ -261,7 +262,7 @@
             this.label1.Location = new System.Drawing.Point(19, 378);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 19);
+            this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "Kode             : ";
             this.label1.Visible = false;
@@ -273,7 +274,7 @@
             this.label2.Location = new System.Drawing.Point(19, 397);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 19);
+            this.label2.Size = new System.Drawing.Size(68, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Atas Nama  :";
             this.label2.Visible = false;
@@ -282,10 +283,10 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(238, 382);
+            this.label3.Location = new System.Drawing.Point(236, 378);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 19);
+            this.label3.Size = new System.Drawing.Size(64, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Jumlah       :";
             this.label3.Visible = false;
@@ -329,7 +330,7 @@
             this.label_Kode.Location = new System.Drawing.Point(102, 382);
             this.label_Kode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Kode.Name = "label_Kode";
-            this.label_Kode.Size = new System.Drawing.Size(18, 19);
+            this.label_Kode.Size = new System.Drawing.Size(13, 13);
             this.label_Kode.TabIndex = 12;
             this.label_Kode.Text = "- ";
             this.label_Kode.Visible = false;
@@ -338,10 +339,10 @@
             // 
             this.label_Jumlah.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Jumlah.AutoSize = true;
-            this.label_Jumlah.Location = new System.Drawing.Point(320, 382);
+            this.label_Jumlah.Location = new System.Drawing.Point(318, 378);
             this.label_Jumlah.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Jumlah.Name = "label_Jumlah";
-            this.label_Jumlah.Size = new System.Drawing.Size(18, 19);
+            this.label_Jumlah.Size = new System.Drawing.Size(13, 13);
             this.label_Jumlah.TabIndex = 13;
             this.label_Jumlah.Text = "- ";
             this.label_Jumlah.Visible = false;
@@ -353,7 +354,7 @@
             this.label_atasNama.Location = new System.Drawing.Point(102, 401);
             this.label_atasNama.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_atasNama.Name = "label_atasNama";
-            this.label_atasNama.Size = new System.Drawing.Size(18, 19);
+            this.label_atasNama.Size = new System.Drawing.Size(13, 13);
             this.label_atasNama.TabIndex = 14;
             this.label_atasNama.Text = "- ";
             this.label_atasNama.Visible = false;
@@ -365,7 +366,7 @@
             this.label4.Location = new System.Drawing.Point(19, 420);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 19);
+            this.label4.Size = new System.Drawing.Size(69, 13);
             this.label4.TabIndex = 15;
             this.label4.Text = "Nama Bon   :";
             this.label4.Visible = false;
@@ -377,7 +378,7 @@
             this.label_namaBon.Location = new System.Drawing.Point(102, 420);
             this.label_namaBon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_namaBon.Name = "label_namaBon";
-            this.label_namaBon.Size = new System.Drawing.Size(18, 19);
+            this.label_namaBon.Size = new System.Drawing.Size(13, 13);
             this.label_namaBon.TabIndex = 16;
             this.label_namaBon.Text = "- ";
             this.label_namaBon.Visible = false;
@@ -386,10 +387,10 @@
             // 
             this.label_error.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label_error.AutoSize = true;
-            this.label_error.Location = new System.Drawing.Point(390, 382);
+            this.label_error.Location = new System.Drawing.Point(388, 378);
             this.label_error.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_error.Name = "label_error";
-            this.label_error.Size = new System.Drawing.Size(15, 19);
+            this.label_error.Size = new System.Drawing.Size(10, 13);
             this.label_error.TabIndex = 17;
             this.label_error.Text = "-";
             this.label_error.Visible = false;
@@ -397,33 +398,45 @@
             // 
             // textBox_Bayar
             // 
-            this.textBox_Bayar.Location = new System.Drawing.Point(324, 404);
+            this.textBox_Bayar.Location = new System.Drawing.Point(323, 397);
             this.textBox_Bayar.Name = "textBox_Bayar";
-            this.textBox_Bayar.Size = new System.Drawing.Size(81, 24);
+            this.textBox_Bayar.Size = new System.Drawing.Size(125, 20);
             this.textBox_Bayar.TabIndex = 19;
             this.textBox_Bayar.Visible = false;
             this.textBox_Bayar.TextChanged += new System.EventHandler(this.textBox_Bayar_TextChanged);
             this.textBox_Bayar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_Bayar_KeyPress);
-
             // 
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(238, 407);
+            this.label5.Location = new System.Drawing.Point(237, 400);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 19);
+            this.label5.Size = new System.Drawing.Size(67, 13);
             this.label5.TabIndex = 20;
             this.label5.Text = "Bayar          :";
             this.label5.Visible = false;
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(238, 424);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 13);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "label_error";
+            this.label6.Visible = false;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
             // Kasbon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox_Bayar);
             this.Controls.Add(this.label_error);
@@ -444,7 +457,7 @@
             this.Controls.Add(this.button_TambahBon);
             this.Controls.Add(this.dataGridView_Bon);
             this.Controls.Add(this.Kasbonlabel);
-            this.Font = new System.Drawing.Font("Poppins Medium", 8.25F);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Kasbon";
             this.Size = new System.Drawing.Size(600, 450);
@@ -486,5 +499,6 @@
         private System.Windows.Forms.Label label_error;
         private System.Windows.Forms.TextBox textBox_Bayar;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

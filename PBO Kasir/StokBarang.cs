@@ -19,7 +19,7 @@ namespace PBO_Kasir
         SqlDBHelper objSqlDb = new SqlDBHelper();
         barangModel objBarangModel = new barangModel();
         KategoriTambah objKategoriTambah;
-
+        fitur objFitur = new fitur();
 
         public StokBarang(mainForm pantek_parent)
         {
@@ -105,11 +105,12 @@ namespace PBO_Kasir
             if (!checkFormatBarang(textBox_Kode.Text, textBox_NamaBarang.Text, textBox_HargaDasar.Text, textBox_HargaBarang.Text, textBox_Stok.Text, comboBox_Kategori.Text.ToString()))
             {
                 label_error.Text = "Data tidak lengkap ";
-                
+                objFitur.countdownTimer(label_error);
             }
             else if (objBarangModel.checkValueAda("kode_barang",  textBox_Kode.Text, "barang"))
             {
                 label_kode.Text = "Kode harus unik";
+                objFitur.countdownTimer(label_kode);
             }
 
             else

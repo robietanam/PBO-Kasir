@@ -17,6 +17,7 @@ namespace PBO_Kasir
         barangModel objBarangModel = new barangModel();
         List<string> hapusKodeBarang = new List<string>();
         DataTable dtBarang = new DataTable();
+        fitur objFitur = new fitur();
         public Barang(mainForm pantek_parent)
         {
             InitializeComponent();
@@ -101,7 +102,7 @@ namespace PBO_Kasir
             button_Hapus.Visible = true;
             HapusBarang.Visible = false;
             label_Status.Text = "Data Tersimpan";
-
+            objFitur.countdownTimer(label_Status);
             updateDataBarang(out dtBarang);
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.DataSource = dtBarang;

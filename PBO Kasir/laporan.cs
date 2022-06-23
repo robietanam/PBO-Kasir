@@ -17,6 +17,7 @@ namespace PBO_Kasir
         List<string> hapusKodeBarang = new List<string>();
         DataTable dtTransaski = new DataTable();
         laporanModel objFiturModel = new laporanModel();
+        fitur objFitur = new fitur();
         public laporan()
         {
             InitializeComponent();
@@ -85,7 +86,7 @@ namespace PBO_Kasir
             button_Hapus.Visible = true;
             HapusBarang.Visible = false;
             label_status.Text = "Data Tersimpan";
-
+            objFitur.countdownTimer(label_status);
             updateDataBarang(out dtTransaski);
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.DataSource = dtTransaski;

@@ -17,7 +17,8 @@ namespace PBO_Kasir
         DataTable dtKonfirmasi = new DataTable();
         transaksiModel objTransaksiModel = new transaksiModel();
         float HargaTotal;
-        
+        fitur objFitur = new fitur();
+
         public Konfirmasi(mainForm pantek_parent)
         {
             InitializeComponent();
@@ -45,6 +46,7 @@ namespace PBO_Kasir
             if (HargaTotal > Bayar)
             {
                 label_error.Text = "Bayar Tidak Cukup";
+                objFitur.countdownTimer(label_error);
             }
             else
             {

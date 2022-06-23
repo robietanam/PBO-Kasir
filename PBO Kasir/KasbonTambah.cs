@@ -15,7 +15,7 @@ namespace PBO_Kasir
     {
         mainForm objParent;
         kasbonModel objKasbonModel = new kasbonModel();
-
+        fitur objFitur = new fitur();
         public KasbonTambah(mainForm pantek_parent)
         {
             InitializeComponent();
@@ -28,6 +28,7 @@ namespace PBO_Kasir
             if (string.IsNullOrEmpty(textBox_AtasNama.Text) || string.IsNullOrEmpty(textBox_NamaBon.Text) || string.IsNullOrEmpty(textBox_Jumlah.Text) || string.IsNullOrEmpty(textBox_Kode.Text))
             {
                 label_error.Text = "Data belum lengkap";
+                objFitur.countdownTimer(label_error);
             }
             else
             {

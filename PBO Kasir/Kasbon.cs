@@ -20,6 +20,7 @@ namespace PBO_Kasir
         string kodeBayar;
         string hargaBayar;
         string atasNama;
+        fitur objFitur = new fitur();
         public Kasbon(mainForm pantek_parent)
         {
             InitializeComponent();
@@ -201,7 +202,8 @@ namespace PBO_Kasir
             }
             else
             {
-                label_error.Text = "Uang tidak Cukup";
+                label6.Text = "Uang tidak Cukup";
+                objFitur.countdownTimer(label6);
             }
         
         }
@@ -263,6 +265,11 @@ namespace PBO_Kasir
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }
