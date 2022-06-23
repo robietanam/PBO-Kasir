@@ -23,6 +23,7 @@ namespace PBO_Kasir
         Konfirmasi objKonfirmasi;
         KonfirmasiBerhasil objKonfirmasiBerhasil;
         KategoriTambah objKategoriTambah;
+        laporan objLaporan;
 
         int offset_lebar_menu = 200;
         int lebar_menu = 600;
@@ -88,6 +89,11 @@ namespace PBO_Kasir
             objUserProfile.Location = new Point(200, 0);
             objUserProfile.Anchor = ((AnchorStyles.Left | AnchorStyles.Right) | (AnchorStyles.Bottom | AnchorStyles.Top));
             this.Controls.Add(objUserProfile);
+
+            objLaporan = new laporan();
+            objLaporan.Location = new Point(200, 0);
+            objLaporan.Anchor = ((AnchorStyles.Left | AnchorStyles.Right) | (AnchorStyles.Bottom | AnchorStyles.Top));
+            this.Controls.Add(objLaporan);
             /*objPlayground = new playground(this);
             objPlayground.Location = new Point(200, 0);
             objPlayground.Anchor = ((AnchorStyles.Left | AnchorStyles.Right) | (AnchorStyles.Bottom | AnchorStyles.Top));
@@ -180,6 +186,11 @@ namespace PBO_Kasir
             objKonfirmasi.isiDatanya(objTransaksi.isiDataKonfirmasi());
             objKonfirmasi.Visible = true;
         }
+        public void showLaporan()
+        {
+            hideFiturPanel();
+            objLaporan.Visible = true;
+        }
         public void hideFiturPanel()
         {
             objUserProfile.Visible = false;
@@ -192,6 +203,7 @@ namespace PBO_Kasir
             objKasbonTambah.Visible = false;
             objKonfirmasi.Visible = false;
             objKonfirmasiBerhasil.Visible = false;
+            objLaporan.Visible = false;
         }
         public void hideMainForm()
         {
@@ -231,6 +243,7 @@ namespace PBO_Kasir
         private void btnMenu_Barang_Click(object sender, EventArgs e)
         {
             showMenuBarang();
+            objBarang.updateData();
         }
 
         private void btnMenu_Transaksi_Click(object sender, EventArgs e)
@@ -259,6 +272,11 @@ namespace PBO_Kasir
         {
             hideFiturPanel();
             objUserProfile.Visible = true;
+        }
+
+        private void btnMenu_Laporan_Click(object sender, EventArgs e)
+        {
+            showLaporan();
         }
         /* public void showPeranForm()
 {

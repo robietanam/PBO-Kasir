@@ -402,7 +402,9 @@
             this.textBox_Bayar.Size = new System.Drawing.Size(81, 24);
             this.textBox_Bayar.TabIndex = 19;
             this.textBox_Bayar.Visible = false;
-            this.textBox_Bayar.TextChanged += new System.EventHandler(this.textBox_Bayar_TextChanged_1);
+            this.textBox_Bayar.TextChanged += new System.EventHandler(this.textBox_Bayar_TextChanged);
+            this.textBox_Bayar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_Bayar_KeyPress);
+
             // 
             // label5
             // 

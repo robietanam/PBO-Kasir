@@ -73,7 +73,7 @@ namespace PBO_Kasir
             {
                 if (kodeBayar == row.Cells[1].Value.ToString())
                 {
-                    objTransaksiModel.simpanTransaksiKasbon(row.Cells[3].Value.ToString(), row.Cells[4].Value.ToString(), row.Cells[1].Value.ToString());
+                    objTransaksiModel.simpanTransaksiKasbon(row.Cells[3].Value.ToString(), float.Parse(row.Cells[4].Value.ToString()), row.Cells[1].Value.ToString());
                     objKasbonModel.hapusData(row.Cells[1].Value.ToString());
                 }
             }
@@ -193,27 +193,45 @@ namespace PBO_Kasir
 
         private void button_Bayar_Click(object sender, EventArgs e)
         {
-            try
+            if (Math.Round(float.Parse(textBox_Bayar.Text.ToString()), 2) > Math.Round(float.Parse(hargaBayar), 2))
             {
-                if (Math.Round(float.Parse(textBox_Bayar.Text.ToString()), 2) > Math.Round(float.Parse(hargaBayar), 2))
-                {
-                    bayarKasbon();
-                    objParent.showKonfirmasiBerhasilKasbon();
-                    resetBayar();
-                }
-                else
-                {
-                    label_error.Text = "Uang tidak Cukup";
-                }
+                bayarKasbon();
+                objParent.showKonfirmasiBerhasilKasbon();
+                resetBayar();
             }
-            catch
+            else
             {
                 label_error.Text = "Uang tidak Cukup";
             }
-            
-            
+        
+        }
+        private void textBox_Bayar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsNumber(e.KeyChar) || e.KeyChar == ',')
+            {
+                TextBox tb = sender as TextBox;
+                int cursorPosLeft = tb.SelectionStart;
+                int cursorPosRight = tb.SelectionStart + tb.SelectionLength;
+                string result = tb.Text.Substring(0, cursorPosLeft) + e.KeyChar + tb.Text.Substring(cursorPosRight);
+                string[] parts = result.Split(',');
+                if (parts.Length > 1)
+                {
+                    if (parts[1].Length > 2 || parts.Length > 2)
+                    {
+                        e.Handled = true;
+                    }
+                }
+            }
+            else e.Handled = e.KeyChar != (char)Keys.Back;
         }
 
+        private void textBox_Stok_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsNumber(e.KeyChar))
+            {
+                e.Handled = e.Handled = e.KeyChar != (char)Keys.Back;
+            }
+        }
         private void label_error_Click(object sender, EventArgs e)
         {
 

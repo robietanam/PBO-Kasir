@@ -54,7 +54,7 @@ namespace PBO_Kasir
                 }
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
-                    objTransaksiModel.simpanTransaksiBarang(textBox_Nama.Text.ToString(), row.Cells[2].Value.ToString(), row.Cells[0].Value.ToString());
+                    objTransaksiModel.simpanTransaksiBarang(textBox_Nama.Text.ToString(), float.Parse(row.Cells[2].Value.ToString()), row.Cells[0].Value.ToString());
                 }
                 dataGridView1.DataSource = null;
                 objParent.ResetTransaksi();
@@ -76,6 +76,34 @@ namespace PBO_Kasir
             objParent.showMenuTransaksi();
         }
 
+
+        private void textBox_Bayar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsNumber(e.KeyChar) || e.KeyChar == ',')
+            {
+                TextBox tb = sender as TextBox;
+                int cursorPosLeft = tb.SelectionStart;
+                int cursorPosRight = tb.SelectionStart + tb.SelectionLength;
+                string result = tb.Text.Substring(0, cursorPosLeft) + e.KeyChar + tb.Text.Substring(cursorPosRight);
+                string[] parts = result.Split(',');
+                if (parts.Length > 1)
+                {
+                    if (parts[1].Length > 2 || parts.Length > 2)
+                    {
+                        e.Handled = true;
+                    }
+                }
+            }
+            else e.Handled = e.KeyChar != (char)Keys.Back;
+        }
+        
+        private void textBox_Stok_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsNumber(e.KeyChar))
+            {
+                e.Handled = e.Handled = e.KeyChar != (char)Keys.Back;
+            }
+        }
 
         private void dataGridView1_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
         {
@@ -172,6 +200,11 @@ namespace PBO_Kasir
         }
 
         private void label4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_Bayar_TextChanged(object sender, EventArgs e)
         {
 
         }

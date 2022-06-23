@@ -33,6 +33,10 @@ namespace PBO_Kasir
             {
                 objKasbonModel.tambahBon(textBox_Kode.Text, textBox_NamaBon.Text, textBox_AtasNama.Text, textBox_Jumlah.Text.ToString().Replace(@",", @"."), dateTimePicker_TanggalHutang.Value.ToString("yyyy-MM-dd"), dateTimePicker_TenggatHutang.Value.ToString("yyyy-MM-dd"));
                 objParent.showMenuKasbon();
+                textBox_Kode.Text = "";
+                textBox_AtasNama.Text = "";
+                textBox_Jumlah.Text = "";
+                textBox_NamaBon.Text = "";
             }
 
         }

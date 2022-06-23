@@ -128,6 +128,12 @@
     <Compile Include="Konfirmasi.Designer.cs">
       <DependentUpon>Konfirmasi.cs</DependentUpon>
     </Compile>
+    <Compile Include="laporan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="laporan.Designer.cs">
+      <DependentUpon>laporan.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,7 @@
     </Compile>
     <Compile Include="models\barangModel.cs" />
     <Compile Include="models\fitur.cs" />
+    <Compile Include="models\laporanModel.cs" />
     <Compile Include="models\userModel.cs" />
     <Compile Include="models\kasbonModel.cs" />
     <Compile Include="models\transaksiModel.cs" />
@@ -219,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Konfirmasi.resx">
       <DependentUpon>Konfirmasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan.resx">
+      <DependentUpon>laporan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StokBarang.resx">
       <DependentUpon>StokBarang.cs</DependentUpon>

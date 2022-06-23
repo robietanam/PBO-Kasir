@@ -180,6 +180,7 @@ namespace PBO_Kasir
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             objParent.showMenuBarang();
+            objParent.showMenuBarang();
         }
     }
 }
