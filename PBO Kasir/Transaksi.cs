@@ -42,6 +42,10 @@ namespace PBO_Kasir
             dgv[comboBox_Kategori.Text].Visible = true;
 
         }
+        public void updateGridView()
+        {
+            tampilGridView(comboBox_Kategori.Text);
+        }
         public void membuatGridView(string kategori)
         {
             var rand = new Random();
@@ -126,7 +130,6 @@ namespace PBO_Kasir
             genGridView.Columns.Add(JumlahBarang);
             genGridView.Columns.Add(TambahBarang);
             genGridView.Columns.Add(KurangiBarang);
-
             this.Controls.Add(genGridView);
 
             //label1.Text = "sukses";
@@ -139,6 +142,7 @@ namespace PBO_Kasir
                 if (dg == dgv[kategori])
                 {
                     dg.Visible = true;
+                    dg.DataSource = objBarangModel.getDataBarangTransaksi(ref kategori);
                 }
                 else
                 {
@@ -183,6 +187,7 @@ namespace PBO_Kasir
             dt.Columns.Add("Harga", typeof(string));
             dt.Columns.Add("Stok", typeof(int));
             dt.Columns.Add("Jumlah", typeof(int));
+            dt.Columns.Add("Harga_Dasar", typeof(string));
             //Adding the Columns.
             foreach (DataGridView dg in dgv.Values)
             {

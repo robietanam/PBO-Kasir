@@ -113,9 +113,7 @@
             this.textBox_Bayar.Size = new System.Drawing.Size(182, 20);
             this.textBox_Bayar.TabIndex = 5;
             this.textBox_Bayar.TextChanged += new System.EventHandler(this.textBox_Bayar_TextChanged);
-            this.textBox_Bayar.TextChanged += new System.EventHandler(this.textBox_Bayar_TextChanged);
             this.textBox_Bayar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_Bayar_KeyPress);
-
             // 
             // label3
             // 
@@ -127,6 +125,7 @@
             this.label3.Size = new System.Drawing.Size(84, 17);
             this.label3.TabIndex = 7;
             this.label3.Text = "List Barang ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // msgText
             // 
@@ -167,7 +166,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(559, 228);
             this.dataGridView1.TabIndex = 14;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            
             // 
             // label_error
             // 

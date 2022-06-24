@@ -24,6 +24,10 @@ namespace PBO_Kasir
             dataGridView1.DataSource = objFiturModel.getHasilTransaksi(comboBox_Kategori.Text);
             comboBox_Kategori.Text = "Pembelian";
         }
+        public void updateGridLaporan()
+        {
+            dataGridView1.DataSource = objFiturModel.getHasilTransaksi(comboBox_Kategori.Text);
+        }
         public void updateDataBarang(out DataTable dt)
         {
             dt = objFiturModel.getHasilTransaksi(comboBox_Kategori.Text);

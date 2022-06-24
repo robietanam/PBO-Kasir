@@ -40,7 +40,8 @@ namespace PBO_Kasir
             
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-                HargaTotal += float.Parse(row.Cells[2].Value.ToString());
+                
+                HargaTotal += float.Parse(row.Cells[2].Value.ToString()) - float.Parse(objTransaksiModel.getHargaDasar(row.Cells[0].Value.ToString()).Rows[0][0].ToString());
             }
 
             if (HargaTotal > Bayar)
@@ -56,7 +57,7 @@ namespace PBO_Kasir
                 }
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
-                    objTransaksiModel.simpanTransaksiBarang(textBox_Nama.Text.ToString(), float.Parse(row.Cells[2].Value.ToString()), row.Cells[0].Value.ToString());
+                    objTransaksiModel.simpanTransaksiBarang(textBox_Nama.Text.ToString(), HargaTotal, row.Cells[0].Value.ToString());
                 }
                 dataGridView1.DataSource = null;
                 objParent.ResetTransaksi();
@@ -209,6 +210,11 @@ namespace PBO_Kasir
         private void textBox_Bayar_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            label_error.Text = objTransaksiModel.getHargaDasar(dataGridView1.Rows[0].Cells[0].Value.ToString()).Rows[0][0].ToString();
         }
     }
 }

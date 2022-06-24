@@ -30,8 +30,6 @@ namespace PBO_Kasir
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView_Barang = new System.Windows.Forms.DataGridView();
             this.button_Selanjutnya = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,14 +52,6 @@ namespace PBO_Kasir
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_Barang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins Medium", 9F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Barang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView_Barang.ColumnHeadersHeight = 30;
             this.dataGridView_Barang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.KodeBarang,
@@ -71,16 +61,8 @@ namespace PBO_Kasir
             this.JumlahBarang,
             this.TambahBarang,
             this.KurangiBarang});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Poppins Medium", 9F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_Barang.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView_Barang.Location = new System.Drawing.Point(26, 70);
-            this.dataGridView_Barang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView_Barang.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView_Barang.MaximumSize = new System.Drawing.Size(2333, 2923);
             this.dataGridView_Barang.Name = "dataGridView_Barang";
             this.dataGridView_Barang.RowHeadersVisible = false;
@@ -95,10 +77,10 @@ namespace PBO_Kasir
             this.button_Selanjutnya.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_Selanjutnya.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
             this.button_Selanjutnya.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Selanjutnya.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            this.button_Selanjutnya.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button_Selanjutnya.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button_Selanjutnya.Location = new System.Drawing.Point(467, 20);
-            this.button_Selanjutnya.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_Selanjutnya.Margin = new System.Windows.Forms.Padding(4);
             this.button_Selanjutnya.Name = "button_Selanjutnya";
             this.button_Selanjutnya.Size = new System.Drawing.Size(107, 30);
             this.button_Selanjutnya.TabIndex = 2;
@@ -109,11 +91,11 @@ namespace PBO_Kasir
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label1.Location = new System.Drawing.Point(21, 21);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 25);
+            this.label1.Size = new System.Drawing.Size(54, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Barang";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -126,7 +108,7 @@ namespace PBO_Kasir
             this.label2.Location = new System.Drawing.Point(271, 27);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 19);
+            this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 12;
             this.label2.Text = "Barang";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -136,9 +118,9 @@ namespace PBO_Kasir
             this.comboBox_Kategori.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Kategori.FormattingEnabled = true;
             this.comboBox_Kategori.Location = new System.Drawing.Point(91, 21);
-            this.comboBox_Kategori.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox_Kategori.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox_Kategori.Name = "comboBox_Kategori";
-            this.comboBox_Kategori.Size = new System.Drawing.Size(140, 27);
+            this.comboBox_Kategori.Size = new System.Drawing.Size(140, 21);
             this.comboBox_Kategori.TabIndex = 5;
             this.comboBox_Kategori.SelectedIndexChanged += new System.EventHandler(this.comboBox_Kategori_SelectedIndexChanged);
             // 
@@ -203,7 +185,7 @@ namespace PBO_Kasir
             // 
             // Transaksi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.label2);
@@ -211,8 +193,8 @@ namespace PBO_Kasir
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_Selanjutnya);
             this.Controls.Add(this.dataGridView_Barang);
-            this.Font = new System.Drawing.Font("Poppins Medium", 8.25F);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Transaksi";
             this.Size = new System.Drawing.Size(600, 450);
             this.Load += new System.EventHandler(this.Transaksi_Load);

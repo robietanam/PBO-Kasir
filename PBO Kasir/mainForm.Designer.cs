@@ -144,7 +144,6 @@
             this.btnMenu_Barang.Size = new System.Drawing.Size(200, 44);
             this.btnMenu_Barang.TabIndex = 2;
             this.btnMenu_Barang.Text = "Manajemen Barang";
-            this.btnMenu_Barang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMenu_Barang.UseVisualStyleBackColor = true;
             this.btnMenu_Barang.Click += new System.EventHandler(this.btnMenu_Barang_Click);
             // 
