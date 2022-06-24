@@ -29,6 +29,11 @@ namespace PBO_Kasir
             button_Cancel.Visible = false;
             label_Status.Text = "";
         }
+        public void updateKategoriBarang()
+        {
+            comboBox_Kategori.DisplayMember = "id_kategori";
+            comboBox_Kategori.DataSource = objBarangModel.getKategori();
+        }
         public void updateDataBarang(out DataTable dt)
         {
             dt = objBarangModel.getDataBarang(comboBox_Kategori.Text);
@@ -44,7 +49,6 @@ namespace PBO_Kasir
             {
                 //row.Cells[1].Value;
                 objBarangModel.updateBarang(row.Cells[1].Value.ToString(), row.Cells[2].Value.ToString(), float.Parse(row.Cells[3].Value.ToString()), float.Parse(row.Cells[4].Value.ToString()), row.Cells[5].Value.ToString(), comboBox_Kategori.Text.ToString());
-                label2.Text = row.Cells[4].Value.ToString();
             }
             if (hapusKodeBarang.Count > 0)
             {
@@ -161,6 +165,11 @@ namespace PBO_Kasir
         private void Barang_Load(object sender, EventArgs e)
         {
             StyleDatageidview();
+        }
+
+        private void label_Status_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

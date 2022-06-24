@@ -18,16 +18,16 @@ namespace PBO_Kasir.models
         public void simpanTransaksiBarang(string nama_pelanggan, float jumlah_pemasukan, string kode_barang)
         {
             string jenis_transaksi = "Pembelian";
-            string query = "insert into transaksi(jenis_transaksi,nama_pelanggan,jumlah_pemasukan,barang_kode_barang) values ('{0}', '{1}', '{2}', '{3}')";
-            query = string.Format(query,jenis_transaksi, nama_pelanggan, jumlah_pemasukan, kode_barang);
+            string query = "insert into transaksi(jenis_transaksi,nama_pelanggan,jumlah_pemasukan) values ('{0}', '{1}', '{2}')";
+            query = string.Format(query,jenis_transaksi, nama_pelanggan, jumlah_pemasukan.ToString().Replace(',','.'));
             objSqlDb.ExecuteNonQuery(query);
 
         }
-        public void simpanTransaksiKasbon(string nama_pelanggan, float jumlah_pemasukan, string kode_kasbon)
+        public void simpanTransaksiKasbon(string nama_pelanggan, float jumlah_pemasukan)
         {
             string jenis_transaksi = "Kasbon";
-            string query = "insert into transaksi(jenis_transaksi,nama_pelanggan,jumlah_pemasukan,kasbon_kode_kasbon ) values ('{0}', '{1}', '{2}', '{3}')";
-            query = string.Format(query, jenis_transaksi, nama_pelanggan, jumlah_pemasukan, kode_kasbon);
+            string query = "insert into transaksi(jenis_transaksi,nama_pelanggan,jumlah_pemasukan ) values ('{0}', '{1}', '{2}')";
+            query = string.Format(query, jenis_transaksi, nama_pelanggan, jumlah_pemasukan);
             objSqlDb.ExecuteNonQuery(query);
 
         }

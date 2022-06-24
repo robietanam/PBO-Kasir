@@ -118,16 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnProfil.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAF
-        hgAABYYBG6Yz4AAAAQhJREFUOE+9VFsRgzAQRAIOigQkVAIScNA6oA5aB8VBJSChEiqhEtLdy91AHuXx
-        k51Zwr02OZJQFYVzrgX7HWy05D+QNIBHMGhpCgRrn+M+YG5FMd8gUatECAQaH3c3da2CeT7dndQVAoFy
-        gvCdQcY7jupLBWEwodf3rCBsii0xqT8UxMvd2wJuyJbgV8eH+mdBPGxHX6C1sNYy82VSdSWCVsxVyrZj
-        NB8n4eGmvUbmEfWy2CDfAePozd2Q9peCE3gVpwI2Dy3b2WKnJYGgfC+MF/AJzklHgMJYkCslkg0h4Ofx
-        4lUrd83s2HDW+NLnyB8GkV8hgaDNuhfb3SCJredWFLPVkhKoqh83VPc+yd1lJAAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="btnMenu_Pengaturan.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAF

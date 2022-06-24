@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnProfil = new System.Windows.Forms.Button();
             this.btnMenu_Pengaturan = new System.Windows.Forms.Button();
             this.btnMenu_Laporan = new System.Windows.Forms.Button();
             this.btnMenu_Kasbon = new System.Windows.Forms.Button();
@@ -43,7 +42,6 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
-            this.panelMenu.Controls.Add(this.btnProfil);
             this.panelMenu.Controls.Add(this.btnMenu_Pengaturan);
             this.panelMenu.Controls.Add(this.btnMenu_Laporan);
             this.panelMenu.Controls.Add(this.btnMenu_Kasbon);
@@ -55,24 +53,6 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(200, 450);
             this.panelMenu.TabIndex = 0;
-            // 
-            // btnProfil
-            // 
-            this.btnProfil.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProfil.FlatAppearance.BorderSize = 0;
-            this.btnProfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.btnProfil.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnProfil.Image = ((System.Drawing.Image)(resources.GetObject("btnProfil.Image")));
-            this.btnProfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProfil.Location = new System.Drawing.Point(0, 320);
-            this.btnProfil.Name = "btnProfil";
-            this.btnProfil.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
-            this.btnProfil.Size = new System.Drawing.Size(200, 44);
-            this.btnProfil.TabIndex = 6;
-            this.btnProfil.Text = "Profile";
-            this.btnProfil.UseVisualStyleBackColor = true;
-            this.btnProfil.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnMenu_Pengaturan
             // 
@@ -199,6 +179,5 @@
         private System.Windows.Forms.Button btnMenu_Barang;
         private System.Windows.Forms.Button btnMenu_Transaksi;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnProfil;
     }
 }

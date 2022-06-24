@@ -171,12 +171,13 @@
             // 
             this.label_error.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label_error.AutoSize = true;
-            this.label_error.Location = new System.Drawing.Point(285, 410);
+            this.label_error.Location = new System.Drawing.Point(18, 388);
             this.label_error.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_error.Name = "label_error";
             this.label_error.Size = new System.Drawing.Size(56, 13);
             this.label_error.TabIndex = 15;
             this.label_error.Text = "label_error";
+            this.label_error.Visible = false;
             this.label_error.Click += new System.EventHandler(this.label4_Click_1);
             // 
             // Konfirmasi

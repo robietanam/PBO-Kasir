@@ -17,13 +17,13 @@ namespace PBO_Kasir.models
         }
         public DataTable getLogin()
         {
-            string query = "SELECT * FROM userLogin;";
+            string query = "SELECT * FROM user_login;";
             DataTable dt = objSqlDb.ExecuteQuery(query);
             return dt;
         }
         public void updateLogin(string nama_user, string password)
         {
-            string query = @"update userLogin set nama_user = :nama::varchar(255),
+            string query = @"update user_login set username = :nama::varchar(255),
                                 password = :pass::varchar(255) 
                                 where no_index = 1;";
 

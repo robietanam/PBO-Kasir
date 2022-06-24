@@ -74,7 +74,7 @@ namespace PBO_Kasir
             {
                 if (kodeBayar == row.Cells[1].Value.ToString())
                 {
-                    objTransaksiModel.simpanTransaksiKasbon(row.Cells[3].Value.ToString(), float.Parse(row.Cells[4].Value.ToString()), row.Cells[1].Value.ToString());
+                    objTransaksiModel.simpanTransaksiKasbon(row.Cells[3].Value.ToString(), float.Parse(row.Cells[4].Value.ToString()));
                     objKasbonModel.hapusData(row.Cells[1].Value.ToString());
                 }
             }
@@ -169,6 +169,7 @@ namespace PBO_Kasir
             button_Bayar.Visible = true;
             button_BayarCancel.Visible = true;
             textBox_Bayar.Visible = true;
+            textBox_Bayar.Text = "0";
         }
         private void hideBayarKasbonMenu()
         {
@@ -184,6 +185,7 @@ namespace PBO_Kasir
             button_Bayar.Visible = false;
             button_BayarCancel.Visible = false;
             textBox_Bayar.Visible = false;
+            textBox_Bayar.Text = "0";
         }
         private void button_BayarCancel_Click(object sender, EventArgs e)
         {

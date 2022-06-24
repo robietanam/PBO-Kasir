@@ -16,6 +16,7 @@ namespace PBO_Kasir
         mainForm objParent;
         DataTable dtKonfirmasi = new DataTable();
         transaksiModel objTransaksiModel = new transaksiModel();
+        barangModel objBarangModel = new barangModel();
         float HargaTotal;
         fitur objFitur = new fitur();
 
@@ -34,14 +35,10 @@ namespace PBO_Kasir
         {
             HargaTotal = 0;
             
-
             float Bayar = float.Parse(textBox_Bayar.Text.ToString());
-
-            
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-                
-                HargaTotal += float.Parse(row.Cells[2].Value.ToString()) - float.Parse(objTransaksiModel.getHargaDasar(row.Cells[0].Value.ToString()).Rows[0][0].ToString());
+                HargaTotal += float.Parse(row.Cells[2].Value.ToString());
             }
 
             if (HargaTotal > Bayar)
@@ -57,14 +54,16 @@ namespace PBO_Kasir
                 }
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
-                    objTransaksiModel.simpanTransaksiBarang(textBox_Nama.Text.ToString(), HargaTotal, row.Cells[0].Value.ToString());
+                    float Harga = float.Parse(row.Cells[2].Value.ToString()) - float.Parse(objTransaksiModel.getHargaDasar(row.Cells[0].Value.ToString()).Rows[0][0].ToString());
+                    objTransaksiModel.simpanTransaksiBarang(textBox_Nama.Text.ToString(), Harga, row.Cells[0].Value.ToString());
+                    objBarangModel.updateStok(row.Cells[0].Value.ToString(), int.Parse(row.Cells[3].Value.ToString()));
                 }
                 dataGridView1.DataSource = null;
                 objParent.ResetTransaksi();
                 //objTransaksiModel.simpanTransaksi();
                 objParent.showKonfirmasiBerhasilBarang();
                 textBox_Nama.Text = "";
-                textBox_Bayar.Text = "";
+                textBox_Bayar.Text = "0";
                 
             }
             

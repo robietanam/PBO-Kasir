@@ -32,6 +32,11 @@ namespace PBO_Kasir
             comboBox_Kategori.DataSource = objBarangModel.getKategori();
 
         }
+        public void updateDataKategori()
+        {
+            comboBox_Kategori.DisplayMember = "id_kategori";
+            comboBox_Kategori.DataSource = objBarangModel.getKategori();
+        }
         public bool checkFormatBarang(string kode, string nama, string hargaDasar, string hargaJual, string stok, string kategori)
         {
             bool check;
@@ -182,6 +187,11 @@ namespace PBO_Kasir
         {
             objParent.showMenuBarang();
             objParent.showMenuBarang();
+        }
+
+        private void StokBarang_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -43,7 +43,16 @@ namespace PBO_Kasir.models
             DataTable dt = objSqlDb.ExecuteQuery(query);
             return dt;
         }
+        public void updateStok(string kode, int stok)
+        {
+            string query = @"update barang set stok = :stoki::integer
+                                where kode_barang = :kode::varchar(100);";
 
+            objSqlDb.ExecuteNonQuery(query,
+                new NpgsqlParameter(":kode", kode),
+                new NpgsqlParameter(":stoki", stok)
+                );
+        }
         public DataTable getDataBarang(string kategori)
         {
             string query = "select row_number(*) over() as nomor, t1.kode_barang,nama_barang,harga_dasar,harga_jual,stok from barang t1 where kategori_id_kategori = '" + kategori + "'";

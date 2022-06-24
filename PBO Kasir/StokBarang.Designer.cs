@@ -102,7 +102,6 @@
             this.textBox_HargaBarang.TabIndex = 9;
             this.textBox_HargaBarang.TextChanged += new System.EventHandler(this.textBox_HargaBarang_TextChanged);
             this.textBox_HargaBarang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_HargaBarang_KeyPress);
-            
             // 
             // label4
             // 
@@ -244,6 +243,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "StokBarang";
             this.Size = new System.Drawing.Size(600, 450);
+            this.Load += new System.EventHandler(this.StokBarang_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

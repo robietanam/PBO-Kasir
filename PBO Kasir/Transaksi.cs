@@ -187,7 +187,6 @@ namespace PBO_Kasir
             dt.Columns.Add("Harga", typeof(string));
             dt.Columns.Add("Stok", typeof(int));
             dt.Columns.Add("Jumlah", typeof(int));
-            dt.Columns.Add("Harga_Dasar", typeof(string));
             //Adding the Columns.
             foreach (DataGridView dg in dgv.Values)
             {
@@ -225,7 +224,6 @@ namespace PBO_Kasir
                     {
                         if (row.Cells[0].Value != null && int.Parse(row.Cells[0].Value.ToString()) > 0)
                         {
-                            label1.Text = row.Cells[0].Value.ToString();
                             dt.Rows.Add(row.Cells[3].Value, row.Cells[4].Value, row.Cells[5].Value, row.Cells[6].Value, row.Cells[0].Value);
                         }
                     }

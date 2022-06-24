@@ -138,12 +138,14 @@ namespace PBO_Kasir
         public void showMenuBarang()
         {
             hideFiturPanel();
+            objBarang.updateKategoriBarang();
             objBarang.Visible = true;
         }
         public void showplsStokBarang()
         {
             hideFiturPanel();
             objStokBarang.Visible = true;
+            objStokBarang.updateDataKategori();
         }
         public void showMenuTransaksi()
         {
@@ -190,6 +192,7 @@ namespace PBO_Kasir
         {
             hideFiturPanel();
             objLaporan.Visible = true;
+            objLaporan.updateGridLaporan();
         }
         public void hideFiturPanel()
         {
@@ -266,13 +269,13 @@ namespace PBO_Kasir
 
         private void btnMenu_Pengaturan_Click(object sender, EventArgs e)
         {
-
+            hideFiturPanel();
+            objUserProfile.Visible = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            hideFiturPanel();
-            objUserProfile.Visible = true;
+            
         }
 
         private void btnMenu_Laporan_Click(object sender, EventArgs e)
