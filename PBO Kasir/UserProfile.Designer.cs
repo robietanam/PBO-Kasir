@@ -38,6 +38,9 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(203, 155);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -48,8 +51,11 @@
             // 
             // textBox_nama
             // 
+            this.textBox_nama.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_nama.Location = new System.Drawing.Point(261, 151);
-            this.textBox_nama.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_nama.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_nama.Name = "textBox_nama";
             this.textBox_nama.Size = new System.Drawing.Size(177, 24);
             this.textBox_nama.TabIndex = 1;
@@ -57,8 +63,9 @@
             // 
             // button_simpan
             // 
+            this.button_simpan.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button_simpan.Location = new System.Drawing.Point(274, 256);
-            this.button_simpan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_simpan.Margin = new System.Windows.Forms.Padding(4);
             this.button_simpan.Name = "button_simpan";
             this.button_simpan.Size = new System.Drawing.Size(88, 34);
             this.button_simpan.TabIndex = 2;
@@ -68,14 +75,20 @@
             // 
             // textBox_password
             // 
+            this.textBox_password.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_password.Location = new System.Drawing.Point(261, 189);
-            this.textBox_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_password.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_password.Name = "textBox_password";
             this.textBox_password.Size = new System.Drawing.Size(177, 24);
             this.textBox_password.TabIndex = 3;
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(182, 193);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -86,6 +99,7 @@
             // 
             // label_status
             // 
+            this.label_status.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label_status.AutoSize = true;
             this.label_status.Location = new System.Drawing.Point(297, 294);
             this.label_status.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -106,7 +120,7 @@
             this.Controls.Add(this.textBox_nama);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Poppins Medium", 8.25F);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserProfile";
             this.Size = new System.Drawing.Size(600, 450);
             this.Load += new System.EventHandler(this.UserProfile_Load);

@@ -93,5 +93,10 @@ namespace PBO_Kasir
         {
 
         }
+
+        private void textBox_AtasNama_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

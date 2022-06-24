@@ -46,6 +46,9 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -55,12 +58,13 @@
             this.TanggalTransaksi,
             this.HapusBarang});
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 57);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 86);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView1.Size = new System.Drawing.Size(547, 347);
+            this.dataGridView1.Size = new System.Drawing.Size(544, 262);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -114,19 +118,20 @@
             this.comboBox_Kategori.Items.AddRange(new object[] {
             "Pembelian",
             "Kasbon"});
-            this.comboBox_Kategori.Location = new System.Drawing.Point(75, 25);
-            this.comboBox_Kategori.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox_Kategori.Location = new System.Drawing.Point(95, 29);
+            this.comboBox_Kategori.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.comboBox_Kategori.Name = "comboBox_Kategori";
-            this.comboBox_Kategori.Size = new System.Drawing.Size(140, 21);
+            this.comboBox_Kategori.Size = new System.Drawing.Size(163, 27);
             this.comboBox_Kategori.TabIndex = 6;
             this.comboBox_Kategori.SelectedIndexChanged += new System.EventHandler(this.comboBox_Kategori_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 28);
+            this.label1.Location = new System.Drawing.Point(33, 33);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.Size = new System.Drawing.Size(53, 19);
             this.label1.TabIndex = 7;
             this.label1.Text = "Laporan";
             // 
@@ -136,10 +141,10 @@
             this.button_Hapus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
             this.button_Hapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Hapus.ForeColor = System.Drawing.Color.White;
-            this.button_Hapus.Location = new System.Drawing.Point(491, 16);
-            this.button_Hapus.Margin = new System.Windows.Forms.Padding(4);
+            this.button_Hapus.Location = new System.Drawing.Point(481, 29);
+            this.button_Hapus.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.button_Hapus.Name = "button_Hapus";
-            this.button_Hapus.Size = new System.Drawing.Size(80, 25);
+            this.button_Hapus.Size = new System.Drawing.Size(93, 28);
             this.button_Hapus.TabIndex = 13;
             this.button_Hapus.Text = "Hapus";
             this.button_Hapus.UseVisualStyleBackColor = false;
@@ -152,10 +157,10 @@
             this.button_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.button_Cancel.ForeColor = System.Drawing.Color.White;
-            this.button_Cancel.Location = new System.Drawing.Point(315, 16);
-            this.button_Cancel.Margin = new System.Windows.Forms.Padding(4);
+            this.button_Cancel.Location = new System.Drawing.Point(276, 29);
+            this.button_Cancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.button_Cancel.Name = "button_Cancel";
-            this.button_Cancel.Size = new System.Drawing.Size(80, 25);
+            this.button_Cancel.Size = new System.Drawing.Size(93, 28);
             this.button_Cancel.TabIndex = 12;
             this.button_Cancel.Text = "Cancel";
             this.button_Cancel.UseVisualStyleBackColor = false;
@@ -168,10 +173,10 @@
             this.button_Simpan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(214)))), ((int)(((byte)(103)))));
             this.button_Simpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Simpan.ForeColor = System.Drawing.Color.White;
-            this.button_Simpan.Location = new System.Drawing.Point(403, 16);
-            this.button_Simpan.Margin = new System.Windows.Forms.Padding(4);
+            this.button_Simpan.Location = new System.Drawing.Point(378, 29);
+            this.button_Simpan.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.button_Simpan.Name = "button_Simpan";
-            this.button_Simpan.Size = new System.Drawing.Size(80, 25);
+            this.button_Simpan.Size = new System.Drawing.Size(93, 28);
             this.button_Simpan.TabIndex = 11;
             this.button_Simpan.Text = "Simpan";
             this.button_Simpan.UseVisualStyleBackColor = false;
@@ -180,10 +185,12 @@
             // 
             // label_status
             // 
+            this.label_status.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label_status.AutoSize = true;
-            this.label_status.Location = new System.Drawing.Point(22, 407);
+            this.label_status.Location = new System.Drawing.Point(26, 367);
+            this.label_status.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_status.Name = "label_status";
-            this.label_status.Size = new System.Drawing.Size(28, 13);
+            this.label_status.Size = new System.Drawing.Size(35, 19);
             this.label_status.TabIndex = 14;
             this.label_status.Text = "error";
             this.label_status.Visible = false;
@@ -191,7 +198,7 @@
             // 
             // laporan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label_status);
             this.Controls.Add(this.button_Hapus);
@@ -200,6 +207,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox_Kategori);
             this.Controls.Add(this.dataGridView1);
+            this.Font = new System.Drawing.Font("Poppins Medium", 8.25F);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "laporan";
             this.Size = new System.Drawing.Size(600, 450);
             this.Load += new System.EventHandler(this.laporan_Load);
