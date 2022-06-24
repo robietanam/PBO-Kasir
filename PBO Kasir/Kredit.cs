@@ -16,5 +16,25 @@ namespace PBO_Kasir
         {
             InitializeComponent();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Kredit_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

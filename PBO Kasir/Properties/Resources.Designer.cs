@@ -73,6 +73,16 @@ namespace PBO_Kasir.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Browser_perspective_matte {
+            get {
+                object obj = ResourceManager.GetObject("Browser_perspective_matte", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calendarDark {
             get {
                 object obj = ResourceManager.GetObject("calendarDark", resourceCulture);
@@ -86,6 +96,16 @@ namespace PBO_Kasir.Properties {
         internal static System.Drawing.Bitmap calendarWhite {
             get {
                 object obj = ResourceManager.GetObject("calendarWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Loginbg {
+            get {
+                object obj = ResourceManager.GetObject("Loginbg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

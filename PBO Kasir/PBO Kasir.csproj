@@ -288,8 +288,9 @@
     <Content Include="Resources\bgconfirm.png" />
     <None Include="Resources\calendarWhite.png" />
     <None Include="Resources\calendarDark.png" />
+    <None Include="Resources\Browser_perspective_matte.png" />
     <Content Include="Resources\komputer.png" />
-    <Content Include="Resources\Loginbg.png" />
+    <None Include="Resources\Loginbg.png" />
     <Content Include="Resources\Other 07 1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

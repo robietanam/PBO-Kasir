@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Id_Transaksi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Pembeli = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,6 +51,15 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Poppins Medium", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id_Transaksi,
@@ -59,7 +69,7 @@
             this.HapusBarang});
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.Location = new System.Drawing.Point(30, 86);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
@@ -170,7 +180,7 @@
             // button_Simpan
             // 
             this.button_Simpan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Simpan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(214)))), ((int)(((byte)(103)))));
+            this.button_Simpan.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.button_Simpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Simpan.ForeColor = System.Drawing.Color.White;
             this.button_Simpan.Location = new System.Drawing.Point(378, 29);
@@ -187,10 +197,12 @@
             // 
             this.label_status.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label_status.AutoSize = true;
-            this.label_status.Location = new System.Drawing.Point(26, 367);
+            this.label_status.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            this.label_status.ForeColor = System.Drawing.Color.Red;
+            this.label_status.Location = new System.Drawing.Point(25, 361);
             this.label_status.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_status.Name = "label_status";
-            this.label_status.Size = new System.Drawing.Size(35, 19);
+            this.label_status.Size = new System.Drawing.Size(45, 25);
             this.label_status.TabIndex = 14;
             this.label_status.Text = "error";
             this.label_status.Visible = false;
@@ -200,6 +212,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.label_status);
             this.Controls.Add(this.button_Hapus);
             this.Controls.Add(this.button_Cancel);
@@ -208,7 +221,7 @@
             this.Controls.Add(this.comboBox_Kategori);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Poppins Medium", 8.25F);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "laporan";
             this.Size = new System.Drawing.Size(600, 450);
             this.Load += new System.EventHandler(this.laporan_Load);

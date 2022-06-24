@@ -57,6 +57,7 @@ namespace PBO_Kasir
         }
         public void membuatGridView(string kategorinya)
         {
+
             var rand = new Random();
             DataGridView genGridView = new DataGridView();
             DataGridViewTextBoxColumn KodeBarang = new DataGridViewTextBoxColumn();
@@ -121,8 +122,9 @@ namespace PBO_Kasir
             genGridView.RowHeadersVisible = false;
             genGridView.TabIndex = 4;
             genGridView.Location = new Point(30, 52);
-            genGridView.MaximumSize = new Size(2000, 2000);
-            genGridView.Size = new Size(558, 382);
+            genGridView.MaximumSize = new Size(0, 0);
+            genGridView.MinimumSize = new Size(0, 0);
+            genGridView.Size = new Size(539, 326);
             genGridView.Anchor = ((AnchorStyles)((((AnchorStyles.Top | AnchorStyles.Bottom)
            | AnchorStyles.Left)
            | AnchorStyles.Right)));
@@ -139,6 +141,7 @@ namespace PBO_Kasir
             genGridView.Columns.Add(JumlahBarang);
             genGridView.Columns.Add(TambahBarang);
             genGridView.Columns.Add(KurangiBarang);
+
             this.Controls.Add(genGridView);
 
             //label1.Text = "sukses";
@@ -383,12 +386,24 @@ namespace PBO_Kasir
 
         private void Transaksi_Load(object sender, EventArgs e)
         {
-
+            StyleDatageidview();
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+        void StyleDatageidview()
+        {
+            dataGridView_Barang.BorderStyle = BorderStyle.None;
+            dataGridView_Barang.CellBorderStyle = DataGridViewCellBorderStyle.Single;
+            dataGridView_Barang.DefaultCellStyle.SelectionBackColor = Color.FromArgb(209, 185, 250);
+            dataGridView_Barang.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dataGridView_Barang.EnableHeadersVisualStyles = false;
+            dataGridView_Barang.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridView_Barang.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridView_Barang.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridView_Barang.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(22, 31, 106);
         }
     }
 }

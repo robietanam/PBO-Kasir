@@ -21,7 +21,7 @@ namespace PBO_Kasir
             }
             base.Dispose(disposing);
         }
-
+      
         #region Component Designer generated code
 
         /// <summary> 
@@ -30,6 +30,7 @@ namespace PBO_Kasir
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView_Barang = new System.Windows.Forms.DataGridView();
             this.KodeBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NamaBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,6 +53,14 @@ namespace PBO_Kasir
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_Barang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Poppins Medium", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Barang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView_Barang.ColumnHeadersHeight = 30;
             this.dataGridView_Barang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.KodeBarang,

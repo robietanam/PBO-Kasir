@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button_Edit = new System.Windows.Forms.Button();
             this.button_Konfirmasi = new System.Windows.Forms.Button();
             this.textBox_Nama = new System.Windows.Forms.TextBox();
@@ -47,6 +49,7 @@
             this.button_Edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_Edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
             this.button_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Edit.Font = new System.Drawing.Font("Poppins Medium", 10F);
             this.button_Edit.ForeColor = System.Drawing.Color.White;
             this.button_Edit.Location = new System.Drawing.Point(470, 28);
             this.button_Edit.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -62,6 +65,7 @@
             this.button_Konfirmasi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_Konfirmasi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
             this.button_Konfirmasi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Konfirmasi.Font = new System.Drawing.Font("Poppins Medium", 10F);
             this.button_Konfirmasi.ForeColor = System.Drawing.Color.White;
             this.button_Konfirmasi.Location = new System.Drawing.Point(470, 315);
             this.button_Konfirmasi.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -75,7 +79,7 @@
             // textBox_Nama
             // 
             this.textBox_Nama.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_Nama.Location = new System.Drawing.Point(155, 320);
+            this.textBox_Nama.Location = new System.Drawing.Point(161, 320);
             this.textBox_Nama.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.textBox_Nama.Name = "textBox_Nama";
             this.textBox_Nama.Size = new System.Drawing.Size(212, 24);
@@ -86,28 +90,32 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 324);
+            this.label1.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            this.label1.Location = new System.Drawing.Point(16, 321);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 19);
+            this.label1.Size = new System.Drawing.Size(142, 25);
             this.label1.TabIndex = 4;
             this.label1.Text = "Nama (Opsional) :";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(88, 373);
+            this.label2.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            this.label2.Location = new System.Drawing.Point(95, 368);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 19);
+            this.label2.Size = new System.Drawing.Size(63, 25);
             this.label2.TabIndex = 6;
             this.label2.Text = "Bayar : ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox_Bayar
             // 
             this.textBox_Bayar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_Bayar.Location = new System.Drawing.Point(155, 367);
+            this.textBox_Bayar.Location = new System.Drawing.Point(161, 369);
             this.textBox_Bayar.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.textBox_Bayar.Name = "textBox_Bayar";
             this.textBox_Bayar.Size = new System.Drawing.Size(212, 24);
@@ -141,11 +149,11 @@
             // 
             this.linkLabel_Kembali.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabel_Kembali.AutoSize = true;
-            this.linkLabel_Kembali.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
-            this.linkLabel_Kembali.Location = new System.Drawing.Point(519, 367);
+            this.linkLabel_Kembali.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            this.linkLabel_Kembali.Location = new System.Drawing.Point(502, 370);
             this.linkLabel_Kembali.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.linkLabel_Kembali.Name = "linkLabel_Kembali";
-            this.linkLabel_Kembali.Size = new System.Drawing.Size(54, 19);
+            this.linkLabel_Kembali.Size = new System.Drawing.Size(71, 25);
             this.linkLabel_Kembali.TabIndex = 9;
             this.linkLabel_Kembali.TabStop = true;
             this.linkLabel_Kembali.Text = "Kembali";
@@ -158,6 +166,23 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins Medium", 8.25F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(21, 75);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.dataGridView1.MaximumSize = new System.Drawing.Size(2722, 4272);
@@ -184,6 +209,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.label_error);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.linkLabel_Kembali);
@@ -199,6 +225,7 @@
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "Konfirmasi";
             this.Size = new System.Drawing.Size(600, 450);
+            this.Load += new System.EventHandler(this.Konfirmasi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

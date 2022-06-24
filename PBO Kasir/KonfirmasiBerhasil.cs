@@ -43,5 +43,20 @@ namespace PBO_Kasir
         {
 
         }
+
+        private void KonfirmasiBerhasil_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_Bayar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

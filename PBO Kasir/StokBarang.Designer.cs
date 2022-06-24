@@ -50,16 +50,16 @@
             // labe1
             // 
             this.labe1.AutoSize = true;
-            this.labe1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.labe1.Location = new System.Drawing.Point(91, 51);
+            this.labe1.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            this.labe1.Location = new System.Drawing.Point(90, 43);
             this.labe1.Name = "labe1";
-            this.labe1.Size = new System.Drawing.Size(95, 17);
+            this.labe1.Size = new System.Drawing.Size(109, 25);
             this.labe1.TabIndex = 0;
             this.labe1.Text = "Nama Barang";
             // 
             // textBox_NamaBarang
             // 
-            this.textBox_NamaBarang.Location = new System.Drawing.Point(94, 71);
+            this.textBox_NamaBarang.Location = new System.Drawing.Point(97, 71);
             this.textBox_NamaBarang.Name = "textBox_NamaBarang";
             this.textBox_NamaBarang.Size = new System.Drawing.Size(121, 20);
             this.textBox_NamaBarang.TabIndex = 1;
@@ -67,7 +67,7 @@
             // 
             // textBox_HargaDasar
             // 
-            this.textBox_HargaDasar.Location = new System.Drawing.Point(94, 133);
+            this.textBox_HargaDasar.Location = new System.Drawing.Point(97, 133);
             this.textBox_HargaDasar.Name = "textBox_HargaDasar";
             this.textBox_HargaDasar.Size = new System.Drawing.Size(121, 20);
             this.textBox_HargaDasar.TabIndex = 3;
@@ -77,26 +77,26 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(92, 114);
+            this.label1.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            this.label1.Location = new System.Drawing.Point(92, 105);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 17);
+            this.label1.Size = new System.Drawing.Size(98, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "Harga Dasar";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(92, 249);
+            this.label3.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            this.label3.Location = new System.Drawing.Point(92, 238);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 17);
+            this.label3.Size = new System.Drawing.Size(151, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "Kategori (Opsional)";
             // 
             // textBox_HargaBarang
             // 
-            this.textBox_HargaBarang.Location = new System.Drawing.Point(94, 199);
+            this.textBox_HargaBarang.Location = new System.Drawing.Point(97, 199);
             this.textBox_HargaBarang.Name = "textBox_HargaBarang";
             this.textBox_HargaBarang.Size = new System.Drawing.Size(121, 20);
             this.textBox_HargaBarang.TabIndex = 9;
@@ -106,17 +106,17 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label4.Location = new System.Drawing.Point(92, 180);
+            this.label4.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            this.label4.Location = new System.Drawing.Point(92, 171);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 17);
+            this.label4.Size = new System.Drawing.Size(108, 25);
             this.label4.TabIndex = 8;
             this.label4.Text = "Harga Barang";
             // 
             // textBox_Kode
             // 
             this.textBox_Kode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_Kode.Location = new System.Drawing.Point(314, 71);
+            this.textBox_Kode.Location = new System.Drawing.Point(376, 71);
             this.textBox_Kode.Name = "textBox_Kode";
             this.textBox_Kode.Size = new System.Drawing.Size(121, 20);
             this.textBox_Kode.TabIndex = 11;
@@ -126,10 +126,10 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(312, 52);
+            this.label2.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            this.label2.Location = new System.Drawing.Point(371, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 17);
+            this.label2.Size = new System.Drawing.Size(48, 25);
             this.label2.TabIndex = 10;
             this.label2.Text = "Kode";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -137,7 +137,7 @@
             // textBox_Stok
             // 
             this.textBox_Stok.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_Stok.Location = new System.Drawing.Point(314, 133);
+            this.textBox_Stok.Location = new System.Drawing.Point(376, 133);
             this.textBox_Stok.Name = "textBox_Stok";
             this.textBox_Stok.Size = new System.Drawing.Size(121, 20);
             this.textBox_Stok.TabIndex = 13;
@@ -148,10 +148,10 @@
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label5.Location = new System.Drawing.Point(312, 114);
+            this.label5.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            this.label5.Location = new System.Drawing.Point(371, 105);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 17);
+            this.label5.Size = new System.Drawing.Size(42, 25);
             this.label5.TabIndex = 12;
             this.label5.Text = "Stok";
             // 
@@ -159,7 +159,7 @@
             // 
             this.comboBox_Kategori.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Kategori.FormattingEnabled = true;
-            this.comboBox_Kategori.Location = new System.Drawing.Point(94, 269);
+            this.comboBox_Kategori.Location = new System.Drawing.Point(97, 268);
             this.comboBox_Kategori.Name = "comboBox_Kategori";
             this.comboBox_Kategori.Size = new System.Drawing.Size(129, 21);
             this.comboBox_Kategori.TabIndex = 16;
@@ -167,7 +167,7 @@
             // 
             // button_tambahKategori
             // 
-            this.button_tambahKategori.Location = new System.Drawing.Point(229, 266);
+            this.button_tambahKategori.Location = new System.Drawing.Point(246, 268);
             this.button_tambahKategori.Name = "button_tambahKategori";
             this.button_tambahKategori.Size = new System.Drawing.Size(25, 23);
             this.button_tambahKategori.TabIndex = 17;
@@ -177,8 +177,8 @@
             // 
             // button_simpanBarang
             // 
-            this.button_simpanBarang.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button_simpanBarang.Location = new System.Drawing.Point(208, 352);
+            this.button_simpanBarang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button_simpanBarang.Location = new System.Drawing.Point(97, 352);
             this.button_simpanBarang.Name = "button_simpanBarang";
             this.button_simpanBarang.Size = new System.Drawing.Size(110, 38);
             this.button_simpanBarang.TabIndex = 18;
@@ -190,7 +190,7 @@
             // 
             this.label_kode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label_kode.AutoSize = true;
-            this.label_kode.Location = new System.Drawing.Point(359, 55);
+            this.label_kode.Location = new System.Drawing.Point(425, 47);
             this.label_kode.Name = "label_kode";
             this.label_kode.Size = new System.Drawing.Size(101, 13);
             this.label_kode.TabIndex = 19;
@@ -201,7 +201,7 @@
             this.label_error.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label_error.AutoSize = true;
             this.label_error.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label_error.Location = new System.Drawing.Point(29, 407);
+            this.label_error.Location = new System.Drawing.Point(213, 361);
             this.label_error.Name = "label_error";
             this.label_error.Size = new System.Drawing.Size(93, 17);
             this.label_error.TabIndex = 20;
@@ -209,11 +209,12 @@
             // 
             // linkLabel1
             // 
-            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(29, 377);
+            this.linkLabel1.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            this.linkLabel1.Location = new System.Drawing.Point(493, 361);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(44, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(71, 25);
             this.linkLabel1.TabIndex = 21;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Kembali";
@@ -223,6 +224,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label_error);
             this.Controls.Add(this.label_kode);

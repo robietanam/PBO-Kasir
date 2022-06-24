@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Kasbonlabel = new System.Windows.Forms.Label();
             this.dataGridView_Bon = new System.Windows.Forms.DataGridView();
             this.Nomor = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,7 +66,7 @@
             // 
             this.Kasbonlabel.AutoSize = true;
             this.Kasbonlabel.Font = new System.Drawing.Font("Poppins Medium", 15F);
-            this.Kasbonlabel.Location = new System.Drawing.Point(17, 1);
+            this.Kasbonlabel.Location = new System.Drawing.Point(11, 7);
             this.Kasbonlabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.Kasbonlabel.Name = "Kasbonlabel";
             this.Kasbonlabel.Size = new System.Drawing.Size(93, 36);
@@ -82,6 +83,15 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_Bon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView_Bon.BackgroundColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Poppins Medium", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Bon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView_Bon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Bon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nomor,
@@ -94,12 +104,12 @@
             this.BayarBon,
             this.HapusBon});
             this.dataGridView_Bon.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
-            this.dataGridView_Bon.Location = new System.Drawing.Point(23, 113);
+            this.dataGridView_Bon.Location = new System.Drawing.Point(17, 113);
             this.dataGridView_Bon.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.dataGridView_Bon.Name = "dataGridView_Bon";
             this.dataGridView_Bon.ReadOnly = true;
             this.dataGridView_Bon.RowHeadersVisible = false;
-            this.dataGridView_Bon.Size = new System.Drawing.Size(537, 209);
+            this.dataGridView_Bon.Size = new System.Drawing.Size(561, 209);
             this.dataGridView_Bon.TabIndex = 1;
             this.dataGridView_Bon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Bon_CellContentClick);
             // 
@@ -199,7 +209,7 @@
             this.button_Hapus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
             this.button_Hapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Hapus.ForeColor = System.Drawing.Color.White;
-            this.button_Hapus.Location = new System.Drawing.Point(469, 37);
+            this.button_Hapus.Location = new System.Drawing.Point(485, 41);
             this.button_Hapus.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.button_Hapus.Name = "button_Hapus";
             this.button_Hapus.Size = new System.Drawing.Size(93, 28);
@@ -244,7 +254,7 @@
             this.button_Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(13)))), ((int)(((byte)(15)))));
             this.button_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Cancel.ForeColor = System.Drawing.Color.White;
-            this.button_Cancel.Location = new System.Drawing.Point(470, 77);
+            this.button_Cancel.Location = new System.Drawing.Point(485, 77);
             this.button_Cancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.button_Cancel.Name = "button_Cancel";
             this.button_Cancel.Size = new System.Drawing.Size(93, 28);
@@ -293,10 +303,10 @@
             // button_BayarCancel
             // 
             this.button_BayarCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_BayarCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
+            this.button_BayarCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(13)))), ((int)(((byte)(15)))));
             this.button_BayarCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_BayarCancel.ForeColor = System.Drawing.Color.White;
-            this.button_BayarCancel.Location = new System.Drawing.Point(469, 394);
+            this.button_BayarCancel.Location = new System.Drawing.Point(485, 379);
             this.button_BayarCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.button_BayarCancel.Name = "button_BayarCancel";
             this.button_BayarCancel.Size = new System.Drawing.Size(93, 28);
@@ -312,7 +322,7 @@
             this.button_Bayar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
             this.button_Bayar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Bayar.ForeColor = System.Drawing.Color.White;
-            this.button_Bayar.Location = new System.Drawing.Point(469, 344);
+            this.button_Bayar.Location = new System.Drawing.Point(485, 339);
             this.button_Bayar.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.button_Bayar.Name = "button_Bayar";
             this.button_Bayar.Size = new System.Drawing.Size(93, 28);
@@ -326,7 +336,7 @@
             // 
             this.label_Kode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label_Kode.AutoSize = true;
-            this.label_Kode.Location = new System.Drawing.Point(119, 350);
+            this.label_Kode.Location = new System.Drawing.Point(119, 346);
             this.label_Kode.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label_Kode.Name = "label_Kode";
             this.label_Kode.Size = new System.Drawing.Size(18, 19);
@@ -338,7 +348,7 @@
             // 
             this.label_Jumlah.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Jumlah.AutoSize = true;
-            this.label_Jumlah.Location = new System.Drawing.Point(271, 344);
+            this.label_Jumlah.Location = new System.Drawing.Point(271, 343);
             this.label_Jumlah.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label_Jumlah.Name = "label_Jumlah";
             this.label_Jumlah.Size = new System.Drawing.Size(18, 19);
@@ -350,7 +360,7 @@
             // 
             this.label_atasNama.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label_atasNama.AutoSize = true;
-            this.label_atasNama.Location = new System.Drawing.Point(119, 378);
+            this.label_atasNama.Location = new System.Drawing.Point(119, 374);
             this.label_atasNama.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label_atasNama.Name = "label_atasNama";
             this.label_atasNama.Size = new System.Drawing.Size(18, 19);
@@ -386,7 +396,7 @@
             // 
             this.label_error.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label_error.AutoSize = true;
-            this.label_error.Location = new System.Drawing.Point(353, 344);
+            this.label_error.Location = new System.Drawing.Point(353, 343);
             this.label_error.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label_error.Name = "label_error";
             this.label_error.Size = new System.Drawing.Size(15, 19);
@@ -399,7 +409,7 @@
             // 
             this.textBox_Bayar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_Bayar.Location = new System.Drawing.Point(258, 373);
-            this.textBox_Bayar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Bayar.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Bayar.Name = "textBox_Bayar";
             this.textBox_Bayar.Size = new System.Drawing.Size(145, 24);
             this.textBox_Bayar.TabIndex = 19;

@@ -248,7 +248,7 @@ namespace PBO_Kasir
 
         private void Kasbon_Load(object sender, EventArgs e)
         {
-
+            StyleDatageidview();
         }
 
         private void textBox_Bayar_Load(object sender, EventArgs e)
@@ -273,7 +273,19 @@ namespace PBO_Kasir
 
         private void label6_Click(object sender, EventArgs e)
         {
-
+            
+        }
+        void StyleDatageidview()
+        {
+            dataGridView_Bon.BorderStyle = BorderStyle.None;
+            dataGridView_Bon.CellBorderStyle = DataGridViewCellBorderStyle.Single;
+            dataGridView_Bon.DefaultCellStyle.SelectionBackColor = Color.FromArgb(209, 185, 250);
+            dataGridView_Bon.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dataGridView_Bon.EnableHeadersVisualStyles = false;
+            dataGridView_Bon.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridView_Bon.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridView_Bon.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridView_Bon.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(22, 31, 106);
         }
     }
 }
