@@ -31,5 +31,11 @@ namespace PBO_Kasir.models
             objSqlDb.ExecuteNonQuery(query);
 
         }
+        public DataTable getHargaDasar(string kode)
+        {
+            string query = "select harga_dasar from barang where kode_barang='" + kode + "'";
+            DataTable dt = objSqlDb.ExecuteQuery(query);
+            return dt;
+        }
     }
 }
