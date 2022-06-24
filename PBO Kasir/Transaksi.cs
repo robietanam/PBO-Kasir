@@ -32,6 +32,15 @@ namespace PBO_Kasir
             this.Controls.Add(objKonfirmasi);*/
 
             saveData = comboBox_Kategori.Text;
+            
+
+        }
+        public void updateGridView()
+        {
+            tampilGridView(comboBox_Kategori.Text);
+        }
+        public void buatGridView()
+        {
             for (int i = 0; i < comboBox_Kategori.Items.Count; i++)
             {
                 string nama = comboBox_Kategori.GetItemText(comboBox_Kategori.Items[i]);
@@ -40,18 +49,13 @@ namespace PBO_Kasir
 
             }
             dgv[comboBox_Kategori.Text].Visible = true;
-
-        }
-        public void updateGridView()
-        {
-            tampilGridView(comboBox_Kategori.Text);
         }
         public void updateKategori()
         {
             comboBox_Kategori.DisplayMember = "id_kategori";
             comboBox_Kategori.DataSource = objBarangModel.getKategori();
         }
-        public void membuatGridView(string kategori)
+        public void membuatGridView(string kategorinya)
         {
             var rand = new Random();
             DataGridView genGridView = new DataGridView();
@@ -124,8 +128,8 @@ namespace PBO_Kasir
            | AnchorStyles.Right)));
             genGridView.Visible = false;
             genGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            genGridView.DataSource = objBarangModel.getDataBarangTransaksi(ref kategori);
-            dgv.Add(kategori,genGridView);
+            genGridView.DataSource = objBarangModel.getDataBarangTransaksi(ref kategorinya);
+            dgv.Add(kategorinya,genGridView);
             genGridView.CellContentClick += new DataGridViewCellEventHandler(this.dataGridView_Barang_CellContentClick);
             genGridView.EditingControlShowing += new DataGridViewEditingControlShowingEventHandler(this.dataGridView_Barang_EditingControlShowing);
             genGridView.Columns.Add(KodeBarang);
@@ -142,18 +146,41 @@ namespace PBO_Kasir
         public void tampilGridView(string kategori)
         {
             dataGridView_Barang.Visible = false;
-            foreach (DataGridView dg in dgv.Values)
+            bool ada = dgv.ContainsKey(kategori);
+
+            if (ada)
             {
-                if (dg == dgv[kategori])
+                
+                foreach (DataGridView dg in dgv.Values)
                 {
-                    dg.Visible = true;
-                    dg.DataSource = objBarangModel.getDataBarangTransaksi(ref kategori);
-                }
-                else
-                {
-                    dg.Visible = false;
+                    if (dg == dgv[kategori])
+                    {
+                        dg.Visible = true;
+                        dg.DataSource = objBarangModel.getDataBarangTransaksi(ref kategori);
+                    }
+                    else
+                    {
+                        dg.Visible = false;
+                    }
                 }
             }
+            else
+            {    
+                membuatGridView(kategori);
+                foreach (DataGridView dg in dgv.Values)
+                {
+                    if (dg == dgv[kategori])
+                    {
+                        dg.Visible = true;
+                        dg.DataSource = objBarangModel.getDataBarangTransaksi(ref kategori);
+                    }
+                    else
+                    {
+                        dg.Visible = false;
+                    }
+                }
+            }
+
         }
         public void isiDataTransaksi()
         {
@@ -355,6 +382,11 @@ namespace PBO_Kasir
         }
 
         private void Transaksi_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
