@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PBO_Kasir.Barang">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAiAEQAASEAARACBACAgKQCECghRAAAAMAACABgAEE=</HashCode>
+      <FileName>Barang.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.customtextbox" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAbIgQACCKAAAAABQAKAAAASACAACAAAEAAAAAADAAA=</HashCode>
+      <FileName>customtextbox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.DatePackerCustom" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgCIAAAACiAAAAAIAAMJCAQCgAAEAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>DatePackerCustom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.Kasbon">
+    <Position X="13.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KkQiomQwgKACgZCIgECAQLCSOEAGJBF4AEBACAAAQkA=</HashCode>
+      <FileName>Kasbon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.KasbonTambah" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACBAQQACIAABIAAUCgQICCAAAAAIAwAEIACAAAAIA=</HashCode>
+      <FileName>KasbonTambah.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.kasirForm">
+    <Position X="7.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>kasirForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.KategoriTambah">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIBAAAAACEAALAAAECAAJASQAggAAAAAAAAIAACAAA=</HashCode>
+      <FileName>KategoriTambah.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.Konfirmasi">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIAgAAQQACECABBAAECAAMADKAgkIABDAEAQKCACAAA=</HashCode>
+      <FileName>Konfirmasi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.KonfirmasiBerhasil">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiAAIAAAACAAABAACACBAIACAAAAAAAAAAEAIABGAAA=</HashCode>
+      <FileName>KonfirmasiBerhasil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.Kredit">
+    <Position X="11.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kredit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.laporan" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAEQCASAIARgQAECCgKACEAghBBAAAICACYAAAAA=</HashCode>
+      <FileName>laporan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.login">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAQAACAAABAAAACAIMACAEAIAAAEAEQgCZBAAIA=</HashCode>
+      <FileName>login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.mainForm" Collapsed="true">
+    <Position X="14.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FqKLAAwQgPQAABIgAgCDEA0CAAAEEIICQGAgAABACQA=</HashCode>
+      <FileName>mainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.Program">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.SqlDBHelper">
+    <Position X="13.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SqlDBHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.StokBarang">
+    <Position X="9.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAQQACEAiBIEAETgQKMCAAQgIKAAENAKCQgCAAA=</HashCode>
+      <FileName>StokBarang.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.Transaksi">
+    <Position X="16" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAAAAEQAACEYCBBABBaAAIgKAAAhQCgwAMRCCAAAAEA=</HashCode>
+      <FileName>Transaksi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.UserProfile">
+    <Position X="2.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBBAAAAAACAAARAAAACAAEASAAAAAAAAABQwCQAAAAA=</HashCode>
+      <FileName>UserProfile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.models.barangModel">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAAAAAAAAAAAAAAAAAEIBAAAAAIABAgAAAAQAAAA=</HashCode>
+      <FileName>models\barangModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.models.fitur">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>models\fitur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.models.kasbonModel">
+    <Position X="11.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAIBAAAAAAAACAAACAAAAAA=</HashCode>
+      <FileName>models\kasbonModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.models.laporanModel">
+    <Position X="13" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIBAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>models\laporanModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.models.transaksiModel">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIACAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>models\transaksiModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.models.userModel">
+    <Position X="11.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQEAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>models\userModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.Properties.Resources" Collapsed="true">
+    <Position X="16" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAABEAAAAQAAAAAAEAAgAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBO_Kasir.Properties.Settings">
+    <Position X="4" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
