@@ -46,6 +46,11 @@ namespace PBO_Kasir
         {
             tampilGridView(comboBox_Kategori.Text);
         }
+        public void updateKategori()
+        {
+            comboBox_Kategori.DisplayMember = "id_kategori";
+            comboBox_Kategori.DataSource = objBarangModel.getKategori();
+        }
         public void membuatGridView(string kategori)
         {
             var rand = new Random();

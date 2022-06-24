@@ -31,10 +31,6 @@ namespace PBO_Kasir
         private void InitializeComponent()
         {
             this.dataGridView_Barang = new System.Windows.Forms.DataGridView();
-            this.button_Selanjutnya = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox_Kategori = new System.Windows.Forms.ComboBox();
             this.KodeBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NamaBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HargaBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +38,10 @@ namespace PBO_Kasir
             this.JumlahBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TambahBarang = new System.Windows.Forms.DataGridViewButtonColumn();
             this.KurangiBarang = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.button_Selanjutnya = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox_Kategori = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Barang)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,58 +71,6 @@ namespace PBO_Kasir
             this.dataGridView_Barang.Visible = false;
             this.dataGridView_Barang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Barang_CellContentClick);
             this.dataGridView_Barang.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dataGridView_Barang_EditingControlShowing);
-            // 
-            // button_Selanjutnya
-            // 
-            this.button_Selanjutnya.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Selanjutnya.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
-            this.button_Selanjutnya.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Selanjutnya.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button_Selanjutnya.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_Selanjutnya.Location = new System.Drawing.Point(467, 20);
-            this.button_Selanjutnya.Margin = new System.Windows.Forms.Padding(4);
-            this.button_Selanjutnya.Name = "button_Selanjutnya";
-            this.button_Selanjutnya.Size = new System.Drawing.Size(107, 30);
-            this.button_Selanjutnya.TabIndex = 2;
-            this.button_Selanjutnya.Text = "Selanjutnya";
-            this.button_Selanjutnya.UseVisualStyleBackColor = false;
-            this.button_Selanjutnya.Click += new System.EventHandler(this.button_Selanjutnya_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(21, 21);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Barang";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(271, 27);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Barang";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // comboBox_Kategori
-            // 
-            this.comboBox_Kategori.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_Kategori.FormattingEnabled = true;
-            this.comboBox_Kategori.Location = new System.Drawing.Point(91, 21);
-            this.comboBox_Kategori.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox_Kategori.Name = "comboBox_Kategori";
-            this.comboBox_Kategori.Size = new System.Drawing.Size(140, 21);
-            this.comboBox_Kategori.TabIndex = 5;
-            this.comboBox_Kategori.SelectedIndexChanged += new System.EventHandler(this.comboBox_Kategori_SelectedIndexChanged);
             // 
             // KodeBarang
             // 
@@ -182,6 +130,58 @@ namespace PBO_Kasir
             this.KurangiBarang.Name = "KurangiBarang";
             this.KurangiBarang.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.KurangiBarang.Text = "-";
+            // 
+            // button_Selanjutnya
+            // 
+            this.button_Selanjutnya.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_Selanjutnya.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(106)))));
+            this.button_Selanjutnya.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Selanjutnya.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button_Selanjutnya.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button_Selanjutnya.Location = new System.Drawing.Point(467, 20);
+            this.button_Selanjutnya.Margin = new System.Windows.Forms.Padding(4);
+            this.button_Selanjutnya.Name = "button_Selanjutnya";
+            this.button_Selanjutnya.Size = new System.Drawing.Size(107, 30);
+            this.button_Selanjutnya.TabIndex = 2;
+            this.button_Selanjutnya.Text = "Selanjutnya";
+            this.button_Selanjutnya.UseVisualStyleBackColor = false;
+            this.button_Selanjutnya.Click += new System.EventHandler(this.button_Selanjutnya_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label1.Location = new System.Drawing.Point(23, 33);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 17);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Barang";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(271, 27);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Barang";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // comboBox_Kategori
+            // 
+            this.comboBox_Kategori.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_Kategori.FormattingEnabled = true;
+            this.comboBox_Kategori.Location = new System.Drawing.Point(85, 29);
+            this.comboBox_Kategori.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox_Kategori.Name = "comboBox_Kategori";
+            this.comboBox_Kategori.Size = new System.Drawing.Size(140, 21);
+            this.comboBox_Kategori.TabIndex = 5;
+            this.comboBox_Kategori.SelectedIndexChanged += new System.EventHandler(this.comboBox_Kategori_SelectedIndexChanged);
             // 
             // Transaksi
             // 

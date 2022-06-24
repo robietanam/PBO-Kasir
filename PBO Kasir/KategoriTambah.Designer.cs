@@ -32,10 +32,10 @@
             this.textBox_Kategori = new System.Windows.Forms.TextBox();
             this.button_Tambah = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Nomor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Kategori = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label_error = new System.Windows.Forms.Label();
             this.linkLabel_Kembali = new System.Windows.Forms.LinkLabel();
+            this.Nomor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Kategori = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,23 +96,6 @@
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // Nomor
-            // 
-            this.Nomor.FillWeight = 50.76142F;
-            this.Nomor.HeaderText = "Nomor";
-            this.Nomor.Name = "Nomor";
-            this.Nomor.ReadOnly = true;
-            this.Nomor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Kategori
-            // 
-            this.Kategori.DataPropertyName = "id_kategori";
-            this.Kategori.FillWeight = 149.2386F;
-            this.Kategori.HeaderText = "Nama Kategori";
-            this.Kategori.Name = "Kategori";
-            this.Kategori.ReadOnly = true;
-            this.Kategori.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
             // label_error
             // 
             this.label_error.AutoSize = true;
@@ -135,6 +118,24 @@
             this.linkLabel_Kembali.TabStop = true;
             this.linkLabel_Kembali.Text = "Kembali";
             this.linkLabel_Kembali.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_Kembali_LinkClicked);
+            // 
+            // Nomor
+            // 
+            this.Nomor.DataPropertyName = "nomor";
+            this.Nomor.FillWeight = 50.76142F;
+            this.Nomor.HeaderText = "Nomor";
+            this.Nomor.Name = "Nomor";
+            this.Nomor.ReadOnly = true;
+            this.Nomor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Kategori
+            // 
+            this.Kategori.DataPropertyName = "id_kategori";
+            this.Kategori.FillWeight = 149.2386F;
+            this.Kategori.HeaderText = "Nama Kategori";
+            this.Kategori.Name = "Kategori";
+            this.Kategori.ReadOnly = true;
+            this.Kategori.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // KategoriTambah
             // 
@@ -163,9 +164,9 @@
         private System.Windows.Forms.TextBox textBox_Kategori;
         private System.Windows.Forms.Button button_Tambah;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nomor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Kategori;
         private System.Windows.Forms.Label label_error;
         private System.Windows.Forms.LinkLabel linkLabel_Kembali;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nomor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Kategori;
     }
 }

@@ -19,7 +19,7 @@ namespace PBO_Kasir.models
 
         public DataTable getKategori()
         {
-             string query = "SELECT id_kategori FROM kategori;";
+             string query = "SELECT row_number(*) over() as nomor, id_kategori FROM kategori;";
              DataTable dt = objSqlDb.ExecuteQuery(query);
              return dt;
         }

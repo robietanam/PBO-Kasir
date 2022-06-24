@@ -254,6 +254,7 @@ namespace PBO_Kasir
             showMenuTransaksi();
             objTransaksi.isiDataTransaksi();
             objTransaksi.updateGridView();
+            objTransaksi.updateKategori();
         }
 
         private void label1_Click(object sender, EventArgs e)
