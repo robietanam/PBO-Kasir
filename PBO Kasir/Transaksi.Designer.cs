@@ -66,7 +66,7 @@ namespace PBO_Kasir
             this.dataGridView_Barang.MaximumSize = new System.Drawing.Size(2333, 2923);
             this.dataGridView_Barang.Name = "dataGridView_Barang";
             this.dataGridView_Barang.RowHeadersVisible = false;
-            this.dataGridView_Barang.Size = new System.Drawing.Size(548, 352);
+            this.dataGridView_Barang.Size = new System.Drawing.Size(548, 333);
             this.dataGridView_Barang.TabIndex = 4;
             this.dataGridView_Barang.Visible = false;
             this.dataGridView_Barang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Barang_CellContentClick);
