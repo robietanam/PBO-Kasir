@@ -15,7 +15,7 @@ namespace PBO_Kasir
     {
         mainForm objParent;
         kasbonModel objKasbonModel = new kasbonModel();
-
+        fitur objFitur = new fitur();
         public KasbonTambah(mainForm pantek_parent)
         {
             InitializeComponent();
@@ -28,11 +28,16 @@ namespace PBO_Kasir
             if (string.IsNullOrEmpty(textBox_AtasNama.Text) || string.IsNullOrEmpty(textBox_NamaBon.Text) || string.IsNullOrEmpty(textBox_Jumlah.Text) || string.IsNullOrEmpty(textBox_Kode.Text))
             {
                 label_error.Text = "Data belum lengkap";
+                objFitur.countdownTimer(label_error);
             }
             else
             {
                 objKasbonModel.tambahBon(textBox_Kode.Text, textBox_NamaBon.Text, textBox_AtasNama.Text, textBox_Jumlah.Text.ToString().Replace(@",", @"."), dateTimePicker_TanggalHutang.Value.ToString("yyyy-MM-dd"), dateTimePicker_TenggatHutang.Value.ToString("yyyy-MM-dd"));
                 objParent.showMenuKasbon();
+                textBox_Kode.Text = "";
+                textBox_AtasNama.Text = "";
+                textBox_Jumlah.Text = "";
+                textBox_NamaBon.Text = "";
             }
 
         }

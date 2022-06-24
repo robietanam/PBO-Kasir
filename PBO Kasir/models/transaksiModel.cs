@@ -15,7 +15,7 @@ namespace PBO_Kasir.models
         {
 
         }
-        public void simpanTransaksiBarang(string nama_pelanggan, string jumlah_pemasukan, string kode_barang)
+        public void simpanTransaksiBarang(string nama_pelanggan, float jumlah_pemasukan, string kode_barang)
         {
             string jenis_transaksi = "Pembelian";
             string query = "insert into transaksi(jenis_transaksi,nama_pelanggan,jumlah_pemasukan,barang_kode_barang) values ('{0}', '{1}', '{2}', '{3}')";
@@ -23,7 +23,7 @@ namespace PBO_Kasir.models
             objSqlDb.ExecuteNonQuery(query);
 
         }
-        public void simpanTransaksiKasbon(string nama_pelanggan, string jumlah_pemasukan, string kode_kasbon)
+        public void simpanTransaksiKasbon(string nama_pelanggan, float jumlah_pemasukan, string kode_kasbon)
         {
             string jenis_transaksi = "Kasbon";
             string query = "insert into transaksi(jenis_transaksi,nama_pelanggan,jumlah_pemasukan,kasbon_kode_kasbon ) values ('{0}', '{1}', '{2}', '{3}')";

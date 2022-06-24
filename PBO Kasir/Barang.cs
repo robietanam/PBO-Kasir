@@ -17,12 +17,14 @@ namespace PBO_Kasir
         barangModel objBarangModel = new barangModel();
         List<string> hapusKodeBarang = new List<string>();
         DataTable dtBarang = new DataTable();
+        fitur objFitur = new fitur();
         public Barang(mainForm pantek_parent)
         {
             InitializeComponent();
             objParent = pantek_parent;
             comboBox_Kategori.DisplayMember = "id_kategori";
             comboBox_Kategori.DataSource = objBarangModel.getKategori();
+            dataGridView1.DataSource = objBarangModel.getDataBarang(comboBox_Kategori.Text);
             button_Simpan.Visible = false;
             button_Cancel.Visible = false;
             label_Status.Text = "";
@@ -30,6 +32,11 @@ namespace PBO_Kasir
         public void updateDataBarang(out DataTable dt)
         {
             dt = objBarangModel.getDataBarang(comboBox_Kategori.Text);
+        }
+        public void updateData()
+        {
+            updateDataBarang(out dtBarang);
+            dataGridView1.DataSource = dtBarang;
         }
         public void simpanDataBaru()
         {
@@ -95,7 +102,7 @@ namespace PBO_Kasir
             button_Hapus.Visible = true;
             HapusBarang.Visible = false;
             label_Status.Text = "Data Tersimpan";
-
+            objFitur.countdownTimer(label_Status);
             updateDataBarang(out dtBarang);
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.DataSource = dtBarang;
@@ -140,13 +147,9 @@ namespace PBO_Kasir
         void StyleDatageidview()
         {
             dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(22, 31, 106);
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.Single;
             dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(209, 185, 250);
             dataGridView1.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-
-
-
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(22, 31, 106);

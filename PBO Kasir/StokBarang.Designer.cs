@@ -102,6 +102,7 @@
             this.textBox_HargaBarang.TabIndex = 9;
             this.textBox_HargaBarang.TextChanged += new System.EventHandler(this.textBox_HargaBarang_TextChanged);
             this.textBox_HargaBarang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_HargaBarang_KeyPress);
+            
             // 
             // label4
             // 

@@ -15,6 +15,7 @@ namespace PBO_Kasir
     {
         userModel objUserModel = new userModel();
         DataTable dt = new DataTable();
+        fitur objFitur = new fitur();
         public UserProfile()
         {
             InitializeComponent();
@@ -46,12 +47,14 @@ namespace PBO_Kasir
             if (string.IsNullOrEmpty(textBox_nama.Text) || string.IsNullOrEmpty(textBox_password.Text))
             {
                 label_status.Text = "Data Tidak Lengkap";
+                objFitur.countdownTimer(label_status);
             }
             else
             {
                 updateDataUser();
                 tampilDataUser();
                 label_status.Text = "Data Tersimpan";
+                objFitur.countdownTimer(label_status);
             }
         }
 
