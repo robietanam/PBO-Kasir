@@ -51,6 +51,6 @@ CREATE TABLE user_login (
 
 ALTER TABLE user_login ADD CONSTRAINT user_login_pk PRIMARY KEY ( no_index );
 
-insert into user_login values ('1','t','1');
+insert into user_login values ('1','Test','123');
 insert into kategori values ('Tanpa Kategori');
 
