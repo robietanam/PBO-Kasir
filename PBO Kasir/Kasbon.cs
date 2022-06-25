@@ -84,7 +84,7 @@ namespace PBO_Kasir
             foreach (DataGridViewRow row in dataGridView_Bon.Rows)
             {
                 //row.Cells[1].Value;
-                Kasbonlabel.Text = row.Cells[5].Value.ToString().Replace(@"/", @"-").Split(' ')[0];
+                //Kasbonlabel.Text = row.Cells[5].Value.ToString().Replace(@"/", @"-").Split(' ')[0];
                 objKasbonModel.updateKason(row.Cells[1].Value.ToString(), row.Cells[2].Value.ToString(), row.Cells[3].Value.ToString(), float.Parse(row.Cells[4].Value.ToString()), row.Cells[5].Value.ToString().Replace(@"/", @"-").Split(' ')[0], row.Cells[6].Value.ToString().Replace(@"/", @"-").Split(' ')[0]);
             
             }
