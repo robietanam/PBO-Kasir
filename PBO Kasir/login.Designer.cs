@@ -50,7 +50,7 @@
             this.lblInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblInfo.Font = new System.Drawing.Font("Poppins Medium", 8.25F);
             this.lblInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(113)))), ((int)(((byte)(254)))));
-            this.lblInfo.Location = new System.Drawing.Point(250, 306);
+            this.lblInfo.Location = new System.Drawing.Point(357, 326);
             this.lblInfo.Name = "lblInfo";
             this.lblInfo.Size = new System.Drawing.Size(2, 21);
             this.lblInfo.TabIndex = 4;
@@ -63,7 +63,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Poppins Medium", 20F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(281, 86);
+            this.label2.Location = new System.Drawing.Point(388, 86);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(99, 48);
             this.label2.TabIndex = 6;
@@ -75,7 +75,7 @@
             this.UsernameBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.UsernameBox1.BackColor = System.Drawing.Color.Transparent;
             this.UsernameBox1.Image = ((System.Drawing.Image)(resources.GetObject("UsernameBox1.Image")));
-            this.UsernameBox1.Location = new System.Drawing.Point(189, 151);
+            this.UsernameBox1.Location = new System.Drawing.Point(296, 171);
             this.UsernameBox1.Name = "UsernameBox1";
             this.UsernameBox1.Size = new System.Drawing.Size(40, 40);
             this.UsernameBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -87,7 +87,7 @@
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(113)))), ((int)(((byte)(254)))));
-            this.panel1.Location = new System.Drawing.Point(189, 197);
+            this.panel1.Location = new System.Drawing.Point(296, 217);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(294, 3);
             this.panel1.TabIndex = 8;
@@ -96,7 +96,7 @@
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(113)))), ((int)(((byte)(254)))));
-            this.panel2.Location = new System.Drawing.Point(189, 277);
+            this.panel2.Location = new System.Drawing.Point(296, 297);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(294, 3);
             this.panel2.TabIndex = 10;
@@ -106,7 +106,7 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(189, 227);
+            this.pictureBox1.Location = new System.Drawing.Point(296, 247);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -121,7 +121,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Poppins Medium", 12F);
             this.button1.ForeColor = System.Drawing.SystemColors.Window;
-            this.button1.Location = new System.Drawing.Point(277, 328);
+            this.button1.Location = new System.Drawing.Point(384, 368);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 35);
             this.button1.TabIndex = 11;
@@ -136,7 +136,7 @@
             this.textBox_User.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_User.Font = new System.Drawing.Font("Poppins Medium", 12F);
             this.textBox_User.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(113)))), ((int)(((byte)(254)))));
-            this.textBox_User.Location = new System.Drawing.Point(250, 155);
+            this.textBox_User.Location = new System.Drawing.Point(357, 175);
             this.textBox_User.Name = "textBox_User";
             this.textBox_User.Size = new System.Drawing.Size(248, 24);
             this.textBox_User.TabIndex = 12;
@@ -150,7 +150,7 @@
             this.textBox_Pass.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox_Pass.Font = new System.Drawing.Font("Poppins Medium", 12F);
             this.textBox_Pass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(113)))), ((int)(((byte)(254)))));
-            this.textBox_Pass.Location = new System.Drawing.Point(250, 236);
+            this.textBox_Pass.Location = new System.Drawing.Point(357, 256);
             this.textBox_Pass.Name = "textBox_Pass";
             this.textBox_Pass.Size = new System.Drawing.Size(248, 24);
             this.textBox_Pass.TabIndex = 13;
@@ -175,7 +175,7 @@
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "login";
-            this.Size = new System.Drawing.Size(600, 450);
+            this.Size = new System.Drawing.Size(814, 490);
             this.Load += new System.EventHandler(this.login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.UsernameBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
