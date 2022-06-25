@@ -281,15 +281,15 @@ namespace PBO_Kasir
                 DataGridViewRow row = dgv[comboBox_Kategori.Text].Rows[e.RowIndex];
                 if (e.ColumnIndex == 1)  // edit
                 {
-                    if (row.Cells[0].Value == null || row.Cells[0].Value == "")
-                    {  
+                    if ((row.Cells[0].Value == null || row.Cells[0].Value == "") && int.Parse(row.Cells[6].Value.ToString()) > 0)
+                    {
                         row.Cells[0].Value = "1";
                         int stok = int.Parse(row.Cells[6].Value.ToString());
                         stok -= 1;
                         row.Cells[6].Value = stok.ToString();
 
                     }
-                    else if (row.Cells[0].Value != null)
+                    else if (row.Cells[0].Value != null && int.Parse(row.Cells[6].Value.ToString()) > 0)
                     {
                         int num = int.Parse(row.Cells[0].Value.ToString());
                         num += 1;
