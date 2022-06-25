@@ -32,19 +32,18 @@ namespace PBO_Kasir
             dataGridView1.DataSource = dtKonfirmasi;
         }
         private void button_Konfirmasi_Click(object sender, EventArgs e)
-        {
-            HargaTotal = 0;
-            
+        {            
             float Bayar = float.Parse(textBox_Bayar.Text.ToString());
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-                HargaTotal += float.Parse(row.Cells[2].Value.ToString());
+                HargaTotal += float.Parse(row.Cells[2].Value.ToString()) * float.Parse(row.Cells[3].Value.ToString());
             }
 
-            if (HargaTotal > Bayar)
+            if (HargaTotal >= Bayar)
             {
                 label_error.Text = "Bayar Tidak Cukup";
                 objFitur.countdownTimer(label_error);
+                HargaTotal = 0;
             }
             else
             {

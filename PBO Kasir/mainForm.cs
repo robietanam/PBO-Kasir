@@ -94,21 +94,12 @@ namespace PBO_Kasir
             objLaporan.Location = new Point(200, 0);
             objLaporan.Anchor = ((AnchorStyles.Left | AnchorStyles.Right) | (AnchorStyles.Bottom | AnchorStyles.Top));
             this.Controls.Add(objLaporan);
+
             /*objPlayground = new playground(this);
             objPlayground.Location = new Point(200, 0);
             objPlayground.Anchor = ((AnchorStyles.Left | AnchorStyles.Right) | (AnchorStyles.Bottom | AnchorStyles.Top));
             this.Controls.Add(objPlayground);*/
-            //objListUsers = new listUsers(this);
-            //objListUsers.Dock = DockStyle.Fill;
-            //this.Controls.Add(objListUsers);
-            //showLoginForm();
-
-            //objListPerson = new listPerson(this);
-            //objListPerson.Dock = DockStyle.Fill;
-            //this.Controls.Add(objListPerson);
-
-            //objVPeran = new WinFormsApp2.peran();
-            //objVPeran.Dock = DockStyle.Fill;dd
+           
             showLoginForm();
 
             //showListPersons();
