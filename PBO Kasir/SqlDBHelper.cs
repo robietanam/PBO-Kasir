@@ -14,9 +14,11 @@ namespace PBO_Kasir
         public SqlDBHelper()
         {
             connection = new NpgsqlConnection();
-            connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;Password=database123;Database=Kasir_PBO;CommandTimeout=10";
+            //connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;Password=database123;Database=Kasir_PBO;CommandTimeout=10";
             // ConfigurationManager.ConnectionStrings["constr"].ToString();
-            
+            connection.ConnectionString = ConfigurationManager.ConnectionStrings["myconnection"].ConnectionString;
+          
+   
         }
 
         public DataTable ExecuteQuery(string sql)
