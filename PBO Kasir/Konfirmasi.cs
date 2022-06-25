@@ -36,10 +36,10 @@ namespace PBO_Kasir
             float Bayar = float.Parse(textBox_Bayar.Text.ToString());
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-                HargaTotal += float.Parse(row.Cells[2].Value.ToString()) * float.Parse(row.Cells[3].Value.ToString());
+                HargaTotal += float.Parse(row.Cells[2].Value.ToString()) * float.Parse(row.Cells[4].Value.ToString());
             }
 
-            if (HargaTotal >= Bayar)
+            if (HargaTotal > Bayar)
             {
                 label_error.Text = "Bayar Tidak Cukup";
                 objFitur.countdownTimer(label_error);
